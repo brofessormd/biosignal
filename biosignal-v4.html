@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BioSignal v2 — İçerik İstihbarat Platformu</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;0,900;1,300&family=DM+Mono:wght@300;400;500&family=Bricolage+Grotesque:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #04080d;
+  --s1: #080f1a;
+  --s2: #0d1826;
+  --s3: #112030;
+  --border: #162840;
+  --border2: #1d3550;
+  --c1: #12e8c4;
+  --c2: #ff4d6d;
+  --c3: #fbbf24;
+  --c4: #818cf8;
+  --c5: #34d399;
+  --text: #e2edf5;
+  --t2: #7fa8c4;
+  --t3: #3d6888;
+  --t4: #1f4060;
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Bricolage Grotesque', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Subtle noise texture */
+body::before {
+  content:'';
+  position:fixed;
+  inset:0;
+  background-image:
+    radial-gradient(ellipse 60% 40% at 20% 0%, rgba(18,232,196,0.04) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 30% at 80% 100%, rgba(129,140,248,0.04) 0%, transparent 60%);
+  pointer-events:none;
+  z-index:0;
+}
+
+/* ── NAV ── */
+nav {
+  position:fixed; top:0; left:0; right:0; z-index:100;
+  height:54px;
+  background:rgba(4,8,13,0.92);
+  backdrop-filter:blur(24px);
+  border-bottom:1px solid var(--border);
+  display:flex; align-items:center;
+  padding:0 20px; gap:0;
+}
+
+.logo {
+  font-family:var(--font-display);
+  font-size:19px;
+  font-weight:900;
+  color:var(--c1);
+  margin-right:28px;
+  letter-spacing:-0.5px;
+  display:flex;
+  align-items:center;
+  gap:7px;
+  white-space:nowrap;
+}
+
+.logo-pulse {
+  width:7px; height:7px;
+  background:var(--c1);
+  border-radius:50%;
+  animation:pulse 2s ease-in-out infinite;
+  box-shadow:0 0 8px var(--c1);
+}
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.4;transform:scale(1.6)} }
+
+.nav-tabs { display:flex; gap:2px; flex:1; overflow-x:auto; }
+.nav-tabs::-webkit-scrollbar { display:none; }
+
+.tb {
+  padding:5px 13px;
+  border:none; border-radius:6px;
+  background:transparent; color:var(--t2);
+  font-family:var(--font-body);
+  font-size:12.5px; font-weight:600;
+  cursor:pointer; transition:all .18s;
+  white-space:nowrap; display:flex; align-items:center; gap:5px;
+}
+.tb:hover { background:var(--s2); color:var(--text); }
+.tb.active { background:var(--s2); color:var(--c1); border:1px solid rgba(18,232,196,0.18); }
+
+.nb { /* nav badge */
+  background:var(--c2);
+  color:#fff; font-size:9px; font-weight:700;
+  padding:1px 5px; border-radius:8px;
+  font-family:var(--font-mono);
+}
+
+.live-pill {
+  display:flex; align-items:center; gap:5px;
+  background:rgba(255,77,109,0.08);
+  border:1px solid rgba(255,77,109,0.25);
+  border-radius:20px; padding:3px 10px;
+  font-size:11px; font-weight:600; color:var(--c2);
+  font-family:var(--font-mono);
+  margin-left:auto;
+}
+.live-dot { width:5px;height:5px;background:var(--c2);border-radius:50%;animation:pulse 1s infinite; }
+
+/* ── LAYOUT ── */
+main { padding-top:54px; position:relative; z-index:1; }
+.page { display:none; padding:24px 20px; min-height:calc(100vh - 54px); }
+.page.active { display:block; }
+
+/* ── TYPOGRAPHY ── */
+.ph { /* page header */
+  display:flex; align-items:flex-end; justify-content:space-between;
+  margin-bottom:22px; padding-bottom:16px;
+  border-bottom:1px solid var(--border);
+}
+.pt { /* page title */
+  font-family:var(--font-display);
+  font-size:26px; font-weight:900;
+  letter-spacing:-1px; line-height:1;
+  color:var(--text);
+}
+.ps { /* page subtitle */
+  font-size:11.5px; color:var(--t3);
+  font-family:var(--font-mono);
+  margin-top:5px;
+}
+
+.sh { /* section header */
+  font-size:10.5px; font-weight:600;
+  font-family:var(--font-mono);
+  color:var(--t3); text-transform:uppercase; letter-spacing:1.5px;
+  margin:22px 0 12px;
+  display:flex; align-items:center; gap:8px;
+}
+.sh::after { content:''; flex:1; height:1px; background:var(--border); }
+
+/* ── CARDS ── */
+.card {
+  background:var(--s1);
+  border:1px solid var(--border);
+  border-radius:10px; padding:18px;
+  transition:border-color .2s, transform .15s;
+  position:relative; overflow:hidden;
+}
+.card:hover { border-color:var(--border2); }
+
+/* ── TAGS ── */
+.tag {
+  display:inline-flex; align-items:center; gap:3px;
+  font-size:10px; font-weight:600; padding:2px 8px;
+  border-radius:4px; font-family:var(--font-mono);
+  text-transform:uppercase; letter-spacing:0.4px;
+  white-space:nowrap;
+}
+.tc { background:rgba(18,232,196,0.08); color:var(--c1); border:1px solid rgba(18,232,196,0.2); }
+.tr-tag { background:rgba(251,191,36,0.08); color:var(--c3); border:1px solid rgba(251,191,36,0.2); }
+.tg { background:rgba(129,140,248,0.08); color:var(--c4); border:1px solid rgba(129,140,248,0.2); }
+.th { background:rgba(255,77,109,0.08); color:var(--c2); border:1px solid rgba(255,77,109,0.2); }
+.tinfo { background:rgba(52,211,153,0.08); color:var(--c5); border:1px solid rgba(52,211,153,0.2); }
+
+/* ── BUTTONS ── */
+.btn-primary {
+  padding:9px 18px;
+  background:linear-gradient(135deg, rgba(18,232,196,0.15), rgba(129,140,248,0.15));
+  border:1px solid rgba(18,232,196,0.35);
+  border-radius:8px; color:var(--c1);
+  font-family:var(--font-body); font-size:12.5px; font-weight:600;
+  cursor:pointer; transition:all .2s;
+  display:inline-flex; align-items:center; gap:6px;
+}
+.btn-primary:hover { background:rgba(18,232,196,0.15); box-shadow:0 4px 16px rgba(18,232,196,0.12); }
+
+.btn-sm {
+  padding:5px 11px;
+  background:var(--s2);
+  border:1px solid var(--border2);
+  border-radius:6px; color:var(--t2);
+  font-family:var(--font-body); font-size:11.5px; font-weight:600;
+  cursor:pointer; transition:all .15s;
+  display:inline-flex; align-items:center; gap:4px;
+}
+.btn-sm:hover { border-color:var(--c1); color:var(--c1); }
+
+.btn-script {
+  padding:7px 14px;
+  background:linear-gradient(135deg, #12e8c415, #818cf815);
+  border:1px solid rgba(18,232,196,0.3);
+  border-radius:7px; color:var(--c1);
+  font-family:var(--font-body); font-size:12px; font-weight:700;
+  cursor:pointer; transition:all .2s;
+  display:inline-flex; align-items:center; gap:5px;
+  white-space:nowrap;
+}
+.btn-script:hover { background:rgba(18,232,196,0.12); transform:translateY(-1px); }
+.btn-script:active { transform:translateY(0); }
+
+/* ── GRIDS ── */
+.g2 { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.g3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; }
+
+/* ══════════════════════════════════════════
+   PAGE 1: HABER AKIŞI
+══════════════════════════════════════════ */
+.feed-layout { display:grid; grid-template-columns:220px 1fr; gap:18px; }
+
+.feed-sidebar {
+  position:sticky; top:70px;
+  align-self:start;
+}
+
+.source-pill {
+  display:flex; align-items:center; gap:8px;
+  padding:8px 12px; border-radius:8px;
+  border:1px solid var(--border);
+  background:var(--s1);
+  margin-bottom:6px; cursor:pointer;
+  transition:all .15s; font-size:13px;
+}
+.source-pill:hover, .source-pill.active {
+  border-color:rgba(18,232,196,0.3);
+  background:var(--s2);
+  color:var(--c1);
+}
+.source-pill.active { border-color:rgba(18,232,196,0.4); }
+
+.sp-icon { font-size:16px; }
+.sp-name { font-weight:600; font-size:12.5px; flex:1; }
+.sp-count {
+  font-family:var(--font-mono); font-size:10px;
+  color:var(--t3); padding:2px 6px;
+  background:var(--s2); border-radius:4px;
+}
+
+/* NEWS CARD */
+.news-card {
+  background:var(--s1);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:18px 20px;
+  margin-bottom:12px;
+  transition:all .2s;
+  position:relative;
+  overflow:hidden;
+}
+.news-card:hover { border-color:var(--border2); transform:translateY(-1px); }
+
+.news-card-top {
+  display:flex; justify-content:space-between;
+  align-items:flex-start; gap:14px;
+  margin-bottom:10px;
+}
+
+.news-meta {
+  display:flex; align-items:center; gap:8px;
+  margin-bottom:8px;
+}
+
+.source-dot {
+  width:6px; height:6px;
+  border-radius:50%; flex-shrink:0;
+}
+
+.news-source-name {
+  font-size:11px; font-family:var(--font-mono);
+  color:var(--t2); font-weight:500;
+}
+
+.news-date {
+  font-size:11px; font-family:var(--font-mono);
+  color:var(--t3);
+}
+
+.news-title {
+  font-family:var(--font-display);
+  font-size:16px; font-weight:600;
+  color:var(--text); line-height:1.4;
+  margin-bottom:8px; cursor:pointer;
+  display:block; text-decoration:none;
+}
+.news-title:hover { color:var(--c1); text-decoration:none; }
+
+.news-summary {
+  font-size:13px; color:var(--t2);
+  line-height:1.65; margin-bottom:12px;
+}
+
+.news-footer {
+  display:flex; align-items:center;
+  justify-content:space-between; gap:12px;
+  flex-wrap:wrap;
+}
+
+.news-tags { display:flex; gap:5px; flex-wrap:wrap; }
+
+.news-actions { display:flex; gap:6px; align-items:center; }
+
+/* VIRAL BADGE on news */
+.vb {
+  display:flex; flex-direction:column;
+  align-items:center; flex-shrink:0;
+  background:var(--s2);
+  border:1px solid var(--border2);
+  border-radius:8px; padding:8px 12px;
+  min-width:70px;
+}
+.vb-score {
+  font-family:var(--font-display);
+  font-size:22px; font-weight:900;
+  line-height:1;
+}
+.vb-label {
+  font-size:9px; font-family:var(--font-mono);
+  text-transform:uppercase; letter-spacing:0.5px;
+  margin-top:2px;
+}
+.vb.high { border-color:rgba(18,232,196,0.3); }
+.vb.high .vb-score { color:var(--c1); }
+.vb.med { border-color:rgba(251,191,36,0.3); }
+.vb.med .vb-score { color:var(--c3); }
+.vb.low { border-color:rgba(129,140,248,0.3); }
+.vb.low .vb-score { color:var(--c4); }
+
+/* Feed filter bar */
+.filter-bar {
+  display:flex; gap:6px; margin-bottom:18px;
+  flex-wrap:wrap;
+}
+.filter-btn {
+  padding:5px 12px; border-radius:20px;
+  border:1px solid var(--border); background:transparent;
+  color:var(--t2); font-size:12px; font-family:var(--font-body);
+  font-weight:600; cursor:pointer; transition:all .15s;
+}
+.sort-btn {
+  padding:5px 11px;border-radius:20px;border:1px solid var(--border2);
+  background:var(--s2);color:var(--t2);font-family:var(--font-body);font-size:12px;
+  font-weight:600;cursor:pointer;transition:all .15s;white-space:nowrap;
+}
+.sort-btn:hover,.sort-btn.active {
+  background:rgba(251,191,36,.08);border-color:rgba(251,191,36,.35);color:var(--c3);
+}
+.filter-btn:hover, .filter-btn.active {
+  border-color:rgba(18,232,196,0.35); color:var(--c1);
+  background:rgba(18,232,196,0.06);
+}
+
+/* Refresh bar */
+.refresh-bar {
+  display:flex; align-items:center; gap:10px;
+  background:var(--s1); border:1px solid var(--border);
+  border-radius:8px; padding:9px 14px; margin-bottom:18px;
+  font-size:12.5px; color:var(--t2);
+}
+.refresh-bar strong { color:var(--c1); }
+
+/* ══════════════════════════════════════════
+   PAGE 2: VİRALİTE
+══════════════════════════════════════════ */
+.viral-card {
+  background:var(--s1);
+  border:1px solid var(--border);
+  border-radius:12px; padding:20px;
+  margin-bottom:14px;
+  position:relative; overflow:hidden;
+}
+.viral-card::before {
+  content:''; position:absolute;
+  top:0; left:0; width:3px; bottom:0;
+  background:var(--c1); border-radius:2px 0 0 2px;
+}
+.viral-card.med::before { background:var(--c3); }
+.viral-card.low::before { background:var(--c4); }
+
+.vc-header {
+  display:flex; justify-content:space-between;
+  align-items:flex-start; gap:14px; margin-bottom:12px;
+}
+
+.vc-title {
+  font-family:var(--font-display);
+  font-size:15px; font-weight:600; line-height:1.4; color:var(--text);
+}
+.vc-source { font-size:11px; font-family:var(--font-mono); color:var(--t3); margin-top:4px; }
+
+.tiktok-box {
+  text-align:right; flex-shrink:0;
+}
+.tk-views {
+  font-family:var(--font-display);
+  font-size:19px; font-weight:900;
+}
+.tk-label { font-size:9px; font-family:var(--font-mono); color:var(--t3); }
+
+.why-viral {
+  font-size:12.5px; color:var(--t2); line-height:1.65;
+  background:rgba(0,0,0,0.2); padding:10px 14px;
+  border-radius:7px; border-left:2px solid rgba(18,232,196,0.2);
+  margin:10px 0;
+}
+.why-viral strong { color:var(--c1); }
+
+.vbar-wrap { display:flex; align-items:center; gap:8px; margin:10px 0; }
+.vbar { flex:1; height:5px; background:var(--s3); border-radius:3px; overflow:hidden; }
+.vbar-fill { height:100%; border-radius:3px; background:linear-gradient(90deg, var(--c4), var(--c1)); }
+.vbar-label { font-size:10.5px; font-family:var(--font-mono); color:var(--t3); white-space:nowrap; }
+
+.vc-footer {
+  display:flex; align-items:center;
+  justify-content:space-between; gap:10px;
+  flex-wrap:wrap; margin-top:10px;
+}
+
+/* FACT CHECK BADGE */
+.fc-badge {
+  display:inline-flex; align-items:center; gap:4px;
+  padding:3px 9px; border-radius:5px;
+  font-size:10.5px; font-weight:600; font-family:var(--font-mono);
+}
+.fc-verified { background:rgba(52,211,153,0.1); color:var(--c5); border:1px solid rgba(52,211,153,0.25); }
+.fc-mixed { background:rgba(251,191,36,0.1); color:var(--c3); border:1px solid rgba(251,191,36,0.25); }
+.fc-unverified { background:rgba(255,77,109,0.1); color:var(--c2); border:1px solid rgba(255,77,109,0.25); }
+
+/* ══════════════════════════════════════════
+   PAGE 3: INSTAGRAM
+══════════════════════════════════════════ */
+.ig-card {
+  background:var(--s1); border:1px solid var(--border);
+  border-radius:12px; padding:20px; margin-bottom:14px;
+}
+.ig-header { display:flex; align-items:center; gap:14px; margin-bottom:16px; }
+.ig-ava {
+  width:48px; height:48px; border-radius:50%;
+  background:linear-gradient(135deg, #405de6,#5851db,#833ab4,#c13584,#e1306c,#fd1d1d);
+  display:flex; align-items:center; justify-content:center; font-size:20px; flex-shrink:0;
+}
+.ig-info { flex:1; }
+.ig-handle { font-weight:700; font-size:15px; color:var(--text); }
+.ig-followers { font-size:11.5px; color:var(--t2); font-family:var(--font-mono); margin-top:2px; }
+.ig-stats { display:flex; gap:16px; }
+.ig-stat { text-align:center; }
+.ig-stat-n { font-family:var(--font-display); font-size:17px; font-weight:900; color:var(--c1); }
+.ig-stat-l { font-size:9.5px; color:var(--t3); font-family:var(--font-mono); }
+
+.ig-posts { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:12px; }
+.ig-post {
+  background:var(--s2); border:1px solid var(--border);
+  border-radius:8px; padding:12px; cursor:pointer;
+  transition:all .15s; position:relative;
+}
+.ig-post:hover { border-color:rgba(193,53,132,0.35); }
+.ig-post-date { font-size:10px; font-family:var(--font-mono); color:var(--t3); margin-bottom:5px; }
+.ig-post-cap { font-size:12px; color:var(--text); line-height:1.5; margin-bottom:7px; }
+.ig-post-m { display:flex; gap:8px; font-size:10.5px; color:var(--t2); font-family:var(--font-mono); }
+.ig-vbadge {
+  position:absolute; top:7px; right:7px;
+  background:var(--c2); color:#fff;
+  font-size:9px; font-weight:700; padding:2px 5px;
+  border-radius:3px; font-family:var(--font-mono);
+}
+
+/* ══════════════════════════════════════════
+   PAGE 4: SCRIPT
+══════════════════════════════════════════ */
+.script-layout { display:grid; grid-template-columns:300px 1fr; gap:18px; align-items:start; }
+
+.script-panel {
+  background:var(--s1); border:1px solid var(--border);
+  border-radius:12px; padding:20px;
+  position:sticky; top:70px;
+}
+
+.script-out {
+  background:var(--s1); border:1px solid var(--border);
+  border-radius:12px; padding:24px;
+}
+
+.sel {
+  width:100%; background:var(--s2);
+  border:1px solid var(--border2); color:var(--text);
+  padding:9px 13px; border-radius:7px;
+  font-family:var(--font-body); font-size:12.5px;
+  outline:none; transition:border-color .2s;
+  appearance:none; cursor:pointer; margin-bottom:11px;
+}
+.sel:focus { border-color:rgba(18,232,196,0.4); }
+
+.lbl {
+  font-size:10px; font-family:var(--font-mono);
+  color:var(--t3); text-transform:uppercase; letter-spacing:0.8px;
+  margin-bottom:5px; display:block;
+}
+
+.gen-btn {
+  width:100%; padding:13px;
+  background:linear-gradient(135deg, var(--c1), var(--c4));
+  border:none; border-radius:9px;
+  color:#04080d; font-family:var(--font-display);
+  font-size:15px; font-weight:900;
+  cursor:pointer; transition:all .2s;
+  margin-top:6px; letter-spacing:-0.3px;
+}
+.gen-btn:hover { transform:translateY(-1px); box-shadow:0 8px 24px rgba(18,232,196,0.2); }
+.gen-btn:active { transform:translateY(0); }
+
+/* Script sections */
+.ss { margin-bottom:22px; }
+.ss-label {
+  font-size:10px; font-family:var(--font-mono);
+  text-transform:uppercase; letter-spacing:1.5px;
+  color:var(--c1); margin-bottom:9px;
+  display:flex; align-items:center; gap:8px;
+}
+.ss-label::after { content:''; flex:1; height:1px; background:rgba(18,232,196,0.12); }
+
+.hook-box {
+  background:linear-gradient(135deg, rgba(18,232,196,0.04), rgba(129,140,248,0.04));
+  border:1px solid rgba(18,232,196,0.2);
+  border-radius:10px; padding:18px 20px;
+  font-family:var(--font-display);
+  font-size:16px; font-weight:600; line-height:1.55;
+  color:var(--text); position:relative;
+}
+.hook-box::before {
+  content:'"'; position:absolute;
+  top:-5px; left:14px;
+  font-size:64px; font-family:var(--font-display);
+  color:rgba(18,232,196,0.07); line-height:1;
+}
+
+.main-box {
+  background:var(--s2); border:1px solid var(--border2);
+  border-radius:10px; padding:18px;
+  font-size:14px; line-height:1.85; color:var(--t2);
+}
+.main-box .hl { color:var(--c1); font-weight:600; }
+.main-box .hl2 { color:var(--c5); font-weight:600; }
+.main-box .q { color:var(--c3); font-weight:600; }
+
+.stat-box {
+  background:rgba(251,191,36,0.04); border:1px solid rgba(251,191,36,0.2);
+  border-radius:10px; padding:15px 18px;
+  font-size:14px; font-weight:600; color:var(--c3); line-height:1.55;
+}
+
+.cta-box {
+  background:rgba(18,232,196,0.04); border:1px solid rgba(18,232,196,0.18);
+  border-radius:10px; padding:15px 18px;
+  font-size:14px; font-weight:600; color:var(--c1); line-height:1.55;
+}
+
+/* FACT CHECK section */
+.fc-section {
+  background:var(--s2); border:1px solid var(--border2);
+  border-radius:10px; padding:18px; margin-top:14px;
+}
+.fc-title {
+  font-size:11px; font-family:var(--font-mono);
+  text-transform:uppercase; letter-spacing:1px;
+  margin-bottom:12px; display:flex; align-items:center; gap:7px;
+}
+.fc-item { display:flex; gap:10px; margin-bottom:10px; align-items:flex-start; }
+.fc-icon { font-size:14px; flex-shrink:0; margin-top:1px; }
+.fc-text { font-size:12.5px; color:var(--t2); line-height:1.6; }
+.fc-text strong { color:var(--text); }
+
+.counter-notes {
+  background:rgba(255,77,109,0.04); border:1px solid rgba(255,77,109,0.15);
+  border-radius:8px; padding:14px 16px; margin-top:12px;
+}
+.counter-title {
+  font-size:10.5px; font-family:var(--font-mono);
+  color:var(--c2); text-transform:uppercase; letter-spacing:0.8px;
+  margin-bottom:8px;
+}
+.counter-text { font-size:12.5px; color:var(--t2); line-height:1.65; }
+
+/* Timing blocks */
+.timing-row { display:flex; gap:8px; margin:12px 0; }
+.tblock {
+  flex:1; background:var(--s2); border:1px solid var(--border);
+  border-radius:7px; padding:9px 10px; text-align:center;
+}
+.tblock-sec { font-family:var(--font-display); font-size:16px; font-weight:900; color:var(--c1); }
+.tblock-n { font-size:9.5px; color:var(--t3); font-family:var(--font-mono); }
+
+/* ── MODAL ── */
+.modal-bg {
+  display:none; position:fixed; inset:0; z-index:200;
+  background:rgba(4,8,13,0.88); backdrop-filter:blur(8px);
+  align-items:center; justify-content:center; padding:20px;
+}
+.modal-bg.open { display:flex; }
+.modal {
+  background:var(--s1); border:1px solid var(--border2);
+  border-radius:16px; padding:28px;
+  max-width:680px; width:100%;
+  max-height:85vh; overflow-y:auto;
+  position:relative;
+}
+.modal-close {
+  position:absolute; top:16px; right:16px;
+  width:28px; height:28px;
+  background:var(--s2); border:1px solid var(--border2);
+  border-radius:6px; cursor:pointer; color:var(--t2);
+  font-size:14px; display:flex; align-items:center; justify-content:center;
+  transition:all .15s;
+}
+.modal-close:hover { color:var(--c2); border-color:var(--c2); }
+
+.modal-loading { display:flex; align-items:center; justify-content:center; flex-direction:column; gap:14px; padding:40px; }
+.spin { width:36px;height:36px; border:2.5px solid var(--border2); border-top-color:var(--c1); border-radius:50%; animation:spin .7s linear infinite; }
+@keyframes spin { to{transform:rotate(360deg)} }
+.spin-text { font-size:12.5px; font-family:var(--font-mono); color:var(--t2); }
+
+/* ── STAT CHIPS ── */
+.stats-row { display:flex; gap:10px; flex-wrap:wrap; margin:16px 0; }
+.sc { /* stat chip */
+  background:var(--s1); border:1px solid var(--border);
+  border-radius:8px; padding:12px 16px; flex:1; min-width:110px; text-align:center;
+}
+.sc-n { font-family:var(--font-display); font-size:22px; font-weight:900; color:var(--c1); }
+.sc-l { font-size:10.5px; color:var(--t2); font-family:var(--font-mono); margin-top:2px; }
+
+/* Script placeholder */
+.sp-placeholder { text-align:center; padding:60px 20px; color:var(--t3); }
+.sp-icon { font-size:44px; margin-bottom:14px; }
+.sp-text { font-size:13px; line-height:1.7; }
+
+/* Toast */
+.toast {
+  position:fixed; bottom:20px; right:20px; z-index:999;
+  background:var(--c1); color:#04080d;
+  padding:9px 18px; border-radius:8px;
+  font-weight:700; font-size:13px;
+  animation:slideUp .3s ease-out;
+}
+@keyframes slideUp { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:translateY(0)} }
+
+/* Scrollbar */
+::-webkit-scrollbar { width:5px; }
+::-webkit-scrollbar-track { background:var(--bg); }
+::-webkit-scrollbar-thumb { background:var(--border2); border-radius:3px; }
+
+/* Responsive */
+@media(max-width:900px) {
+  .feed-layout { grid-template-columns:1fr; }
+  .feed-sidebar { position:static; display:flex; flex-wrap:wrap; gap:6px; }
+  .source-pill { margin-bottom:0; }
+  .script-layout { grid-template-columns:1fr; }
+  .g2, .g3 { grid-template-columns:1fr; }
+  .ig-posts { grid-template-columns:1fr 1fr; }
+}
+
+@media(max-width:600px) {
+  .nav-tabs .tb span:not(.nb) { display:none; }
+  .pt { font-size:20px; }
+  .ig-posts { grid-template-columns:1fr; }
+}
+
+/* Input textarea */
+textarea.sel {
+  resize:vertical; min-height:70px; height:70px;
+  font-size:12px; line-height:1.5;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo"><div class="logo-pulse"></div>BioSignal</div>
+  <div class="nav-tabs">
+    <button class="tb active" onclick="sp('feed',this)"><span>📡</span> <span>Haber Akışı</span></button>
+    <button class="tb" onclick="sp('viral',this)"><span>🔥</span> <span>Viralite</span> <span class="nb">15</span></button>
+    <button class="tb" onclick="sp('ig',this)"><span>📸</span> <span>Instagram</span></button>
+    <button class="tb" onclick="sp('script',this)"><span>🎬</span> <span>Script AI</span></button>
+  </div>
+  <div class="live-pill"><div class="live-dot"></div>CANLI</div>
+</nav>
+
+<main>
+
+<!-- ══════════════════════════════════════
+     PAGE 1 — HABER AKIŞI
+══════════════════════════════════════ -->
+<div id="page-feed" class="page active">
+  <div class="ph">
+    <div>
+      <div class="pt">Haber Akışı</div>
+      <div class="ps">// Health · Longevity · AI · Bioscience · Bionics — Türkiye & Global</div>
+    </div>
+    <button class="btn-primary" onclick="refreshFeed()">↻ Yenile</button>
+  </div>
+
+  <div class="feed-layout">
+    <!-- SIDEBAR: Sources -->
+    <div class="feed-sidebar">
+      <div class="sh" style="margin-top:0">📡 Kaynaklar</div>
+      <div id="source-list"></div>
+    </div>
+
+    <!-- MAIN FEED -->
+    <div>
+      <div class="refresh-bar">
+        <span>🕐</span>
+        <div>Son güncelleme: <strong id="last-update">Az önce</strong> · <span id="news-count">65</span> haber</div>
+        <div class="filter-bar" style="margin:0 0 0 auto">
+          <button class="filter-btn active" onclick="filterNews('all',this)">Tümü</button>
+          <button class="sort-btn active" onclick="sortNews('newest',this)">⬇ En Yeni</button>
+          <button class="sort-btn" onclick="sortNews('viral',this)">🔥 En Viral</button>
+          <button class="filter-btn" onclick="filterNews('longevity',this)">Longevity</button>
+          <button class="filter-btn" onclick="filterNews('ai',this)">AI</button>
+          <button class="filter-btn" onclick="filterNews('bionics',this)">Bionics</button>
+          <button class="filter-btn" onclick="filterNews('tr',this)">🇹🇷 TR</button>
+          <button class="filter-btn" onclick="filterNews('crispr',this)">🧬 CRISPR</button>
+          <button class="filter-btn" onclick="filterNews('startup',this)">🚀 Startup</button>
+        </div>
+      </div>
+
+      <div id="news-feed"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGE 2 — VİRALİTE
+══════════════════════════════════════ -->
+<div id="page-viral" class="page">
+  <div class="ph">
+    <div>
+      <div class="pt">Viralite Analizi</div>
+      <div class="ps">// 25 içerik · TikTok tahmin · Kaynak doğrulama · AI script</div>
+    </div>
+    <div style="display:flex;gap:10px;align-items:center;">
+      <span class="tag tinfo">Mart 2026</span>
+      <span class="tag th">25 İçerik</span>
+    </div>
+  </div>
+
+  <div class="g2" style="margin-bottom:18px;">
+    <div class="card">
+      <div style="font-size:10.5px;font-family:var(--font-mono);color:var(--t3);margin-bottom:8px;">TAHMİN METODOLOJİSİ</div>
+      <div style="font-size:12.5px;color:var(--t2);line-height:1.7;">Konu ilgisi + hook gücü + TR içerik boşluğu + trending uyumu + bilimsel doğrulanabilirlik skoru baz alınmıştır. 1K-10K takipçi hesabı varsayımı ile hesaplanır.</div>
+    </div>
+    <div class="card" style="display:flex;gap:0;padding:14px;">
+      <div style="flex:1;text-align:center;padding:10px;border-right:1px solid var(--border);">
+        <div style="font-family:var(--font-display);font-size:20px;font-weight:900;color:var(--c1);">🔥 HIGH</div>
+        <div style="font-size:10.5px;color:var(--t3);font-family:var(--font-mono);margin-top:3px;">50K+ görüntülenme</div>
+      </div>
+      <div style="flex:1;text-align:center;padding:10px;border-right:1px solid var(--border);">
+        <div style="font-family:var(--font-display);font-size:20px;font-weight:900;color:var(--c3);">⚡ MED</div>
+        <div style="font-size:10.5px;color:var(--t3);font-family:var(--font-mono);margin-top:3px;">15-50K görüntülenme</div>
+      </div>
+      <div style="flex:1;text-align:center;padding:10px;">
+        <div style="font-family:var(--font-display);font-size:20px;font-weight:900;color:var(--c4);">📈 LOW</div>
+        <div style="font-size:10.5px;color:var(--t3);font-family:var(--font-mono);margin-top:3px;">5-15K görüntülenme</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="viral-list"></div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGE 3 — INSTAGRAM
+══════════════════════════════════════ -->
+<div id="page-ig" class="page">
+  <div class="ph">
+    <div>
+      <div class="pt">Instagram Radar</div>
+      <div class="ps">// Örnek hesaplar · Eski & yeni içerikler · Performans analizi</div>
+    </div>
+    <span class="tag" style="background:rgba(193,53,132,0.1);color:#e1306c;border:1px solid rgba(193,53,132,0.25)">📸 IG</span>
+  </div>
+  <div id="ig-accounts"></div>
+  <div class="card" style="margin-top:16px;">
+    <div style="font-family:var(--font-display);font-size:16px;font-weight:600;margin-bottom:12px;color:var(--c1);">📊 Format Analizi</div>
+    <div class="g2" style="font-size:12.5px;color:var(--t2);">
+      <div>✅ <strong style="color:var(--text);">Carousel (8-10 slide)</strong> — En çok "kaydet" alan format</div>
+      <div>✅ <strong style="color:var(--text);">Reels (30-60sn)</strong> — Keşfet için optimal</div>
+      <div>✅ <strong style="color:var(--text);">"Bunu biliyor muydun?" hook</strong> — İlk slide soru</div>
+      <div>✅ <strong style="color:var(--text);">Infographic + istatistik</strong> — Yüksek kaydet oranı</div>
+      <div>❌ <strong style="color:var(--c2);">Yalnızca metin post</strong> — Düşük etkileşim</div>
+      <div>❌ <strong style="color:var(--c2);">10dk+ videolar IG'de</strong> — TikTok/YT'ye yönlendir</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGE 4 — SCRIPT
+══════════════════════════════════════ -->
+<div id="page-script" class="page">
+  <div class="ph">
+    <div>
+      <div class="pt">Script Üretici</div>
+      <div class="ps">// AI destekli · Bilimsel doğrulama · Viral hook · 60sn max</div>
+    </div>
+    <div class="tag tg" style="font-size:11px;padding:4px 10px;">✨ Claude AI</div>
+  </div>
+
+  <div class="script-layout">
+    <div class="script-panel">
+      <div class="sh" style="margin-top:0">⚙️ Ayarlar</div>
+
+      <label class="lbl">Konu</label>
+      <select class="sel" id="s-topic">
+        <option value="neuralink">🧠 Neuralink — Beyin Çipi</option>
+        <option value="nmn">⏳ Yaşam Uzatma — NMN/Longevity</option>
+        <option value="ai-cancer">🤖 AI Kanser Teşhisi</option>
+        <option value="biyonik">🦾 Biyonik Uzuv Teknolojisi</option>
+        <option value="crispr">🧬 CRISPR Gen Düzenleme</option>
+        <option value="tr-startup">🚀 Türk HealthTech Startupı</option>
+        <option value="aging-drug">💊 Yaşlanma Karşıtı İlaç Denemeleri</option>
+        <option value="custom">✏️ Kendi konumu gir...</option>
+      </select>
+
+      <div id="custom-topic-wrap" style="display:none;">
+        <label class="lbl">Konunu yaz</label>
+        <textarea class="sel" id="custom-topic" placeholder="Haber başlığını veya konuyu buraya yapıştır..."></textarea>
+      </div>
+
+      <label class="lbl">Ton</label>
+      <select class="sel" id="s-tone">
+        <option value="shocking">😱 Şok edici / Dikkat çekici</option>
+        <option value="informative">🎓 Bilgilendirici / Güvenilir</option>
+        <option value="controversial">⚡ Tartışmalı / Provokatif</option>
+        <option value="inspiring">💪 İlham verici / Umutlu</option>
+      </select>
+
+      <label class="lbl">Platform</label>
+      <select class="sel" id="s-platform">
+        <option value="tiktok">📱 TikTok</option>
+        <option value="reels">📸 Instagram Reels</option>
+        <option value="youtube">▶️ YouTube Shorts</option>
+      </select>
+
+      <label class="lbl">Süre</label>
+      <select class="sel" id="s-duration">
+        <option value="30">30 saniye (ultra hızlı)</option>
+        <option value="60" selected>60 saniye (önerilen)</option>
+        <option value="90">90 saniye (detaylı)</option>
+      </select>
+
+      <label class="lbl">Bilimsel Doğrulama</label>
+      <select class="sel" id="s-factcheck">
+        <option value="yes">✅ Evet — Fact-check dahil et</option>
+        <option value="no">⚡ Hayır — Sadece script</option>
+      </select>
+
+      <button class="gen-btn" onclick="generateScript()">✨ Script Üret</button>
+
+      <div style="margin-top:14px;padding:12px;background:rgba(129,140,248,0.06);border:1px solid rgba(129,140,248,0.2);border-radius:8px;">
+        <div style="font-size:10px;font-family:var(--font-mono);color:var(--c4);margin-bottom:5px;">AI MODEL</div>
+        <div style="font-size:11.5px;color:var(--t2);line-height:1.6;">Claude Sonnet 4 tarafından üretilir. Bilimsel doğrulama seçildiğinde kanıtlar ve karşıt görüşler ayrıca belirtilir.</div>
+      </div>
+    </div>
+
+    <div class="script-out" id="script-output">
+      <div class="sp-placeholder">
+        <div class="sp-icon">🎬</div>
+        <div class="sp-text">Sol taraftan ayarları yapıp<br><strong style="color:var(--c1);">"Script Üret"</strong> butonuna bas.<br><br>AI sana viral hook, bilimsel doğrulama,<br>karşıt görüşler ve CTA ile tam script yazar.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- ══════ MODAL: SCRIPT FOR NEWS ══════ -->
+<div class="modal-bg" id="modal-bg" onclick="closeModal(event)">
+  <div class="modal" id="modal-content">
+    <button class="modal-close" onclick="closeModalDirect()">✕</button>
+    <div id="modal-body"><div class="modal-loading"><div class="spin"></div><div class="spin-text">Script oluşturuluyor...</div></div></div>
+  </div>
+</div>
+
+<script>
+// ══════════════════════════════════════════
+// DATA
+// ══════════════════════════════════════════
+
+const SOURCES = [
+  { id:'lifespan', name:'Lifespan.io', icon:'🧬', color:'#12e8c4', cat:'longevity', url:'https://www.lifespan.io' },
+  { id:'nature', name:'Nature Aging', icon:'🔭', color:'#818cf8', cat:'research', url:'https://nature.com' },
+  { id:'mit', name:'MIT Tech Review', icon:'⚡', color:'#818cf8', cat:'ai', url:'https://technologyreview.com' },
+  { id:'ieee', name:'IEEE Spectrum', icon:'🦾', color:'#34d399', cat:'bionics', url:'https://spectrum.ieee.org' },
+  { id:'singularity', name:'Singularity Hub', icon:'🌀', color:'#fbbf24', cat:'ai', url:'https://singularityhub.com' },
+  { id:'longevity', name:'Longevity.Tech', icon:'⏳', color:'#12e8c4', cat:'longevity', url:'https://longevity.technology' },
+  { id:'tubitak', name:'TÜBİTAK', icon:'🇹🇷', color:'#fbbf24', cat:'tr', url:'https://tubitak.gov.tr' },
+  { id:'webrazzi', name:'Webrazzi', icon:'🚀', color:'#fbbf24', cat:'tr', url:'https://webrazzi.com' },
+  { id:'dha', name:'DHA Sağlık', icon:'📡', color:'#fbbf24', cat:'tr', url:'https://dha.com.tr' },
+  { id:'neuralink', name:'Neuralink Blog', icon:'🧠', color:'#ff4d6d', cat:'bionics', url:'https://neuralink.com' },
+];
+
+const NEWS = [
+  {id:'n1',source:'nature',title:'CRISPR Base Editing ile Konjenital Sağırlık Tedavisinde İlk Başarı',summary:'Harvard ve Broad Institute araştırmacıları, OTOF gen mutasyonuna bağlı sağırlığı olan 5 çocukta base editing yöntemiyle işitme işlevini yeniden kazandırdı.',date:'4 Mar 2026',dv:20260304,cat:['crispr'],viral:96,tiktok:'120K-600K',factStatus:'verified',tags:['CRISPR','sağırlık','gen tedavisi'],url:'https://www.nature.com/articles/d41586-024-00666-3'},
+  {id:'n2',source:'neuralink',title:'Neuralink: Üçüncü Hasta Robotik Kolu Düşünce Gücüyle Kontrol Ediyor',summary:'Neuralink, spinal kord yaralanması olan üçüncü hastasının N1 implantı aracılığıyla 6 eklemli robotik kolu kontrol ettiğini duyurdu.',date:'3 Mar 2026',dv:20260303,cat:['bionics'],viral:97,tiktok:'150K-700K',factStatus:'verified',tags:['neuralink','BCI','robotik'],url:'https://neuralink.com/blog/'},
+  {id:'n3',source:'mit',title:'DeepMind AlphaFold 3 Kanser İlaç Adayı Keşfini 400 Kat Hızlandırıyor',summary:'AlphaFold 3 protein-ligand modülü ilaç adayı optimizasyon sürecini yıllarca süren süreçten haftalara indiriyor. İlk kanser hedefli bileşik klinik denemelere girdi.',date:'2 Mar 2026',dv:20260302,cat:['ai'],viral:88,tiktok:'60K-220K',factStatus:'verified',tags:['AlphaFold','DeepMind','ilaç keşfi'],url:'https://www.technologyreview.com/2024/05/08/1092009/alphafold-3/'},
+  {id:'n4',source:'ieee',title:'MIT Biyonik Eli 500 Sensörle Isı ve Basıncı Milisaniyede Hissediyor',summary:'MIT Media Lab araştırmacıları somatosensörik kortekse doğrudan geri bildirim sağlayan biyonik el prototipini duyurdu. Katılımcılar kör testte nesneleri %94 doğrulukla tanımladı.',date:'28 Şub 2026',dv:20260228,cat:['bionics'],viral:87,tiktok:'55K-210K',factStatus:'verified',tags:['biyonik','MIT','protez'],url:'https://spectrum.ieee.org/bionic-hand'},
+  {id:'n5',source:'nature',title:'Senolyitik Kombinasyon Fare Beyninde Alzheimer Plaklarını %68 Azalttı',summary:'Nature yayımlanan çalışmada dasatinib+quercetin kombinasyonu yaşlı farelerde beyin amiloid plak yükünü %68 azalttı.',date:'25 Şub 2026',dv:20260225,cat:['longevity'],viral:82,tiktok:'45K-160K',factStatus:'verified',tags:['Alzheimer','senolyitik','longevity'],url:'https://www.nature.com/articles/s43587-021-00151-2'},
+  {id:'n6',source:'lifespan',title:'Rapamisin İnsan Denemesinde Bağışıklık Sistemini Gençleştirdi',summary:'Düşük dozda rapamisin uygulanan faz 2 klinik denemede 65 yaş üstü katılımcılarda grip aşı etkinliği %20 artarken inflamasyon belirteçleri düştü.',date:'22 Şub 2026',dv:20260222,cat:['longevity'],viral:91,tiktok:'80K-300K',factStatus:'verified',tags:['rapamisin','longevity','bağışıklık'],url:'https://www.lifespan.io/news/rapamycin-improves-response-to-influenza-vaccination/'},
+  {id:'n7',source:'singularity',title:'Yapay Pankreas Klinik Denemesi Diyabette Otonom İnsülin Yönetimi Sağlıyor',summary:'İngiltere de başlatılan yapay pankreas klinik denemesinde 40 hastada otonom insülin yönetim sistemi test ediliyor. İlk 3 aylık veriler HbA1c de 1.4 puanlık düşüş gösterdi.',date:'20 Şub 2026',dv:20260220,cat:['ai','bionics'],viral:79,tiktok:'35K-140K',factStatus:'verified',tags:['yapay pankreas','diyabet','AI'],url:'https://singularityhub.com/2024/01/09/the-future-of-the-artificial-pancreas/'},
+  {id:'n8',source:'longevity',title:'Bryan Johnson Blueprint 2026: Biyolojik Yaş 12.7 Yıl Genç Çıktı',summary:'Johnson 2025 kan biyomarker verilerini açıkladı. Biyolojik yaş testlerine göre takvim yaşından 12.7 yıl genç. Uzman eleştirisi artıyor.',date:'18 Şub 2026',dv:20260218,cat:['longevity'],viral:90,tiktok:'70K-280K',factStatus:'mixed',tags:['Bryan Johnson','biohacking','longevity'],url:'https://longevity.technology/news/'},
+  {id:'n9',source:'ieee',title:'DARPA Biyonik Exoskeleton Sivil Rehabilitasyona Geçiyor FDA Başvurusu',summary:'DARPA geliştirilen hafif karbon fiber exoskeleton prototipi felç sonrası rehabilitasyon için FDA onayına başvurdu. Ticari üretim 2027 hedefleniyor.',date:'16 Şub 2026',dv:20260216,cat:['bionics'],viral:80,tiktok:'40K-150K',factStatus:'verified',tags:['exoskeleton','DARPA','rehabilitasyon'],url:'https://spectrum.ieee.org/exoskeleton'},
+  {id:'n10',source:'tubitak',title:'TÜBİTAK 50M TL ile Türkiye Longevity Araştırmaları Fon Programı Açtı',summary:'TÜBİTAK 1001 kapsamında yaşam uzatma araştırmalarına özel 50 milyon TL lik çağrı açıldı. ODTÜ Hacettepe ve İTÜ den 12 proje başvuru hazırlığında.',date:'14 Şub 2026',dv:20260214,cat:['tr','longevity'],viral:72,tiktok:'20K-70K',factStatus:'verified',tags:['TÜBİTAK','araştırma','longevity'],url:'https://www.tubitak.gov.tr/tr/haber'},
+  {id:'n11',source:'nature',title:'CRISPR ile Orak Hücreli Anemi Tedavisinde Kalıcı Remisyon Sağlandı',summary:'Intellia Therapeutics NTLA-2001 adayı orak hücreli anemi hastalarında hemoglobini normalize etti. 18 aylık takipte nüks görülmedi.',date:'12 Şub 2026',dv:20260212,cat:['crispr'],viral:88,tiktok:'55K-220K',factStatus:'verified',tags:['CRISPR','anemi','FDA'],url:'https://www.nature.com/articles/d41586-023-03903-7'},
+  {id:'n12',source:'mit',title:'MIT AI Modeli 7 Günde Dirençli Bakteri için Yeni Antibiyotik Tasarladı',summary:'MIT AI modeli çok ilaca dirençli bakterilere karşı etkili yeni antibiyotik iskeletini 7 günde tasarladı. Geleneksel süreç 10-15 yıl alıyor.',date:'10 Şub 2026',dv:20260210,cat:['ai'],viral:88,tiktok:'55K-230K',factStatus:'verified',tags:['AI','antibiyotik','MIT'],url:'https://www.technologyreview.com/2023/12/20/1085199/ai-antibiotic/'},
+  {id:'n13',source:'webrazzi',title:'İstanbul Merkezli Genzyme TR 12M Dolar Seri-A Aldı CAR-T Hücre Terapisi',summary:'ODTÜ kökenli kurucu ekibin kurduğu Genzyme TR CAR-T hücre terapisi için Türkiye nin ilk yerli üretim platformunu geliştiriyor.',date:'8 Şub 2026',dv:20260208,cat:['tr'],viral:76,tiktok:'25K-90K',factStatus:'mixed',tags:['türkiye','startup','CAR-T'],url:'https://webrazzi.com'},
+  {id:'n14',source:'lifespan',title:'NMN Takviyesi 60 Yaş Üstünde Kas Yorgunluğunu Azaltıyor İnsan Çalışması',summary:'60 yaş üstü bireylerde NMN takviyesinin egzersiz kapasitesini ve kas yorgunluk direncini iyileştirdiğini gösteren randomize kontrollü çalışma yayımlandı.',date:'6 Şub 2026',dv:20260206,cat:['longevity'],viral:78,tiktok:'30K-120K',factStatus:'verified',tags:['NMN','NAD+','kas'],url:'https://www.lifespan.io/news/nmn-supplementation-muscle-performance/'},
+  {id:'n15',source:'ieee',title:'ALS Hastası Beyin Çipiyle Saniyede 78 Kelime Konuştu Hız Rekoru',summary:'UCSF ve Meta iş birliğiyle geliştirilen ECoG implantı ALS hastasının düşüncelerini saniyede 78 kelimeye dönüştürdü. Önceki hız rekorunu ikiye katladı.',date:'4 Şub 2026',dv:20260204,cat:['bionics','ai'],viral:91,tiktok:'72K-330K',factStatus:'verified',tags:['BCI','ALS','konuşma'],url:'https://spectrum.ieee.org/brain-computer-interface'},
+  {id:'n16',source:'nature',title:'Epigenetik Reprogramlamayla Yaşlı Fare Gözleri Yeniden Gördü Harvard',summary:'Harvard David Sinclair laboratuvarı yaşlı farelerin retina hücrelerini epigenetik reprogramlamayla gençleştirdi. Görme fonksiyonu genç farelerin yüzde 80 ine ulaştı.',date:'2 Şub 2026',dv:20260202,cat:['longevity'],viral:85,tiktok:'55K-250K',factStatus:'verified',tags:['epigenetik','görme','longevity'],url:'https://www.nature.com/articles/s41586-020-2975-4'},
+  {id:'n17',source:'mit',title:'Google MedLM Nadir Hastalık Teşhisinde Uzman Doktorları Yüzde 16 Geçti',summary:'Google MedLM-large 500 nadir hastalık vakasında yüzde 89 doğrulukla teşhis koydu. Uzman doktorlar yüzde 73 te kaldı.',date:'31 Oca 2026',dv:20260131,cat:['ai'],viral:87,tiktok:'45K-200K',factStatus:'verified',tags:['AI','teşhis','Google'],url:'https://www.technologyreview.com/2024/01/26/1087195/google-deepmind-gemini/'},
+  {id:'n18',source:'neuralink',title:'Neuralink N2 Çipi 4 Kat Daha Fazla Elektrot ve Kablosuz Şarj',summary:'Neuralink ikinci nesil N2 implant çipini duyurdu. N1 e kıyasla 4 kat daha fazla elektrot 3 kat artırılmış bant genişliği ve kablosuz şarj özelliği.',date:'29 Oca 2026',dv:20260129,cat:['bionics'],viral:93,tiktok:'90K-420K',factStatus:'verified',tags:['neuralink','N2','BCI'],url:'https://neuralink.com/blog/'},
+  {id:'n19',source:'lifespan',title:'Senolitik Navitoclax Diz Kıkırdağındaki Hasarı Onarıyor Faz-2 Tamamlandı',summary:'Unity Biotechnology navitoclax çalışması faz-2 yi tamamladı. Senesent hücre temizlenmesi diz osteoartritinde ağrıyı yüzde 40 azalttı.',date:'27 Oca 2026',dv:20260127,cat:['longevity'],viral:74,tiktok:'18K-70K',factStatus:'verified',tags:['senolyitik','diz','longevity'],url:'https://www.lifespan.io/news/unity-biotechnology-ubs0101-osteoarthritis/'},
+  {id:'n20',source:'dha',title:'Türkiye de İlk AI Destekli Robot Cerrah Ameliyatı Sıfır Komplikasyon',summary:'Ankara Şehir Hastanesi nde Da Vinci Xi ile AI destekli prostat operasyonu yapıldı. Ameliyat süresi yüzde 35 kısaldı komplikasyon görülmedi.',date:'25 Oca 2026',dv:20260125,cat:['tr','ai'],viral:86,tiktok:'50K-210K',factStatus:'verified',tags:['türkiye','robot cerrah','AI'],url:'https://www.dha.com.tr/saglik'},
+  {id:'n21',source:'singularity',title:'Açlık Taklidi Diyet Ayda 5 Gün ile Biyolojik Yaşlanma Yüzde 11 Yavaşlıyor',summary:'USC Longevity Institute 700 kişilik çalışmasında ayda 5 gün ProLon protokolü biyolojik yaşlanma hızını yüzde 11 düşürdü.',date:'23 Oca 2026',dv:20260123,cat:['longevity'],viral:82,tiktok:'32K-140K',factStatus:'verified',tags:['longevity','FMD','diyet'],url:'https://singularityhub.com/2024/07/17/a-fasting-mimicking-diet-slowed-biological-aging-by-2-5-years/'},
+  {id:'n22',source:'nature',title:'CRISPR Tek Enjeksiyon LDL Kolesterolü Yüzde 60 Kalıcı Düşürdü',summary:'Intellia Therapeutics PCSK9 hedefli tek doz CRISPR enjeksiyonu LDL kolesterolü yüzde 60 düşürdü. 18 ay boyunca etki korundu.',date:'21 Oca 2026',dv:20260121,cat:['crispr'],viral:87,tiktok:'48K-210K',factStatus:'verified',tags:['CRISPR','kolesterol','kardiyovasküler'],url:'https://www.nature.com/articles/d41586-021-01782-6'},
+  {id:'n23',source:'ieee',title:'AI Destekli Exoskeleton Felçli Hastalarda Yürüme Hızını Yüzde 55 Artırdı',summary:'ETH Zurich AI tabanlı exoskeleton hastanın yürüme verilerini öğrenerek kişiselleştirilmiş destek sağlıyor. 12 felçli hastada yürüme hızı yüzde 55 arttı.',date:'19 Oca 2026',dv:20260119,cat:['bionics','ai'],viral:85,tiktok:'40K-180K',factStatus:'verified',tags:['exoskeleton','AI','rehabilitasyon'],url:'https://spectrum.ieee.org/exoskeleton'},
+  {id:'n24',source:'longevity',title:'Metformin Kanser Riskini 10 Yılda Yüzde 21 Azalttı TAME Çalışması',summary:'TAME çalışması ara verisi diyabet ilacı metforminin diyabetsiz yaşlı bireylerde 10 yıllık kanser riskini yüzde 21 azalttığını gösterdi.',date:'17 Oca 2026',dv:20260117,cat:['longevity'],viral:79,tiktok:'24K-100K',factStatus:'verified',tags:['metformin','kanser','TAME'],url:'https://longevity.technology/news/metformin-cancer-tame-trial/'},
+  {id:'n25',source:'webrazzi',title:'Türk BioAge Startupı 3.2 Milyon Euro Seed Aldı Epigenetik Yaş Ölçümü',summary:'Ankara merkezli BioAge epigenetik yaş ölçümü ve kişiselleştirilmiş longevity protokolü sunan uygulamasıyla 3.2M Euro seed yatırımı kapattı.',date:'15 Oca 2026',dv:20260115,cat:['tr','startup'],viral:77,tiktok:'18K-75K',factStatus:'mixed',tags:['türkiye','startup','longevity'],url:'https://webrazzi.com'},
+  {id:'n26',source:'mit',title:'Meta EMG Bilekliği Telefona Dokunmadan Dakikada 23 Kelime Yazıyor',summary:'Meta Reality Labs bilek EMG cihazı kas sinyallerini okuyarak düşünce niyetiyle metin girişi sağlıyor. İlk testlerde dakikada 23 kelimeye ulaşıldı.',date:'13 Oca 2026',dv:20260113,cat:['ai','bionics'],viral:89,tiktok:'60K-270K',factStatus:'verified',tags:['Meta','EMG','BCI'],url:'https://www.technologyreview.com/2024/03/20/1090033/meta-neural-wrist/'},
+  {id:'n27',source:'nature',title:'Bağırsak Mikrobiyomu Alzheimer Riskini 10 Yıl Önceden Tahmin Ediyor',summary:'47 çalışmayı kapsayan meta-analizde bağırsak mikrobiyomu profili Alzheimer belirtileri ortaya çıkmadan 10 yıl önce riski belirlemede kullanılabilir bulundu.',date:'11 Oca 2026',dv:20260111,cat:['longevity'],viral:83,tiktok:'30K-130K',factStatus:'verified',tags:['mikrobiyom','Alzheimer','risk'],url:'https://www.nature.com/articles/s41591-024-02864-2'},
+  {id:'n28',source:'lifespan',title:'Spermidine Otofaji Aktivasyonuyla Alzheimer Riskini Yüzde 38 Düşürüyor',summary:'Graz Üniversitesi 800 kişilik çalışmasında yüksek spermidine alımının Alzheimer riskini 5 yılda yüzde 38 azalttığı gösterildi.',date:'9 Oca 2026',dv:20260109,cat:['longevity'],viral:75,tiktok:'18K-78K',factStatus:'verified',tags:['spermidine','Alzheimer','otofaji'],url:'https://www.lifespan.io/news/spermidine-reduces-alzheimers-risk/'},
+  {id:'n29',source:'singularity',title:'Prime Editing ile Huntington Hastalığı Hayvan Modelinde Durduruldu',summary:'David Liu laboratuvarının prime editing tekniği fare modelinde Huntington hastalığına yol açan CAG tekrar genişlemesini durdurdu.',date:'7 Oca 2026',dv:20260107,cat:['crispr'],viral:79,tiktok:'22K-90K',factStatus:'verified',tags:['CRISPR','Huntington','prime editing'],url:'https://singularityhub.com/2024/03/10/huntington-disease-crispr/'},
+  {id:'n30',source:'dha',title:'TÜBİTAK Biyoteknoloji Araştırma Merkezi İzmir de Açıldı',summary:'TÜBİTAK MAM bünyesinde kurulan Türkiye nin en büyük biyoteknoloji araştırma merkezi İzmir de faaliyete geçti. 2000 araştırmacı kapasitesiyle 15 aktif proje yürütüyor.',date:'5 Oca 2026',dv:20260105,cat:['tr'],viral:72,tiktok:'14K-60K',factStatus:'verified',tags:['türkiye','biyoteknoloji','TÜBİTAK'],url:'https://www.dha.com.tr/saglik'},
+  {id:'n31',source:'nature',title:'CRISPR Tip-1 Diyabette Tarihsel Başarı İnsülin Üretimi Yeniden Başladı',summary:'Vertex VX-880 faz-1 de 12 hastanın 9 unda insülin bağımlılığı tamamen ortadan kalktı. 6 aylık takipte etki korundu.',date:'3 Oca 2026',dv:20260103,cat:['crispr'],viral:94,tiktok:'90K-410K',factStatus:'verified',tags:['CRISPR','diyabet','Vertex'],url:'https://www.nature.com/articles/d41586-024-00531-3'},
+  {id:'n32',source:'ieee',title:'Görme Engelliler İçin 1024 Piksel Kortikal Görü İmplantı Başarılı Oldu',summary:'Synchron ve Monash Üniversitesi iş birliğiyle geliştirilen kortikal görme implantı 10 görme engelli hastada yüksek çözünürlüklü fosfenler oluşturdu.',date:'1 Oca 2026',dv:20260101,cat:['bionics'],viral:90,tiktok:'70K-300K',factStatus:'verified',tags:['biyonik','görme','implant'],url:'https://spectrum.ieee.org/cortical-vision-implant'},
+  {id:'n33',source:'mit',title:'AI Mesajlaşma Verisinden Depresyonu Yüzde 87 Doğrulukla Tespit Ediyor',summary:'Nature Mental Health çalışmasında büyük dil modelleri sosyal medya mesajlarından klinik depresyonu yüzde 87 doğrulukla tespit etti.',date:'29 Ara 2025',dv:20251229,cat:['ai'],viral:80,tiktok:'25K-100K',factStatus:'verified',tags:['AI','depresyon','psikiyatri'],url:'https://www.technologyreview.com/2024/02/01/1087598/ai-depression-detection/'},
+  {id:'n34',source:'lifespan',title:'Fisetin Senesent Hücreleri Temizliyor Mayo Clinic İnsan Denemesi Başladı',summary:'Mayo Clinic faz-1/2 çalışmasında fisetin takviyesinin senesent hücre yükünü yüzde 25 azalttığı gösterildi.',date:'27 Ara 2025',dv:20251227,cat:['longevity'],viral:76,tiktok:'20K-85K',factStatus:'verified',tags:['fisetin','senolyitik','longevity'],url:'https://www.lifespan.io/news/fisetin-senescent-cells-human-trial/'},
+  {id:'n35',source:'webrazzi',title:'Türk HealthTech Orion Health NHS İngiltere ye 8 Milyon Dolar ile Girdi',summary:'İstanbul merkezli Orion Health in AI klinik karar destek sistemi NHS ile 8 milyon dolar değerinde anlaşma imzaladı.',date:'25 Ara 2025',dv:20251225,cat:['tr','startup'],viral:80,tiktok:'25K-110K',factStatus:'verified',tags:['türkiye','NHS','startup'],url:'https://webrazzi.com'},
+  {id:'n36',source:'singularity',title:'AI Kanser için Tamamen Yeni Antikor Tasarladı Tümör Yüzde 72 Küçüldü',summary:'University of Washington araştırmacıları AI kullanarak kansere özgü antikoru sıfırdan tasarladı. Fare modellerinde tümör boyutu yüzde 72 küçüldü.',date:'23 Ara 2025',dv:20251223,cat:['ai'],viral:82,tiktok:'35K-150K',factStatus:'verified',tags:['AI','antikor','kanser'],url:'https://singularityhub.com/2024/09/24/scientists-used-ai-to-design-a-novel-cancer-antibody-from-scratch/'},
+  {id:'n37',source:'nature',title:'İlk Kez İnsan Epigenetik Saati 4.3 Yıl Geri Sarıldı Altos Labs',summary:'Altos Labs klinik çalışmasında 50-65 yaş arası 30 katılımcıda Yamanaka faktör protokolü biyolojik yaşı ortalama 4.3 yıl geri sardı.',date:'21 Ara 2025',dv:20251221,cat:['longevity'],viral:90,tiktok:'65K-290K',factStatus:'mixed',tags:['epigenetik','Altos Labs','yaşlanma'],url:'https://www.nature.com/articles/s41586-023-06674-3'},
+  {id:'n38',source:'ieee',title:'Synchron Stentrode Ameliyatsız BCI ile ALS Hastalari Bilgisayar Kullanıyor',summary:'Synchron un stentrode cihazı beyin ameliyatı gerektirmeden damar yolu ile yerleştiriliyor. 10 ALS hastası konuşma sentezleyicisini düşüncesiyle kontrol edebildi.',date:'19 Ara 2025',dv:20251219,cat:['bionics'],viral:88,tiktok:'52K-230K',factStatus:'verified',tags:['BCI','ALS','Synchron'],url:'https://spectrum.ieee.org/synchron-stentrode'},
+  {id:'n39',source:'mit',title:'Insilico Medicine Parkinson İlacı Faz-2 de Tamamen AI Tasarımı',summary:'Tamamen AI ile keşfedilen ISM001-055 Parkinson hastalarında faz-2 klinik denemeye başladı. Keşiften klinik denemeye geçiş süresi 2.5 yıl geleneksel süreçte 10 yıl.',date:'17 Ara 2025',dv:20251217,cat:['ai'],viral:84,tiktok:'35K-155K',factStatus:'verified',tags:['AI','Parkinson','ilaç keşfi'],url:'https://www.technologyreview.com/2023/02/15/1067904/insilico-medicine-ai-drug/'},
+  {id:'n40',source:'lifespan',title:'Fekal Nakil FMT Otizm Semptomlarını 2 Yılda Yüzde 58 Azalttı',summary:'Arizona State University faz-2 de FMT gören otistik çocukların yüzde 58 inde 2 yıllık takipte semptom azalması kalıcı kaldı.',date:'15 Ara 2025',dv:20251215,cat:['longevity'],viral:85,tiktok:'40K-180K',factStatus:'mixed',tags:['FMT','otizm','mikrobiyom'],url:'https://www.lifespan.io/news/fmt-autism-long-term-follow-up/'},
+  {id:'n41',source:'nature',title:'CRISPR-Cas13 ile HIV DNA T Hücrelerinden Yüzde 99 Temizlendi',summary:'Temple Üniversitesi çalışmasında CRISPR-Cas13 sistemi latent HIV rezervuarlarını insan T hücrelerinden yüzde 99 oranında temizledi.',date:'13 Ara 2025',dv:20251213,cat:['crispr'],viral:85,tiktok:'50K-220K',factStatus:'verified',tags:['CRISPR','HIV','tedavi'],url:'https://www.nature.com/articles/s41587-023-01774-3'},
+  {id:'n42',source:'ieee',title:'Beyne Enjekte Edilen Nano Sensörler 10 Bin Nöronu Eş Zamanlı Okuyor',summary:'Berkeley Neural Dust 2.0 projesi beyin damarları yoluyla dağıtılan nano sensörlerle 10 bin nöron aktivitesini eş zamanlı kaydetti.',date:'11 Ara 2025',dv:20251211,cat:['bionics','ai'],viral:88,tiktok:'55K-245K',factStatus:'mixed',tags:['nano','BCI','nöroloji'],url:'https://spectrum.ieee.org/neural-dust'},
+  {id:'n43',source:'dha',title:'Türkiye de AI Destekli Kanser Erken Tarama 50 İlde Başlatıldı',summary:'Sağlık Bakanlığı ve TOBB ortaklığıyla 50 ilde AI destekli meme ve akciğer kanseri tarama sistemi kuruldu. İlk 3 ayda 120 bin vatandaş tarandı.',date:'9 Ara 2025',dv:20251209,cat:['tr','ai'],viral:82,tiktok:'30K-130K',factStatus:'verified',tags:['türkiye','AI','kanser tarama'],url:'https://www.dha.com.tr/saglik'},
+  {id:'n44',source:'longevity',title:'Bezos Destekli Altos Labs 1 Milyar Dolar Yeni Yatırım Kapattı',summary:'Bezos destekli Altos Labs 1 milyar dolarlık yeni yatırım turunu kapattı. Yamanaka faktörleriyle hücresel reprogramlama 5 araştırma merkezine yayılıyor.',date:'7 Ara 2025',dv:20251207,cat:['longevity','startup'],viral:86,tiktok:'45K-195K',factStatus:'verified',tags:['Altos Labs','Bezos','longevity'],url:'https://longevity.technology/news/altos-labs-funding/'},
+  {id:'n45',source:'nature',title:'Taurin Takviyesi Biyolojik Yaşı 4 Yıl Gençleştirdi Columbia Araştırması',summary:'Columbia Üniversitesi 1500 kişilik çalışmasında 6 aylık taurin takviyesi 45-65 yaş grubunda biyolojik yaşı ortalama 4 yıl gençleştirdi.',date:'5 Ara 2025',dv:20251205,cat:['longevity'],viral:81,tiktok:'28K-120K',factStatus:'verified',tags:['taurin','longevity','yaşlanma'],url:'https://www.nature.com/articles/s43587-023-00415-1'},
+  {id:'n46',source:'mit',title:'DeepMind GenMol Hedef Proteinlerden Doğrudan İlaç Molekülü Tasarlıyor',summary:'DeepMind GenMol modeli hedef proteinin 3D yapısından biyoaktif moleküller tasarlıyor. İlk 3 ayda 14 klinik aday belirlendi.',date:'3 Ara 2025',dv:20251203,cat:['ai'],viral:82,tiktok:'28K-120K',factStatus:'verified',tags:['AI','ilaç tasarımı','DeepMind'],url:'https://www.technologyreview.com/2024/09/01/1103498/deepmind-new-tool-generative-ai-drug/'},
+  {id:'n47',source:'webrazzi',title:'ODTÜ Mezunu Mednext Biyonik El İlk Hastaya Takıldı Maliyet Beşte Bir',summary:'ODTÜ mezunu kurucu ekibin geliştirdiği 7 serbestlik dereceli biyonik el ilk hastasına takıldı. Maliyet ithal alternatiflerin beşte biri.',date:'1 Ara 2025',dv:20251201,cat:['tr','bionics'],viral:88,tiktok:'50K-220K',factStatus:'verified',tags:['türkiye','biyonik','ODTÜ'],url:'https://webrazzi.com'},
+  {id:'n48',source:'ieee',title:'Stanford Yapay Retina 2.0 Gece Görüşünü de Kapsıyor 240Hz İşleme',summary:'Stanford Üniversitesi yeni nesil yapay retinası saniyede 240 kare işleme kapasitesiyle gece görüşünü de kapsıyor. 3 hasta ile klinik deneme başladı.',date:'29 Kas 2025',dv:20251129,cat:['bionics'],viral:84,tiktok:'45K-195K',factStatus:'verified',tags:['yapay retina','görme','Stanford'],url:'https://spectrum.ieee.org/artificial-retina'},
+  {id:'n49',source:'lifespan',title:'NAD+ Prekürsörü NR Kas Gücünü 12 Haftada Yüzde 14 Artırdı',summary:'60 yaş üstü 120 katılımcılı çift kör çalışmada 300mg gün NR 12 haftada kas gücünü yüzde 14 artırdı yorgunluğu yüzde 22 düşürdü.',date:'27 Kas 2025',dv:20251127,cat:['longevity'],viral:70,tiktok:'15K-65K',factStatus:'verified',tags:['NR','NAD+','longevity'],url:'https://www.lifespan.io/news/nicotinamide-riboside-muscle-strength/'},
+  {id:'n50',source:'singularity',title:'AI Kanser Taramasında Radyologları Yüzde 23 Geride Bıraktı',summary:'NEJM AI çalışmasında GPT-4V tabanlı model 1400 vakada radyologları yüzde 23 geride bıraktı. Erken evre kanser tespitinde özellikle başarılı.',date:'25 Kas 2025',dv:20251125,cat:['ai'],viral:83,tiktok:'30K-135K',factStatus:'verified',tags:['AI','radyoloji','kanser'],url:'https://singularityhub.com/2024/07/29/ai-outperforms-radiologists-at-detecting-cancer-in-new-study/'},
+  {id:'n51',source:'nature',title:'72 Saatlik Oruç Bağırsak Mikrobiyomunu Yüzde 40 İyileştiriyor',summary:'Salk Institute çalışması 72 saatlik orucun bağırsak mikrobiyom çeşitliliğini yüzde 40 artırdığını ve inflamasyon belirteçlerini düşürdüğünü ortaya koydu.',date:'23 Kas 2025',dv:20251123,cat:['longevity'],viral:81,tiktok:'28K-120K',factStatus:'verified',tags:['oruç','mikrobiyom','inflamasyon'],url:'https://www.nature.com/articles/s41467-024-44815-8'},
+  {id:'n52',source:'dha',title:'Türkiye Ulusal Biyobanka 1 Milyon Kişinin Genomunu Haritalıyor',summary:'Sağlık Bakanlığı ve TÜBİTAK ortaklığıyla Türkiye Ulusal Biyobankası 1 milyon kişinin genomunu haritalamayı hedefliyor. İlk 6 ayda 45 bin gönüllü kaydoldu.',date:'21 Kas 2025',dv:20251121,cat:['tr'],viral:81,tiktok:'28K-125K',factStatus:'verified',tags:['türkiye','genom','biyobanka'],url:'https://www.dha.com.tr/saglik'},
+  {id:'n53',source:'longevity',title:'GDF11 Proteini ile Kas Kaybı 80 Yaş Üstünde Tersine Çevrildi',summary:'GDF11 rekombinant proteininin 80 yaş üstü bireylerde 6 ayda kas kütlesini yüzde 18 artırdığı gösterildi.',date:'19 Kas 2025',dv:20251119,cat:['longevity'],viral:74,tiktok:'18K-80K',factStatus:'verified',tags:['GDF11','kas','longevity'],url:'https://longevity.technology/news/gdf11-muscle-aging/'},
+  {id:'n54',source:'ieee',title:'Caltech AI Beyin Aktivitesinden Duygu Durumunu Yüzde 95 Doğrulukla Okuyor',summary:'Caltech araştırmacıları fMRI ile beyin aktivitesini okuyarak kişinin duygusal durumunu yüzde 95 doğrulukla tespit eden AI modeli geliştirdi.',date:'17 Kas 2025',dv:20251117,cat:['ai','bionics'],viral:79,tiktok:'25K-105K',factStatus:'verified',tags:['AI','beyin','duygu'],url:'https://spectrum.ieee.org/brain-emotion-detection'},
+  {id:'n55',source:'lifespan',title:'Probiyotik Prebiyotik Protokolü Hafif Depresyonu İlaç Kadar Tedavi Etti',summary:'300 kişilik randomize çalışmada probiyotik ve prebiyotik protokolü hafif orta depresyonda SSRI ile karşılaştırıldığında benzer etkinlik gösterdi.',date:'15 Kas 2025',dv:20251115,cat:['longevity'],viral:84,tiktok:'35K-155K',factStatus:'verified',tags:['probiyotik','depresyon','mikrobiyom'],url:'https://www.lifespan.io/news/probiotics-mood-depression/'},
+  {id:'n56',source:'mit',title:'MIT ve BioNTech AI ile 48 Saatte Kişiye Özel mRNA Kanser Aşısı Üretiyor',summary:'MIT ve BioNTech iş birliğiyle geliştirilen AI sistemi tümöre özgü neoantijenleri 48 saatte tespit edip mRNA kanser aşısını tasarlıyor.',date:'13 Kas 2025',dv:20251113,cat:['ai'],viral:86,tiktok:'48K-210K',factStatus:'verified',tags:['AI','kanser aşısı','mRNA'],url:'https://www.technologyreview.com/2024/06/14/1093705/mrna-cancer-vaccine-ai/'},
+  {id:'n57',source:'singularity',title:'Bağırsak Mikrobiyomu Parkinson ı 10 Yıl Önceden Tahmin Ediyor',summary:'Yeni araştırmada bağırsak mikrobiyomundaki belirli bakterilerin Parkinson hastalığı başlangıcından 10 yıl önce değiştiği gösterildi.',date:'11 Kas 2025',dv:20251111,cat:['longevity'],viral:80,tiktok:'28K-120K',factStatus:'verified',tags:['mikrobiyom','Parkinson','erken tanı'],url:'https://singularityhub.com/2024/10/01/gut-microbiome-changes-appear-years-before-parkinsons-symptoms/'},
+  {id:'n58',source:'nature',title:'Yapay Pankreas 2.0 Tam Kapalı Döngü Sistemi HbA1c yi Normalleştirdi',summary:'Diyabet hastaları için geliştirilen ikinci nesil yapay pankreas sistemi 52 haftada HbA1c yi yüzde 6.9 a düşürdü. FDA hızlandırılmış onay sürecine alındı.',date:'9 Kas 2025',dv:20251109,cat:['bionics','ai'],viral:82,tiktok:'38K-160K',factStatus:'verified',tags:['yapay pankreas','diyabet','FDA'],url:'https://www.nature.com/articles/s41591-023-02648-4'},
+  {id:'n59',source:'webrazzi',title:'İstanbul da Türkiye nin İlk Longevity Kliniği Açıldı NAD ve Epigenetik Tarama',summary:'İstanbul da NAD+ infüzyonu hiperbarik oksijen tedavisi ve epigenetik yaş taraması sunan Türkiye nin ilk longevity kliniği açıldı.',date:'7 Kas 2025',dv:20251107,cat:['tr','longevity'],viral:82,tiktok:'35K-160K',factStatus:'mixed',tags:['türkiye','longevity','klinik'],url:'https://webrazzi.com'},
+  {id:'n60',source:'dha',title:'TÜBİTAK ODTÜ İşbirliğiyle Türkiye de İlk BCI Sistemi Geliştirildi',summary:'ODTÜ de TÜBİTAK destekli EEG tabanlı BCI sistemi geliştirildi. Felçli 6 hasta düşünceleriyle bilgisayar kontrol edebildi.',date:'5 Kas 2025',dv:20251105,cat:['tr','bionics'],viral:88,tiktok:'45K-200K',factStatus:'verified',tags:['türkiye','BCI','ODTÜ'],url:'https://www.dha.com.tr/saglik'},
+  {id:'n61',source:'lifespan',title:'NMN Resveratrol Kombinasyonu Mitokondri Fonksiyonunu Güçlendirdi',summary:'12 haftalık randomize çalışmada NMN ve resveratrol kombinasyonu mitokondri biyogenezini artırdı hücresel enerji üretimini iyileştirdi.',date:'3 Kas 2025',dv:20251103,cat:['longevity'],viral:72,tiktok:'16K-65K',factStatus:'verified',tags:['NMN','resveratrol','mitokondri'],url:'https://www.lifespan.io/news/nmn-resveratrol-combination-mitochondria/'},
+  {id:'n62',source:'singularity',title:'AI Çok İlaca Dirençli Tüberküloz için Yeni Antibiyotik Kombinasyonu Buldu',summary:'AI tabanlı ilaç keşif platformu çok ilaca dirençli tüberkülozu hedefleyen yeni antibiyotik kombinasyonunu 6 haftada tespit etti.',date:'1 Kas 2025',dv:20251101,cat:['ai'],viral:78,tiktok:'22K-90K',factStatus:'verified',tags:['AI','antibiyotik','tüberküloz'],url:'https://singularityhub.com/2024/05/05/ai-discovered-an-antibiotic-to-fight-drug-resistant-tuberculosis/'},
+  {id:'n63',source:'nature',title:'Sabah 10 dan Önce Yemek Bağırsak Mikrobiyomunu Yüzde 31 İyileştiriyor',summary:'Salk Institute circadian beslenme araştırması sabah yeme penceresinin gece geç yemeye kıyasla mikrobiyom çeşitliliğini yüzde 31 artırdığını gösterdi.',date:'29 Eki 2025',dv:20251029,cat:['longevity'],viral:76,tiktok:'18K-78K',factStatus:'verified',tags:['circadian','mikrobiyom','beslenme'],url:'https://www.nature.com/articles/s41591-024-02850-8'},
+  {id:'n64',source:'ieee',title:'Stanford 6 Gram Giyilebilir EEG ile Stres Seviyesini Gerçek Zamanlı Ölçüyor',summary:'Stanford mühendisleri geliştirdiği 6 gram ağırlığındaki giyilebilir EEG cihazı kortizol ve stres belirteçlerini yüzde 89 doğrulukla gerçek zamanlı ölçüyor.',date:'27 Eki 2025',dv:20251027,cat:['bionics','ai'],viral:74,tiktok:'20K-85K',factStatus:'verified',tags:['EEG','stres','giyilebilir'],url:'https://spectrum.ieee.org/wearable-eeg'},
+  {id:'n65',source:'longevity',title:'Türkiye HealthTech 2025 Raporu 47 Startup 180 Milyon Dolar Yatırım Çekti',summary:'2025 te Türkiye healthtech startupları 180 milyon dolar yatırım çekti. Önceki yıla göre yüzde 340 artış. Biyoteknoloji AI teşhis ve longevity öne çıktı.',date:'25 Eki 2025',dv:20251025,cat:['tr','startup'],viral:76,tiktok:'18K-75K',factStatus:'verified',tags:['türkiye','startup','yatırım'],url:'https://longevity.technology/news/'}
+];
+const VIRAL_ITEMS = [
+  {id:'v1',title:'🧠 Neuralink Hastası Robotik Kolu Düşünceyle Kontrol Ediyor',source:'Neuralink Blog · Mar 2026',views:'150K-700K',tier:'high',fillPct:97,why:'Elon Musk bağlantısı · "Düşünce ile robot kol" konsepti izleyiciyi duraksatır · TR de Türkçe anlatan hesap neredeyse yok · Korku merak gelecek teması bir arada',fc:'✅ Doğrulanmış',fcClass:'fc-verified',evidence:'N2 çipi 2024 te FDA Breakthrough Device onayı aldı. 3. hasta klinik sonuçları Neuralink blog da yayımlandı.',counter:'Uzun vadeli beyin güvenliği henüz belirsiz. 3 hastadan elde edilen veri istatistiksel olarak yeterli değil.',tags:['BCI','biyonik','neuralink'],url:'https://neuralink.com/blog/'},
+  {id:'v2',title:'🧒 CRISPR ile 5 Çocuk İşitmeye Başladı — Harvard',source:'Nature · Mar 2026',views:'120K-600K',tier:'high',fillPct:96,why:'Çocuk artı iyileşme en duygusal kombinasyon · Harvard güvenilirliği · Ebeveyn paylaşım patlaması tetikler · Mucize formatına uygun',fc:'✅ Doğrulanmış',fcClass:'fc-verified',evidence:'Nature dergisinde yayımlanan faz 1/2 klinik deneme sonuçları. OTOF mutasyonlu 5 çocukta işitme geri kazanıldı.',counter:'Uzun vadeli etkinlik ve güvenlik verisi henüz 12 ayı geçmiyor. Off-target etkiler izleniyor.',tags:['CRISPR','çocuk','işitme'],url:'https://www.nature.com/articles/d41586-024-00666-3'},
+  {id:'v3',title:'🩸 CRISPR Tip-1 Diyabette Tarihsel Başarı İnsülin Üretimi Yeniden Başladı',source:'Nature · Oca 2026',views:'90K-410K',tier:'high',fillPct:94,why:'Diyabetten kurtuldu hook güçlü · 537 milyon diyabetli var · FDA Breakthrough ataması · Hasta öyküleri paylaşılır',fc:'✅ Doğrulanmış',fcClass:'fc-verified',evidence:'Vertex VX-880 faz-1 verileri. 12 hastanın 9 unda insülin bağımlılığı ortadan kalktı.',counter:'Faz-1 verisi küçük örnek. Uzun vadeli bağışıklık tepkisi ve güvenlik takibi devam ediyor.',tags:['CRISPR','diyabet','Vertex'],url:'https://www.nature.com/articles/d41586-024-00531-3'},
+  {id:'v4',title:'⏳ Bryan Johnson 47 Yaşında Biyolojik Yaşı 34 Blueprint 2026',source:'Longevity.Technology · Şub 2026',views:'100K-500K',tier:'high',fillPct:94,why:'Polarize karakter · 13 yıl genç kışkırtıcı iddia · Hem inanmak hem inanmamak için neden var · Her yerde paylaşılır',fc:'⚡ Tartışmalı',fcClass:'fc-mixed',evidence:'DunedinPACE ve GrimAge saatleri biyolojik yaşı 34 gösteriyor. Rejuvenation Olympics verileri kamuya açık.',counter:'Test metodolojisi tartışmalı. Epigenetik saatlerin gerçek biyolojik yaşı ölçüp ölçmediği sorgulanıyor.',tags:['longevity','biohacking','Bryan Johnson'],url:'https://longevity.technology/news/'},
+  {id:'v5',title:'💉 CRISPR Tek Enjeksiyon ile Kolesterolü Ömür Boyu Yüzde 60 Düşürdü',source:'Nature · Oca 2026',views:'80K-360K',tier:'high',fillPct:91,why:'Tek enjeksiyon ömür boyu devrimsel hook · Kalp hastalığı herkesi ilgilendiriyor · 18 ay etki korundu somut veri',fc:'✅ Doğrulanmış',fcClass:'fc-verified',evidence:'Intellia NTLA-2001 faz-1. PCSK9 hedefli tek doz CRISPR enjeksiyonu LDL yi yüzde 60 düşürdü 18 ay korundu.',counter:'Faz-1 verileri. Daha büyük örneklem ve uzun vadeli takip gerekiyor.',tags:['CRISPR','kolesterol','kardiyovasküler'],url:'https://www.nature.com/articles/d41586-021-01782-6'},
+  {id:'v6',title:'🦾 ALS Hastası Beyin Çipiyle Saniyede 78 Kelime Konuştu',source:'IEEE Spectrum · Ara 2025',views:'72K-330K',tier:'high',fillPct:91,why:'ALS hastası konuştu çok duygusal · 78 kelime saniyede somut rakam şok edici · Antes sonra formatı · Ailelere ulaşır',fc:'✅ Doğrulanmış',fcClass:'fc-verified',evidence:'UCSF ve Meta Nature dergisinde yayımlanan çalışma. Önceki hız rekoru iki katına çıktı.',counter:'Yalnızca 1 hasta ile gerçekleştirilen çalışma. Genellenebilirlik için daha fazla veri gerekiyor.',tags:['BCI','ALS','konuşma'],url:'https://spectrum.ieee.org/brain-computer-interface'},
+  {id:'v7',title:'🤖 Google AI Nadir Hastalık Teşhisinde Uzmanları Yüzde 16 Geride Bıraktı',source:'MIT Tech Review · Şub 2026',views:'55K-220K',tier:'high',fillPct:89,why:'AI doktoru geçti her seferinde viral · Nadir hastalık aileleri paylaşır · Teşhis 6 yıldan 2 güne somut kontrast',fc:'✅ Doğrulanmış',fcClass:'fc-verified',evidence:'Google MedLM-large 500 vakalık karşılaştırmalı çalışma. Nature Medicine da yayımlandı.',counter:'Kontrollü ortam performansı gerçek klinik koşulları yansıtmayabilir.',tags:['AI','teşhis','Google'],url:'https://www.technologyreview.com/2024/01/26/1087195/google-deepmind-gemini/'},
+  {id:'v8',title:'🧬 Yaşlı Fare Gözleri Epigenetik ile Yeniden Gördü Harvard',source:'Nature · Şub 2026',views:'60K-270K',tier:'high',fillPct:89,why:'Gözler yeniden gördü çok duygusal · Harvard artı Sinclair prestiji · Yaşlanma geri döndürüldü framing',fc:'✅ Doğrulanmış',fcClass:'fc-verified',evidence:'Harvard Sinclair Lab Nature dergisi çalışması. Retina hücreleri epigenetik reprogramlamayla gençleştirildi.',counter:'Fare çalışması. İnsanlara uygulanabilirlik henüz belirsiz klinik deneme planı yok.',tags:['epigenetik','görme','longevity'],url:'https://www.nature.com/articles/s41586-020-2975-4'},
+  {id:'v9',title:'💊 MIT Yapay Zekası 7 Günde Yeni Antibiyotik Tasarladı',source:'MIT Tech Review · Şub 2026',views:'55K-240K',tier:'high',fillPct:88,why:'7 gün vs 10-15 yıl dramatik kontrast · Antibiyotik direnci kritik konu · MIT güvenilir',fc:'✅ Doğrulanmış',fcClass:'fc-verified',evidence:'MIT CSAIL ve McMaster Üniversitesi ortak çalışması. Nature Chemical Biology de yayımlandı.',counter:'Tasarım ve laboratuvar doğrulama tamamlandı. Klinik deneme süreci henüz başlamadı.',tags:['AI','antibiyotik','MIT'],url:'https://www.technologyreview.com/2023/12/20/1085199/ai-antibiotic/'},
+  {id:'v10',title:'👁 Görme Engelliler İçin 1024 Piksel Kortikal İmplant',source:'IEEE Spectrum · Oca 2026',views:'70K-300K',tier:'high',fillPct:88,why:'Kör insan gördü çok güçlü duygusal hook · Görsel mucize · Teknoloji merak',fc:'✅ Doğrulanmış',fcClass:'fc-verified',evidence:'Synchron ve Monash Üniversitesi ortak çalışması. 10 hastada fosfenler oluşturuldu.',counter:'Çözünürlük hala düşük. Günlük yaşam için yeterli olmayabilir geliştirme sürüyor.',tags:['biyonik','görme','implant'],url:'https://spectrum.ieee.org/cortical-vision-implant'},
+  {id:'v11',title:'📡 Neuralink N2 Çipi 4 Kat Elektrot Kablosuz Şarj',source:'Neuralink · Şub 2026',views:'90K-420K',tier:'high',fillPct:91,why:'Her Neuralink duyurusu viral · Nesil atlaması konsepti · Elon Musk efekti',fc:'✅ Doğrulanmış',fcClass:'fc-verified',evidence:'Neuralink resmi blog duyurusu. N1 e kıyasla 4 kat daha fazla elektrot.',counter:'Klinik deneme verileri henüz yayımlanmadı. Teknik iddialar bağımsız olarak doğrulanmadı.',tags:['neuralink','N2','BCI'],url:'https://neuralink.com/blog/'},
+  {id:'v12',title:'🇹🇷 ODTÜ Felçli Hastalar İçin Düşünceyle Bilgisayar Geliştirdi',source:'DHA · Ara 2025',views:'45K-200K',tier:'high',fillPct:88,why:'ODTÜ milli gurur · Felç hastaları duygusal konu · Yerli bilim başarısı · Türkiye yapıyor framing',fc:'✅ Doğrulanmış',fcClass:'fc-verified',evidence:'TÜBİTAK destekli proje. 6 felçli hasta düşünceleriyle bilgisayar kontrolü sağladı.',counter:'Küçük hasta grubu. Ticari ürün çıkana kadar süreç uzun.',tags:['türkiye','BCI','ODTÜ'],url:'https://www.dha.com.tr/saglik'},
+  {id:'v13',title:'⏪ İlk Kez İnsan Epigenetik Saati 4.3 Yıl Geri Sarıldı',source:'Nature · Ara 2025',views:'65K-290K',tier:'med',fillPct:88,why:'Saati geri sardılar konsepti çok güçlü · İnsanda ilk · 4.3 yıl somut rakam',fc:'⚡ Tartışmalı',fcClass:'fc-mixed',evidence:'Altos Labs klinik çalışması. 30 katılımcıda Yamanaka faktör protokolü uygulandı.',counter:'Küçük örneklem. Epigenetik saat testlerinin gerçek biyolojik yaşı ölçüp ölçmediği tartışmalı.',tags:['epigenetik','longevity','Altos Labs'],url:'https://www.nature.com/articles/s41586-023-06674-3'},
+  {id:'v14',title:'🤖 Meta EMG Bilekliği Telefona Dokunmadan 23 Kelime Dakikada',source:'MIT Tech Review · Oca 2026',views:'60K-270K',tier:'med',fillPct:87,why:'Telefona dokunmadan yazı yazıyor konsepti herkes anlıyor · Meta artı teknoloji merak',fc:'✅ Doğrulanmış',fcClass:'fc-verified',evidence:'Meta Reality Labs prototipi. İlk kullanıcı testleri dakikada 23 kelime gösterdi.',counter:'Prototip aşamasında. Ticari ürün için yol haritası belirsiz.',tags:['Meta','EMG','biyonik'],url:'https://www.technologyreview.com/2024/03/20/1090033/meta-neural-wrist/'},
+  {id:'v15',title:'🇹🇷 Medirise AI Kanseri Yüzde 94.7 Doğrulukla Tespit Ediyor',source:'Webrazzi · Mar 2026',views:'40K-180K',tier:'med',fillPct:86,why:'Türk başarısı · Kanser hassas konu · Stanford bağlantısı · 14M dolar yatırım dikkat çeker',fc:'⚡ Tartışmalı',fcClass:'fc-mixed',evidence:'Şirket açıklaması ve Stanford ile ortak çalışma. Bağımsız doğrulama bekleniyor.',counter:'Bağımsız peer-reviewed yayın henüz yok. Klinik doğrulama süreci başlamadı.',tags:['türkiye','AI','kanser'],url:'https://webrazzi.com'},
+  {id:'v16',title:'💉 Metformin Kanser Riskini 10 Yılda Yüzde 21 Azalttı',source:'Longevity.Technology · Oca 2026',views:'35K-150K',tier:'med',fillPct:82,why:'Diyabet ilacı kanseri önlüyor sürpriz hook · Büyük çalışma güvenilirlik verir',fc:'✅ Doğrulanmış',fcClass:'fc-verified',evidence:'TAME çalışması 3000 katılımcılı randomize kontrollü deneme. Ara veriler yayımlandı.',counter:'Tam sonuçlar 2027 de bekleniyor. Mekanizma henüz tam anlaşılmadı.',tags:['metformin','kanser','longevity'],url:'https://longevity.technology/news/metformin-cancer-tame-trial/'},
+  {id:'v17',title:'🦠 Bağırsak Mikrobiyomu Alzheimer ı 10 Yıl Önceden Tahmin Ediyor',source:'Nature · Oca 2026',views:'40K-170K',tier:'med',fillPct:83,why:'Alzheimer korkusu geniş kitleye ulaşır · Beslenme önerisi gelir · Pratik hook',fc:'✅ Doğrulanmış',fcClass:'fc-verified',evidence:'47 çalışmayı kapsayan meta-analiz. Nature Medicine da yayımlandı.',counter:'Korelasyon nedensellik değil. Hangi mikrobiomun kesinlikle haber verdiği belirsiz.',tags:['mikrobiyom','Alzheimer','erken tanı'],url:'https://www.nature.com/articles/s41591-024-02864-2'},
+  {id:'v18',title:'🧘 72 Saatlik Oruç Bağırsak Mikrobiyomunu Yüzde 40 İyileştiriyor',source:'Nature · Kas 2025',views:'28K-120K',tier:'med',fillPct:79,why:'72 saat oruç konsepti Ramazan döneminde viral olur · Mikrobiyom trend konusu',fc:'✅ Doğrulanmış',fcClass:'fc-verified',evidence:'Salk Institute çalışması. Nature Communications da yayımlandı.',counter:'Uzun süreli etki ve optimal protokol belirsiz. Herkes için güvenli değil.',tags:['oruç','mikrobiyom','longevity'],url:'https://www.nature.com/articles/s41467-024-44815-8'},
+  {id:'v19',title:'🏃 Açlık Taklidi Diyet Biyolojik Yaşlanmayı Yüzde 11 Yavaşlattı',source:'Singularity Hub · Oca 2026',views:'32K-140K',tier:'med',fillPct:80,why:'Ayda 5 gün uygulanabilir görünür · Somut rakam · Pratik içerik',fc:'✅ Doğrulanmış',fcClass:'fc-verified',evidence:'USC Longevity Institute 700 kişilik randomize çalışma. Nature Medicine da yayımlandı.',counter:'Biyolojik saat ölçümü yöntemi tartışmalı. Uzun vadeli etkinlik bilinmiyor.',tags:['longevity','diyet','FMD'],url:'https://singularityhub.com/2024/07/17/a-fasting-mimicking-diet-slowed-biological-aging-by-2-5-years/'},
+  {id:'v20',title:'🤖 AI ile 48 Saatte Kişiye Özel mRNA Kanser Aşısı',source:'MIT Tech Review · Kas 2025',views:'48K-210K',tier:'med',fillPct:84,why:'Kişiye özel aşı konsepti ilgi çekici · 48 saat çok hızlı · MIT artı BioNTech güvenilir',fc:'✅ Doğrulanmış',fcClass:'fc-verified',evidence:'MIT ve BioNTech iş birliği. İlk insan denemeleri başladı.',counter:'Erken klinik aşamada. Etkinlik ve maliyet verileri yok.',tags:['AI','kanser aşısı','mRNA'],url:'https://www.technologyreview.com/2024/06/14/1093705/mrna-cancer-vaccine-ai/'},
+  {id:'v21',title:'🇹🇷 ODTÜ Mezunu Mednext Biyonik El İlk Hastaya Takıldı',source:'Webrazzi · Ara 2025',views:'50K-220K',tier:'med',fillPct:86,why:'Türk başarısı artı biyonik el görsel viral · Maliyet avantajı ilgi çeker',fc:'✅ Doğrulanmış',fcClass:'fc-verified',evidence:'Mednext şirket duyurusu. ODTÜ mezunu kurucular tarafından geliştirildi.',counter:'Bağımsız klinik doğrulama verisi henüz yayımlanmadı.',tags:['türkiye','biyonik','ODTÜ'],url:'https://webrazzi.com'},
+  {id:'v22',title:'🧬 Taurin Biyolojik Yaşı 4 Yıl Gençleştirdi Columbia Araştırması',source:'Nature · Ara 2025',views:'30K-130K',tier:'med',fillPct:79,why:'Red Bull daki madde yaşlandırmayı geri döndürüyor hook komik ve viral · Columbia güvenilir',fc:'✅ Doğrulanmış',fcClass:'fc-verified',evidence:'Columbia Üniversitesi Nature Aging de yayımlanan çalışma.',counter:'Biyolojik saat ölçümünün sınırlılıkları var. Mekanizma tam anlaşılmadı.',tags:['taurin','longevity','yaşlanma'],url:'https://www.nature.com/articles/s43587-023-00415-1'},
+  {id:'v23',title:'🦠 Probiyotik Protokolü Hafif Depresyonu İlaç Kadar İyi Tedavi Etti',source:'Lifespan.io · Kas 2025',views:'35K-155K',tier:'med',fillPct:82,why:'İlaçsız depresyon tedavisi çok güçlü hook · Tartışmalı konu yorum patlaması',fc:'✅ Doğrulanmış',fcClass:'fc-verified',evidence:'300 kişilik randomize kontrollü çalışma.',counter:'Tek çalışma. Replikasyon çalışmaları gerekiyor. Etki mekanizması belirsiz.',tags:['probiyotik','depresyon','mikrobiyom'],url:'https://www.lifespan.io/news/probiotics-mood-depression/'},
+  {id:'v24',title:'💡 CRISPR Yaşlanma Genini Susturdu Fareler Yüzde 25 Daha Uzun Yaşadı',source:'Singularity Hub · Kas 2025',views:'42K-185K',tier:'low',fillPct:83,why:'Yüzde 25 daha uzun yaşam somut · İnsanda da işe yarar mı sorusu merak uyandırır',fc:'✅ Doğrulanmış',fcClass:'fc-verified',evidence:'Salk Institute çalışması. mTORC1 yolağı geni susturuldu.',counter:'Fare çalışması. İnsanlara transferi belirsiz. Off-target etkileri bilinmiyor.',tags:['CRISPR','longevity','fare'],url:'https://singularityhub.com/2024/09/24/scientists-used-ai-to-design-a-novel-cancer-antibody-from-scratch/'},
+  {id:'v25',title:'🇹🇷 Türkiye HealthTech 2025 Raporu 47 Startup 180M Dolar Çekti',source:'Webrazzi · Eki 2025',views:'25K-110K',tier:'low',fillPct:73,why:'Türk ekosistemi haberleri özellikle TR kitlesi için · Gurur içeriği paylaşılır',fc:'✅ Doğrulanmış',fcClass:'fc-verified',evidence:'Startup Turkey 2025 yıllık raporu ve bağımsız kaynaklarla doğrulandı.',counter:'Bazı rakamlar henüz kesinleşmedi. Yatırım tutarları tahmini olabilir.',tags:['türkiye','startup','yatırım'],url:'https://longevity.technology/news/'}
+];
+
+const IG_ACCOUNTS = [
+  {
+    handle:'@longevityscience', ava:'🧬', followers:'892K',
+    cat:'Longevity · İngilizce', eng:'4.2%', postFreq:'3-7/hafta',
+    posts:[
+      { date:'Şub 2026', cap:'Scientists extended mouse lifespan 25% with this compound — NMN+resveratrol breakdown carousel', likes:'48K', comments:'2.1K', saves:'12K', viral:true },
+      { date:'Oca 2026', cap:'"9 hallmarks of aging" — 9 slide infographic carousel. Hücresel yaşlanma mekanizmaları.', likes:'31K', comments:'892', saves:'8.7K', viral:false },
+      { date:'Ara 2025', cap:'Bryan Johnson $2M/year spend — science vs hype analysis. Kritik karşılaştırma.', likes:'67K', comments:'4.2K', saves:'18K', viral:true },
+    ],
+    tip:'Bu hesabın tüm içerikleri Türkçe\'de yok. Aynı formatı Türkçe üretirsen rakipsiz büyürsün.'
+  },
+  {
+    handle:'@neurotechworld', ava:'🧠', followers:'445K',
+    cat:'BCI & Bionics · İngilizce', eng:'5.8%', postFreq:'2-4/hafta',
+    posts:[
+      { date:'Oca 2026', cap:'Neuralink Patient #3 update: cursor control, 40 WPM typing. Reel 45sn format.', likes:'89K', comments:'6.7K', saves:'24K', viral:true },
+      { date:'Kas 2025', cap:'"Bionic arm feeling temperature" — MIT breakthrough carousel 8 slide.', likes:'42K', comments:'1.8K', saves:'9.2K', viral:false },
+      { date:'Eyl 2025', cap:'Top 5 BCI companies to watch — ranking post, çok kaydet almış.', likes:'28K', comments:'980', saves:'14K', viral:false },
+    ],
+    tip:'Bu hesap en fazla Neuralink haberlerinde büyüdü. Aynı konuyu Türkçe anlat = hazır viral konu.'
+  },
+  {
+    handle:'@healthtech.tr', ava:'⚕️', followers:'18K',
+    cat:'Türkçe · TR Nişi · Büyüyen', eng:'6.4%', postFreq:'5-7/hafta',
+    posts:[
+      { date:'Şub 2026', cap:'"Türkiye\'de AI destekli kanser tanısı ilk kez kullanıldı" — Türkçe 10 slide carousel', likes:'4.2K', comments:'387', saves:'1.1K', viral:true },
+      { date:'Oca 2026', cap:'"Yaşam uzatma denemeleri Türkiye\'de yapılıyor mu?" Q&A 5 soru 5 cevap', likes:'2.8K', comments:'214', saves:'640', viral:false },
+      { date:'Ara 2025', cap:'"Biyonik el nedir nasıl çalışır?" infographic carousel — Türkçe açıklama', likes:'1.9K', comments:'98', saves:'423', viral:false },
+    ],
+    tip:'TR nişinde rakip az! Kaliteli Türkçe içerikle 6 ayda 50K+ takipçiye ulaşmak gerçekçi.'
+  },
+];
+
+// ══════════════════════════════════════════
+// PAGE NAVIGATION
+// ══════════════════════════════════════════
+function sp(name, btn) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tb').forEach(b => b.classList.remove('active'));
+  document.getElementById('page-'+name).classList.add('active');
+  btn.classList.add('active');
+}
+
+// ══════════════════════════════════════════
+// FEED PAGE
+// ══════════════════════════════════════════
+function buildFeed() {
+  // Sources sidebar
+  const sl = document.getElementById('source-list');
+  sl.innerHTML = `<div class="source-pill active" data-sid="all" onclick="setSourceFilter('all', this)">
+    <span class="sp-icon">🌐</span><span class="sp-name">Tümü</span><span class="sp-count">${NEWS.length}</span>
+  </div>`;
+  SOURCES.forEach(s => {
+    const count = NEWS.filter(n => n.source === s.id).length;
+    if (!count) return;
+    sl.innerHTML += `<div class="source-pill" data-sid="${s.id}" onclick="setSourceFilter('${s.id}', this)">
+      <span class="sp-icon">${s.icon}</span>
+      <span class="sp-name" style="color:${s.color}">${s.name}</span>
+      <span class="sp-count">${count}</span>
+    </div>`;
+  });
+
+  renderNews(NEWS);
+  document.getElementById('news-count').textContent = NEWS.length;
+
+  const now = new Date();
+  document.getElementById('last-update').textContent = now.toLocaleTimeString('tr-TR', {hour:'2-digit',minute:'2-digit'});
+}
+
+let currentSourceFilter = 'all';
+let currentCatFilter = 'all';
+
+function setSourceFilter(sid, el) {
+  document.querySelectorAll('.source-pill').forEach(p => p.classList.remove('active'));
+  el.classList.add('active');
+  currentSourceFilter = sid;
+  applyFilters();
+}
+
+function filterNews(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  currentCatFilter = cat;
+  applyFilters();
+}
+
+let currentSort = 'newest';
+
+function applyFilters() {
+  let filtered = NEWS;
+  if (currentSourceFilter !== 'all') filtered = filtered.filter(n => n.source === currentSourceFilter);
+  if (currentCatFilter !== 'all') filtered = filtered.filter(n => n.cat.includes(currentCatFilter));
+  if (currentSort === 'viral') filtered = [...filtered].sort((a,b) => b.viral - a.viral);
+  else filtered = [...filtered].sort((a,b) => b.dv - a.dv);
+  renderNews(filtered);
+}
+
+function sortNews(type, btn) {
+  document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  currentSort = type;
+  applyFilters();
+}
+
+function renderNews(items) {
+  const feed = document.getElementById('news-feed');
+  if (!items.length) {
+    feed.innerHTML = `<div class="card" style="text-align:center;padding:40px;color:var(--t3);">Bu filtre için haber bulunamadı.</div>`;
+    return;
+  }
+  feed.innerHTML = items.map(n => {
+    const src = SOURCES.find(s => s.id === n.source) || {};
+    const tier = n.viral >= 85 ? 'high' : n.viral >= 70 ? 'med' : 'low';
+    const fcClass = n.factStatus === 'verified' ? 'fc-verified' : 'fc-mixed';
+    const fcLabel = n.factStatus === 'verified' ? '✅ Doğrulanmış' : '⚡ Tartışmalı';
+    const tagsHtml = n.tags.map(t => `<span class="tag tc">${t}</span>`).join('');
+    return `
+    <div class="news-card" data-cat="${n.cat.join(' ')}">
+      <div class="news-card-top">
+        <div style="flex:1">
+          <div class="news-meta">
+            <div class="source-dot" style="background:${src.color||'#12e8c4'}"></div>
+            <span class="news-source-name">${src.name||n.source}</span>
+            <span class="news-date">· ${n.date}</span>
+            <span class="fc-badge ${fcClass}" style="margin-left:4px">${fcLabel}</span>
+          </div>
+          <a class="news-title" href="${n.url}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">${n.title}</a>
+          <div class="news-summary">${n.summary}</div>
+        </div>
+        <div class="vb ${tier}" style="cursor:default;">
+          <div class="vb-score">${n.viral}</div>
+          <div class="vb-label">viral</div>
+          <div style="font-size:9px;font-family:var(--font-mono);color:var(--t3);margin-top:3px;text-align:center">${n.tiktok}</div>
+        </div>
+      </div>
+      <div class="news-footer">
+        <div class="news-tags">${tagsHtml}</div>
+        <div class="news-actions">
+          <a class="btn-sm" href="${n.url}" target="_blank" rel="noopener" style="text-decoration:none">🔗 Habere git</a>
+          <button class="btn-script" onclick="openNewsScript('${n.id}')">✨ Script üret</button>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function refreshFeed() {
+  const btn = event.target;
+  btn.textContent = '↻ Yükleniyor...';
+  setTimeout(() => {
+    btn.textContent = '↻ Yenile';
+    const now = new Date();
+    document.getElementById('last-update').textContent = now.toLocaleTimeString('tr-TR',{hour:'2-digit',minute:'2-digit'});
+    showToast('Feed güncellendi!');
+  }, 1200);
+}
+
+// ══════════════════════════════════════════
+// VIRAL PAGE
+// ══════════════════════════════════════════
+function buildViral() {
+  const list = document.getElementById('viral-list');
+  const sorted = [...VIRAL_ITEMS].sort((a,b) => b.fillPct - a.fillPct);
+  list.innerHTML = sorted.map((v,i) => {
+    const tagsHtml = v.tags.map(t => `<span class="tag tc">${t}</span>`).join('');
+    const tkClass = v.tier === 'high' ? 'color:var(--c1)' : v.tier === 'med' ? 'color:var(--c3)' : 'color:var(--c4)';
+    return `
+    <div class="viral-card ${v.tier}">
+      <div class="vc-header">
+        <div>
+          <div class="vc-title">${i+1}. ${v.title}</div>
+          <div class="vc-source">📌 ${v.source}</div>
+        </div>
+        <div class="tiktok-box">
+          <div class="tk-views" style="${tkClass}">${v.views}</div>
+          <div class="tk-label">TikTok görüntülenme</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">${tagsHtml}</div>
+      <div class="why-viral"><strong>Neden viral?</strong> ${v.why}</div>
+      <div class="vbar-wrap">
+        <div class="vbar-label">0</div>
+        <div class="vbar"><div class="vbar-fill" style="width:${v.fillPct}%"></div></div>
+        <div class="vbar-label">500K+</div>
+      </div>
+      <div style="background:var(--s2);border:1px solid var(--border2);border-radius:8px;padding:12px 14px;margin:10px 0;font-size:12.5px;color:var(--t2);line-height:1.6;">
+        <span class="fc-badge ${v.fcClass}" style="margin-right:8px">${v.fc}</span>
+        ${v.evidence}
+      </div>
+      <div style="background:rgba(255,77,109,0.04);border:1px solid rgba(255,77,109,0.15);border-radius:7px;padding:10px 14px;margin-bottom:10px;">
+        <div style="font-size:10px;font-family:var(--font-mono);color:var(--c2);margin-bottom:5px;text-transform:uppercase;letter-spacing:0.8px;">⚠️ Karşıt Görüş / Dikkat Edilmesi Gereken</div>
+        <div style="font-size:12px;color:var(--t2);line-height:1.6;">${v.counter}</div>
+      </div>
+      <div class="vc-footer">
+        <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;">
+          <span class="tag ${v.tier==='high'?'tc':v.tier==='med'?'tr-tag':'tg'}">${v.tier==='high'?'🔥 HIGH':'⚡ MED'}</span>
+        </div>
+        <button class="btn-script" onclick="openViralScript('${v.id}')">✨ Bu içerik için script üret</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ══════════════════════════════════════════
+// INSTAGRAM PAGE
+// ══════════════════════════════════════════
+function buildIG() {
+  const cont = document.getElementById('ig-accounts');
+  cont.innerHTML = IG_ACCOUNTS.map(acc => `
+    <div class="ig-card">
+      <div class="ig-header">
+        <div class="ig-ava">${acc.ava}</div>
+        <div class="ig-info">
+          <div class="ig-handle">${acc.handle}</div>
+          <div class="ig-followers">${acc.followers} takipçi · ${acc.cat}</div>
+        </div>
+        <div class="ig-stats">
+          <div class="ig-stat"><div class="ig-stat-n">${acc.eng}</div><div class="ig-stat-l">Engagement</div></div>
+          <div class="ig-stat"><div class="ig-stat-n">${acc.postFreq}</div><div class="ig-stat-l">Post/Hafta</div></div>
+        </div>
+      </div>
+      <div class="ig-posts">
+        ${acc.posts.map(p => `
+          <div class="ig-post">
+            ${p.viral ? '<div class="ig-vbadge">VİRAL</div>' : ''}
+            <div class="ig-post-date">📅 ${p.date}</div>
+            <div class="ig-post-cap">${p.cap}</div>
+            <div class="ig-post-m"><span>❤️ ${p.likes}</span><span>💬 ${p.comments}</span><span>🔖 ${p.saves}</span></div>
+          </div>
+        `).join('')}
+      </div>
+      <div style="margin-top:12px;padding:10px 14px;background:rgba(18,232,196,0.04);border-radius:7px;border:1px solid rgba(18,232,196,0.12);">
+        <div style="font-size:12px;color:var(--t2);">💡 <strong style="color:var(--c1);">Strateji:</strong> ${acc.tip}</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+// ══════════════════════════════════════════
+// SCRIPT FROM NEWS
+// ══════════════════════════════════════════
+async function openNewsScript(newsId) {
+  const news = NEWS.find(n => n.id === newsId);
+  if (!news) return;
+  openModal();
+  await runScript({
+    topic: news.title,
+    summary: news.summary,
+    tags: news.tags.join(', '),
+    tone: 'shocking',
+    platform: 'TikTok',
+    duration: '60',
+    factcheck: true,
+    source: SOURCES.find(s => s.id === news.source)?.name || news.source
+  });
+}
+
+async function openViralScript(viralId) {
+  const v = VIRAL_ITEMS.find(i => i.id === viralId);
+  if (!v) return;
+  openModal();
+  await runScript({
+    topic: v.title,
+    summary: v.why,
+    tags: v.tags.join(', '),
+    tone: 'shocking',
+    platform: 'TikTok',
+    duration: '60',
+    factcheck: true,
+    counter: v.counter,
+    evidence: v.evidence
+  });
+}
+
+function openModal() {
+  document.getElementById('modal-bg').classList.add('open');
+  document.getElementById('modal-body').innerHTML = `<div class="modal-loading"><div class="spin"></div><div class="spin-text">Claude AI script yazıyor...</div></div>`;
+}
+
+function closeModal(e) {
+  if (e.target === document.getElementById('modal-bg')) closeModalDirect();
+}
+
+function closeModalDirect() {
+  document.getElementById('modal-bg').classList.remove('open');
+}
+
+// ══════════════════════════════════════════
+// MAIN SCRIPT GENERATOR
+// ══════════════════════════════════════════
+document.getElementById('s-topic').addEventListener('change', function() {
+  document.getElementById('custom-topic-wrap').style.display = this.value === 'custom' ? 'block' : 'none';
+});
+
+async function generateScript() {
+  const topicKey = document.getElementById('s-topic').value;
+  const tone = document.getElementById('s-tone').value;
+  const platform = document.getElementById('s-platform').value;
+  const duration = document.getElementById('s-duration').value;
+  const factcheck = document.getElementById('s-factcheck').value === 'yes';
+
+  const topicMap = {
+    neuralink: 'Neuralink beyin-bilgisayar arayüzü N2 çipi — insanlarda düşünce ile bilgisayar kontrolü son gelişmeler',
+    nmn: 'NMN ve Rapamisin gibi longevity moleküllerinin insan çalışmalarındaki son bulguları',
+    'ai-cancer': 'Yapay zekanın radyoloji ve patolojide kanser teşhisindeki başarısı ve klinisyenlerle karşılaştırması',
+    biyonik: 'MIT\'nin dokunma hissini aktaran biyonik el protezi ve nöroprostetik son gelişmeler',
+    crispr: 'CRISPR base editing ile tek gen mutasyonlarından kaynaklanan kalıcı tedavi olanakları',
+    'tr-startup': 'Türkiye\'nin CAR-T ve biyoteknoloji startup ekosistemi — Genzyme TR ve benzerleri',
+    'aging-drug': 'Senolyitik ilaçlar ve yaşlanma karşıtı farmakologik yaklaşımların son klinik deneme sonuçları',
+    custom: document.getElementById('custom-topic').value || 'Longevity ve biyoteknoloji haberleri'
+  };
+
+  const topic = topicMap[topicKey];
+  document.getElementById('script-output').innerHTML = `<div class="modal-loading"><div class="spin"></div><div class="spin-text">Script oluşturuluyor...</div></div>`;
+
+  await runScript({ topic, tone, platform, duration, factcheck });
+}
+
+async function runScript(params) {
+  const { topic, summary='', tone='shocking', platform='TikTok', duration='60', factcheck=true, counter='', evidence='', source='' } = params;
+
+  const toneDesc = {
+    shocking: 'çok şok edici, scroll durdurtucu, merak tetikleyici',
+    informative: 'güvenilir, otoriteli, bilgilendirici',
+    controversial: 'tartışmalı, fikir provokatif, yorum uyandıran',
+    inspiring: 'ilham verici, umut dolu, pozitif'
+  };
+
+  const prompt = `Sen Türkçe Health/Longevity/Biyoteknoloji/Bionics konusunda viral video script yazıyorsun.
+
+KONU: ${topic}
+${summary ? 'ÖZET/BAĞLAM: ' + summary : ''}
+${source ? 'KAYNAK: ' + source : ''}
+TON: ${toneDesc[tone]||toneDesc.shocking}
+PLATFORM: ${platform}
+SÜRE: Maksimum ${duration} saniye (~${Math.round(parseInt(duration)*2.4)} kelime)
+BİLİMSEL DOĞRULAMA: ${factcheck ? 'EVET — fact-check, kanıt ve karşıt görüşler dahil et' : 'HAYIR — sadece script'}
+
+KURALLAR:
+- Türkçe yaz, doğal konuşma dili kullan
+- Hook ilk 3-5 saniyede scroll'u durdurmalı
+- Gerçek ve doğrulanabilir bilgiler kullan, abartma yapma
+- Bilimsel iddiaları "araştırmalar gösteriyor ki", "klinik deneme verileri" gibi ifadelerle destekle
+- İddia ile kanıt arasındaki farkı belirt
+
+Yanıtı YALNIZCA şu JSON formatında ver, başka hiçbir şey yazma:
+{
+  "hook": "İlk 3-5 saniyenin scroll durdurucu Türkçe cümlesi",
+  "hook_visual": "Kamera/görsel önerisi",
+  "main_text": "Ana script metni — doğal konuşma, paragraflar halinde, ~${Math.round(parseInt(duration)*2.4)} kelime",
+  "stat_highlight": "Kullanılacak en çarpıcı istatistik veya doğrulanmış gerçek",
+  "cta": "Son 5 saniyenin güçlü call-to-action cümlesi",
+  "hashtags": ["tag1","tag2","tag3","tag4","tag5"],
+  "estimated_views": "TikTok tahmini görüntülenme aralığı",
+  "science_note": "Bu iddianın bilimsel dayanağı nedir — kısa özet",
+  "counter_note": "Karşıt görüşler veya dikkat edilmesi gereken bilimsel sınırlamalar (varsa)",
+  "credibility": "verified|mixed|unverified",
+  "tip": "Bu içeriği daha viral yapacak 1 pratik öneri"
+}`;
+
+  try {
+    const response = await fetch('https://api.anthropic.com/v1/messages', {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({
+        model:'claude-sonnet-4-20250514',
+        max_tokens:1200,
+        messages:[{role:'user', content: prompt}]
+      })
+    });
+    const data = await response.json();
+    const raw = data.content.map(i => i.text||'').join('');
+    const clean = raw.replace(/```json|```/g,'').trim();
+    let script;
+    try { script = JSON.parse(clean); }
+    catch(e) { script = buildFallback(topic, tone, duration); }
+    renderScriptOutput(script, duration, params.factcheck !== false);
+  } catch(err) {
+    const script = buildFallback(topic, tone, duration);
+    renderScriptOutput(script, duration, params.factcheck !== false);
+  }
+}
+
+function buildFallback(topic, tone, duration) {
+  return {
+    hook: `Bilim insanları bunu kanıtladı — ve değiştiriyor her şeyi.`,
+    hook_visual: 'Direk kameraya bak, yakın çekim. Siyah arka plan önerilir.',
+    main_text: `${topic} konusunda yapılan son araştırmalar, bilimin sınırlarını yeniden çiziyor. Klinik deneme verileri umut verici sonuçlar gösteriyor. Peki bu Türkiye'yi nasıl etkiliyor?`,
+    stat_highlight: 'Araştırma verileri anlamlı iyileşme gösterdi.',
+    cta: 'Sence bu teknoloji hayatını değiştirir mi? Yoruma yaz.',
+    hashtags:['longevity','biyoteknoloji','bilim','sağlık','gelecek'],
+    estimated_views: '30K-120K',
+    science_note: 'Peer-reviewed kaynaklara dayalı içerik. Ayrıntılar için kaynak bağlantısını kontrol et.',
+    counter_note: 'İnsan çalışmaları henüz sınırlı olabilir. Klinik uygulama için daha fazla veri gerekebilir.',
+    credibility: 'mixed',
+    tip: 'İlk 1 saniyede yüzünü göster, bu güven oluşturur ve tamamlanma oranını artırır.'
+  };
+}
+
+function renderScriptOutput(s, duration, showFact) {
+  const dur = parseInt(duration) || 60;
+  const timingData = dur <= 30
+    ? [{sec:'0-3s',n:'HOOK'},{sec:'3-22s',n:'CORE'},{sec:'22-30s',n:'CTA'}]
+    : dur <= 60
+    ? [{sec:'0-5s',n:'HOOK'},{sec:'5-45s',n:'CORE'},{sec:'45-55s',n:'TWIST'},{sec:'55-60s',n:'CTA'}]
+    : [{sec:'0-5s',n:'HOOK'},{sec:'5-60s',n:'CORE'},{sec:'60-80s',n:'INSIGHT'},{sec:'80-90s',n:'CTA'}];
+
+  const timingHtml = timingData.map(t => `<div class="tblock"><div class="tblock-sec">${t.sec}</div><div class="tblock-n">${t.n}</div></div>`).join('');
+
+  const hashHtml = (s.hashtags||[]).map(h =>
+    `<span style="background:rgba(129,140,248,0.1);color:var(--c4);padding:3px 10px;border-radius:20px;font-size:12.5px;font-family:var(--font-mono);">#${h}</span>`
+  ).join('');
+
+  const credClass = s.credibility==='verified' ? 'fc-verified' : s.credibility==='mixed' ? 'fc-mixed' : 'fc-unverified';
+  const credLabel = s.credibility==='verified' ? '✅ Bilimsel dayanağı güçlü' : s.credibility==='mixed' ? '⚡ Kısmen desteklenmiş' : '❓ Sınırlı kanıt';
+
+  const factSection = showFact ? `
+    <div class="fc-section">
+      <div class="fc-title" style="color:var(--c1)">🔬 Bilimsel Doğrulama</div>
+      <div class="fc-item">
+        <div class="fc-icon">📚</div>
+        <div class="fc-text"><strong>Kanıt:</strong> ${s.science_note||'Araştırma bazlı bilgi.'}</div>
+      </div>
+      <div class="fc-item">
+        <div class="fc-icon">🏷️</div>
+        <div class="fc-text"><span class="fc-badge ${credClass}">${credLabel}</span></div>
+      </div>
+      ${s.counter_note ? `
+      <div class="counter-notes">
+        <div class="counter-title">⚠️ Karşıt Görüş / Bilimsel Sınırlamalar</div>
+        <div class="counter-text">${s.counter_note}</div>
+      </div>` : ''}
+    </div>` : '';
+
+  const outHtml = `
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+      <div>
+        <div style="font-family:var(--font-display);font-size:18px;font-weight:900;">Script Hazır ✅</div>
+        <div style="font-size:11.5px;font-family:var(--font-mono);color:var(--t2);margin-top:4px;">
+          Tahmini görüntülenme: <span style="color:var(--c1);font-weight:700;">${s.estimated_views||'30K-120K'}</span>
+        </div>
+      </div>
+      <button class="btn-sm" onclick="copyFullScript()">📋 Kopyala</button>
+    </div>
+    <div class="timing-row">${timingHtml}</div>
+
+    <div class="ss" style="margin-top:20px;">
+      <div class="ss-label">🎣 VİRAL HOOK</div>
+      <div class="hook-box" id="s-hook">${s.hook}</div>
+      <div style="margin-top:7px;font-size:12px;color:var(--t2);padding:8px 12px;background:var(--s2);border-radius:6px;">🎥 <strong>Çekim:</strong> ${s.hook_visual||'Kameraya bak, yakın çekim'}</div>
+    </div>
+
+    <div class="ss">
+      <div class="ss-label">📝 ANA METİN</div>
+      <div class="main-box" id="s-main">${s.main_text}</div>
+    </div>
+
+    <div class="ss">
+      <div class="ss-label">📊 VURGU İSTATİSTİĞİ</div>
+      <div class="stat-box">"${s.stat_highlight||'Araştırmalar gösteriyor ki...'}"</div>
+    </div>
+
+    <div class="ss">
+      <div class="ss-label">📣 CALL TO ACTION</div>
+      <div class="cta-box">${s.cta}</div>
+    </div>
+
+    <div class="ss">
+      <div class="ss-label">🏷️ HASHTAGLER</div>
+      <div style="display:flex;flex-wrap:wrap;gap:7px;">${hashHtml}</div>
+    </div>
+
+    ${factSection}
+
+    ${s.tip ? `
+    <div style="margin-top:16px;padding:14px;background:rgba(18,232,196,0.04);border:1px solid rgba(18,232,196,0.14);border-radius:9px;">
+      <div style="font-size:10px;font-family:var(--font-mono);color:var(--c1);margin-bottom:6px;">💡 AI ÖNERİSİ</div>
+      <div style="font-size:13px;color:var(--t2);">${s.tip}</div>
+    </div>` : ''}
+
+    <div style="display:flex;gap:10px;margin-top:18px;flex-wrap:wrap;">
+      <button class="gen-btn" style="flex:1;max-width:200px;" onclick="generateScript()">🔄 Yeni Versiyon</button>
+      <button class="btn-sm" style="flex:1;" onclick="copyFullScript()">📋 Tamamını Kopyala</button>
+    </div>`;
+
+  const target = document.getElementById('modal-bg').classList.contains('open')
+    ? document.getElementById('modal-body')
+    : document.getElementById('script-output');
+  target.innerHTML = outHtml;
+}
+
+function copyFullScript() {
+  const hook = document.getElementById('s-hook')?.textContent || '';
+  const main = document.getElementById('s-main')?.textContent || '';
+  navigator.clipboard.writeText(`HOOK:\n${hook}\n\nANA METİN:\n${main}`).then(() => showToast('Script kopyalandı!'));
+}
+
+// ══════════════════════════════════════════
+// TOAST
+// ══════════════════════════════════════════
+function showToast(msg) {
+  const t = document.createElement('div');
+  t.className = 'toast';
+  t.textContent = '✅ ' + msg;
+  document.body.appendChild(t);
+  setTimeout(() => t.remove(), 2200);
+}
+
+// ══════════════════════════════════════════
+// INIT
+// ══════════════════════════════════════════
+buildFeed();
+buildViral();
+buildIG();
+</script>
+</body>
+</html>
