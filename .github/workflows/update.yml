@@ -1,0 +1,33 @@
+name: Haberleri Güncelle
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # Her gün saat 09:00 Türkiye saati
+    - cron: '0 14 * * *'  # Her gün saat 17:00 Türkiye saati
+  workflow_dispatch:       # Elle de çalıştırabilirsin
+
+jobs:
+  fetch-news:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repoyu indir
+        uses: actions/checkout@v4
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Kütüphaneleri kur
+        run: pip install feedparser
+
+      - name: Haberleri çek
+        run: python fetch_news.py
+
+      - name: Değişiklikleri kaydet
+        run: |
+          git config user.name "BioSignal Bot"
+          git config user.email "bot@biosignal.app"
+          git add news.json
+          git diff --staged --quiet || git commit -m "🤖 Haberler güncellendi: $(date '+%d %b %Y %H:%M')"
+          git push
