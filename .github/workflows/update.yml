@@ -30,7 +30,10 @@ jobs:
         run: |
           git config user.name "BioSignal Bot"
           git config user.email "bot@biosignal.app"
-          git pull --rebase origin main
+          git add news.json
+          git stash
+          git pull origin main
+          git stash pop
           git add news.json
           git diff --staged --quiet || git commit -m "🤖 Haberler güncellendi: $(date '+%d %b %Y %H:%M')"
           git push
