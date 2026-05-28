@@ -1,9 +1,45 @@
 {
-  "updated": "2026-05-28T10:18:14.347001+00:00",
+  "updated": "2026-05-28T17:33:34.356763+00:00",
   "count": 65,
   "news": [
     {
-      "id": "mit_0_5310",
+      "id": "lifespan_0_299",
+      "source": "lifespan",
+      "title": "Early Cancer Cells Change Their Surroundings to Form Tumors",
+      "summary": "Scientists have demonstrated how cancer cells influence neighboring cells to create a favorable niche for the tumor to grow. Understanding this can inform [&#8230;]",
+      "date": "28 May 2026",
+      "dv": 20260528,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 54,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "cancer"
+      ],
+      "url": "https://lifespan.io/early-cancer-cells-change-their-surroundings-to-form-tumors/?utm_source=rss&utm_medium=rss&utm_campaign=early-cancer-cells-change-their-surroundings-to-form-tumors"
+    },
+    {
+      "id": "mit_0_5150",
+      "source": "mit",
+      "title": "The Download: climate tech goes public and the AI Hype Index returns",
+      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Climate tech companies are going public. What’s next? Solar and battery company Solv Energy went pub",
+      "date": "28 May 2026",
+      "dv": 20260528,
+      "cat": [
+        "ai"
+      ],
+      "viral": 50,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://www.technologyreview.com/2026/05/28/1138085/the-download-climate-tech-ipos-ai-hype-index/"
+    },
+    {
+      "id": "mit_1_9602",
       "source": "mit",
       "title": "Climate tech companies are going public. What’s next?",
       "summary": "This year, there’s been a wave of notable energy companies going public via IPO in the US. The solar and battery company Solv Energy went public in February, to the tune of $6 billion. X-energy, which is building small modular nuclear reactors, did t",
@@ -21,7 +57,7 @@
       "url": "https://www.technologyreview.com/2026/05/28/1138067/climate-tech-ipos/"
     },
     {
-      "id": "mit_1_4892",
+      "id": "mit_2_4381",
       "source": "mit",
       "title": "The AI Hype Index: AI gets booed in graduation season",
       "summary": "It is one thing to say AI will change the world. It is another to expect the class of 2026 to applaud it. In fact, when former Google CEO Eric Schmidt told University of Arizona graduates that their task is to help shape AI, he was met with a resound",
@@ -39,7 +75,7 @@
       "url": "https://www.technologyreview.com/2026/05/28/1138053/the-ai-hype-index-ai-gets-booed-in-graduation-season/"
     },
     {
-      "id": "longevity_0_4155",
+      "id": "longevity_0_8125",
       "source": "longevity",
       "title": "Insilico and Human Longevity eye to predict disease early with AI",
       "summary": "Multimillion-dollar collaboration shifts the lens of longevity science from treating disease to predicting it years earlier. Transformative. That is the promise (and the gamble) behind the latest partnership between generative AI drug-discovery compa",
@@ -58,7 +94,115 @@
       "url": "https://longevity.technology/news/insilico-and-human-longevity-eye-to-predict-disease-early-with-ai/"
     },
     {
-      "id": "longevity_1_5613",
+      "id": "longevity_1_2263",
+      "source": "longevity",
+      "title": "Optical brain implant moves into real-world use",
+      "summary": "ABILITY Neurotech wins approval for the first long-term trial of its wireless brain-computer interface in ALS patients. Brain-computer interfaces (BCI) have spent years occupying a strange space between breakthrough science and science fiction. Most ",
+      "date": "28 May 2026",
+      "dv": 20260528,
+      "cat": [
+        "bionics"
+      ],
+      "viral": 99,
+      "tiktok": "100K-500K",
+      "factStatus": "verified",
+      "tags": [
+        "BCI"
+      ],
+      "url": "https://longevity.technology/news/optical-brain-implant-moves-into-real-world-use/"
+    },
+    {
+      "id": "longevity_2_3836",
+      "source": "longevity",
+      "title": "Protuoso banks $9.5m for multifunctional biologics",
+      "summary": "California-based startup bets on AI-designed biologics that tackle complex diseases from multiple angles at once. “Our platform gives us the ability to engineer multiple modalities into a single molecule to target a variety of disease mechanisms. Our",
+      "date": "28 May 2026",
+      "dv": 20260528,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 50,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://longevity.technology/news/protuoso-banks-9-5m-for-multifunctional-biologics/"
+    },
+    {
+      "id": "longevity_3_1138",
+      "source": "longevity",
+      "title": "The wearables tightrope",
+      "summary": "ArentFox Schiff&#8217;s Gayland Hethcoat on navigating the line between wellness and medical devices in the longevity era. The modern wearable is no longer a step counter. It is a continuous health interface – an always-on, sensor-based platform that",
+      "date": "28 May 2026",
+      "dv": 20260528,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 60,
+      "tiktok": "10K-40K",
+      "factStatus": "verified",
+      "tags": [
+        "longevity"
+      ],
+      "url": "https://longevity.technology/news/the-wearables-tightrope/"
+    },
+    {
+      "id": "longevity_4_703",
+      "source": "longevity",
+      "title": "NeuroXT, BIDMC expand partnership advancing AI-driven Alzheimer’s medicine",
+      "summary": "NeuroXT announced the completion of an initial research collaboration with Beth Israel Deaconess Medical Center and has signed a new agreement to extend joint studies into AI-driven precision treatment for Alzheimer&#8217;s disease. The initial colla",
+      "date": "28 May 2026",
+      "dv": 20260528,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 81,
+      "tiktok": "50K-200K",
+      "factStatus": "verified",
+      "tags": [
+        "alzheimer"
+      ],
+      "url": "https://longevity.technology/news/neuroxt-bidmc-expand-partnership-advancing-ai-driven-alzheimers-medicine/"
+    },
+    {
+      "id": "longevity_5_5295",
+      "source": "longevity",
+      "title": "Jupiter Neurosciences begins Phase 2a trial of Parkinson’s drug JOTROL",
+      "summary": "Jupiter Neurosciences has begun patient enrollment in its Phase 2a RESET study (NCT07592767) of JOTROL, an investigational trans-resveratrol micellar formulation, with first patient dosing expected in the near term, according to the company. The mult",
+      "date": "28 May 2026",
+      "dv": 20260528,
+      "cat": [
+        "ai"
+      ],
+      "viral": 79,
+      "tiktok": "20K-80K",
+      "factStatus": "verified",
+      "tags": [
+        "parkinson"
+      ],
+      "url": "https://longevity.technology/news/jupiter-neurosciences-begins-phase-2a-trial-of-parkinsons-drug-jotrol/"
+    },
+    {
+      "id": "longevity_6_4063",
+      "source": "longevity",
+      "title": "Therini Bio begins patient dosing in new clinical trial for diabetic eye disease",
+      "summary": "Therini Bio has dosed the first patients in a Phase 1b multiple ascending dose trial of THN391 for diabetic macular edema. The study will enroll three dose cohorts with each patient receiving three monthly intravitreal injections and will assess safe",
+      "date": "28 May 2026",
+      "dv": 20260528,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 60,
+      "tiktok": "10K-40K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://longevity.technology/news/therini-bio-begins-patient-dosing-in-new-clinical-trial-for-diabetic-eye-disease/"
+    },
+    {
+      "id": "longevity_7_5027",
       "source": "longevity",
       "title": "Insilico, HLFM join forces to accelerate age-related disease detection",
       "summary": "Insilico Medicine and Human Life Foundation Models, Inc., a newly launched unit of Human Longevity, announced a multi-million-dollar co-development collaboration to build large-scale AI foundation models dedicated to human longevity science, accordin",
@@ -77,61 +221,7 @@
       "url": "https://longevity.technology/news/insilico-hlfm-join-forces-to-accelerate-age-related-disease-detection/"
     },
     {
-      "id": "longevity_2_7930",
-      "source": "longevity",
-      "title": "NeuroXT, BIDMC expand partnership advancing AI-driven Alzheimer’s medicine",
-      "summary": "NeuroXT announced the completion of an initial research collaboration with Beth Israel Deaconess Medical Center and has signed a new agreement to extend joint studies into AI-driven precision treatment for Alzheimer&#8217;s disease. The initial colla",
-      "date": "28 May 2026",
-      "dv": 20260528,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 81,
-      "tiktok": "50K-200K",
-      "factStatus": "verified",
-      "tags": [
-        "alzheimer"
-      ],
-      "url": "https://longevity.technology/news/neuroxt-bidmc-expand-partnership-advancing-ai-driven-alzheimers-medicine/"
-    },
-    {
-      "id": "longevity_3_1680",
-      "source": "longevity",
-      "title": "Jupiter Neurosciences begins Phase 2a trial of Parkinson’s drug JOTROL",
-      "summary": "Jupiter Neurosciences has begun patient enrollment in its Phase 2a RESET study (NCT07592767) of JOTROL, an investigational trans-resveratrol micellar formulation, with first patient dosing expected in the near term, according to the company. The mult",
-      "date": "28 May 2026",
-      "dv": 20260528,
-      "cat": [
-        "ai"
-      ],
-      "viral": 79,
-      "tiktok": "20K-80K",
-      "factStatus": "verified",
-      "tags": [
-        "parkinson"
-      ],
-      "url": "https://longevity.technology/news/jupiter-neurosciences-begins-phase-2a-trial-of-parkinsons-drug-jotrol/"
-    },
-    {
-      "id": "longevity_4_9401",
-      "source": "longevity",
-      "title": "Therini Bio begins patient dosing in new clinical trial for diabetic eye disease",
-      "summary": "Therini Bio has dosed the first patients in a Phase 1b multiple ascending dose trial of THN391 for diabetic macular edema. The study will enroll three dose cohorts with each patient receiving three monthly intravitreal injections and will assess safe",
-      "date": "28 May 2026",
-      "dv": 20260528,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 60,
-      "tiktok": "10K-40K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://longevity.technology/news/therini-bio-begins-patient-dosing-in-new-clinical-trial-for-diabetic-eye-disease/"
-    },
-    {
-      "id": "nature_0_1841",
+      "id": "nature_0_3708",
       "source": "nature",
       "title": "Questions of the future in aging and longevity research at the GIMM Festival",
       "summary": "Nature Aging, Published online: 28 May 2026; doi:10.1038/s43587-026-01133-yOn 4–6 September 2025, the Gulbenkian Institute for Molecular Medicine (GIMM) hosted its inaugural GIMM Festival in Lisbon, Portugal. The three-day meeting on ‘Aging and Longe",
@@ -150,7 +240,7 @@
       "url": "https://www.nature.com/articles/s43587-026-01133-y"
     },
     {
-      "id": "nature_1_2048",
+      "id": "nature_1_115",
       "source": "nature",
       "title": "Peroxisomes orchestrate metabolic flexibility and longevity via an interorganelle cascade",
       "summary": "Nature Aging, Published online: 20 May 2026; doi:10.1038/s43587-026-01122-1Sharma and colleagues show that, in Caenorhabditis elegans, age-associated decline in peroxisomal function causally impairs lipid mobilization, resulting in lipid droplet accu",
@@ -169,7 +259,7 @@
       "url": "https://www.nature.com/articles/s43587-026-01122-1"
     },
     {
-      "id": "nature_2_4496",
+      "id": "nature_2_3531",
       "source": "nature",
       "title": "From whole-body to organ-specific biological age clocks",
       "summary": "Nature Aging, Published online: 20 May 2026; doi:10.1038/s43587-026-01113-2Zalesky and colleagues discuss the evolution of aging clocks into organ-specific aging readouts that harness omics and imaging data. They review the insights that this additio",
@@ -187,7 +277,7 @@
       "url": "https://www.nature.com/articles/s43587-026-01113-2"
     },
     {
-      "id": "nature_3_3172",
+      "id": "nature_3_1274",
       "source": "nature",
       "title": "Proteomic aging clocks in epidemiological studies: advances, applications and prospects",
       "summary": "Nature Aging, Published online: 20 May 2026; doi:10.1038/s43587-026-01118-xThis Review discusses current development and applications of blood-based proteomic aging clocks and highlights the key prospects and challenges in this rapidly advancing fiel",
@@ -205,7 +295,7 @@
       "url": "https://www.nature.com/articles/s43587-026-01118-x"
     },
     {
-      "id": "nature_4_8141",
+      "id": "nature_4_9230",
       "source": "nature",
       "title": "A unifying model of stem cell dynamics explains age-related methylation patterns across mammals",
       "summary": "Nature Aging, Published online: 19 May 2026; doi:10.1038/s43587-026-01125-yA parsimonious model of stem cell dynamics describes how DNA methylation changes arise and propagate with age, unifying diverse epigenetic aging patterns and suggesting that s",
@@ -223,7 +313,7 @@
       "url": "https://www.nature.com/articles/s43587-026-01125-y"
     },
     {
-      "id": "nature_5_6916",
+      "id": "nature_5_5127",
       "source": "nature",
       "title": "Predicting categorical and continuous Alzheimer’s disease outcomes from a single MRI scan",
       "summary": "Nature Aging, Published online: 18 May 2026; doi:10.1038/s43587-026-01121-2The authors developed a multitask deep learning framework integrating domain knowledge with large pretrained models that effectively predicts Alzheimer’s disease diagnosis, co",
@@ -243,7 +333,7 @@
       "url": "https://www.nature.com/articles/s43587-026-01121-2"
     },
     {
-      "id": "nature_6_3650",
+      "id": "nature_6_5058",
       "source": "nature",
       "title": "Proteomic signatures of the APOE ε4 and APOE ε2 genetic variants and Alzheimer’s disease",
       "summary": "Nature Aging, Published online: 15 May 2026; doi:10.1038/s43587-026-01123-0Apolipoprotein E (APOE) is the strongest genetic influence in Alzheimer’s disease (AD). Compared to the most frequent allele, ε3, the ε4 allele increases AD risk, and the ε2 a",
@@ -262,7 +352,7 @@
       "url": "https://www.nature.com/articles/s43587-026-01123-0"
     },
     {
-      "id": "nature_7_8352",
+      "id": "nature_7_7601",
       "source": "nature",
       "title": "Reduced ULK1 links impaired autophagy and mitophagy to Alzheimer’s disease pathology",
       "summary": "Nature Aging, Published online: 14 May 2026; doi:10.1038/s43587-026-01108-zAutophagic activity has a protective role in Alzheimer’s disease in mice. Here the authors investigate the role of autophagy-initiating protein ULK1 and report that its overex",
@@ -281,7 +371,25 @@
       "url": "https://www.nature.com/articles/s43587-026-01108-z"
     },
     {
-      "id": "ieee_0_3866",
+      "id": "ieee_0_4076",
+      "source": "ieee",
+      "title": "Finding Success in Industry as a Chip Designer",
+      "summary": "I have been an application-specific IC (ASIC) designer for almost three decades. Over that time, I’ve moved through the full academic trajectory, from graduate student to full professor; later, I transitioned to industry after an unsuccessful stint a",
+      "date": "28 May 2026",
+      "dv": 20260528,
+      "cat": [
+        "bionics"
+      ],
+      "viral": 51,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://spectrum.ieee.org/chip-design-academic-vs-industry"
+    },
+    {
+      "id": "ieee_1_361",
       "source": "ieee",
       "title": "Understanding Phase Noise and Its Impact on RF System Performance",
       "summary": "A practical introduction to phase noise concepts, explaining how oscillator instability affects RF systems and how phase noise is measured, analyzed, and reported.What Attendees will LearnWhat phase noise is and why it matters — Learn how real-world ",
@@ -299,10 +407,10 @@
       "url": "https://content.knowledgehub.wiley.com/understanding-phase-noise-fundamentals/"
     },
     {
-      "id": "lifespan_0_747",
+      "id": "lifespan_1_8787",
       "source": "lifespan",
       "title": "Cardiovascular Health During the Menopausal Transition",
-      "summary": "A recent study compared premenopausal, perimenopausal, and postmenopausal women’s cardiovascular health. Perimenopausal women had about twice the odds of having a poor overall score when compared [&#8230;]",
+      "summary": "A recent study compared premenopausal, perimenopausal, and postmenopausal women’s cardiovascular health. Perimenopausal women had about twice the odds of having [&#8230;]",
       "date": "27 May 2026",
       "dv": 20260527,
       "cat": [
@@ -317,7 +425,7 @@
       "url": "https://lifespan.io/cardiovascular-health-during-the-menopausal-transition/?utm_source=rss&utm_medium=rss&utm_campaign=cardiovascular-health-during-the-menopausal-transition"
     },
     {
-      "id": "mit_2_4382",
+      "id": "mit_3_9711",
       "source": "mit",
       "title": "The Download: keeping up with AI, and the future of IVF",
       "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Stay on top of what’s going on in AI this summer Here at MIT Technology Review, we understand exactl",
@@ -335,7 +443,7 @@
       "url": "https://www.technologyreview.com/2026/05/27/1138048/the-download-ai-future-ivf-technology/"
     },
     {
-      "id": "longevity_5_9171",
+      "id": "longevity_8_9364",
       "source": "longevity",
       "title": "‘The field has crossed a threshold of legitimacy’",
       "summary": "Harvard Health Publishing’s first longevity report brings geroscience, biological aging and preventive longevity medicine to a mass audience. Harvard Health has released its first-ever Special Health Report dedicated entirely to longevity science – a",
@@ -354,7 +462,7 @@
       "url": "https://longevity.technology/news/the-field-has-crossed-a-threshold-of-legitimacy/"
     },
     {
-      "id": "longevity_6_1221",
+      "id": "longevity_9_9519",
       "source": "longevity",
       "title": "Top 30 finalists named for longevity pitch competition",
       "summary": "Startups spanning AI, women’s health, diagnostics and preventive care advance in The Longevity Show’s inaugural competition. The Longevity Show has announced the Top 30 finalists for its inaugural startup pitch competition, with companies spanning di",
@@ -372,7 +480,7 @@
       "url": "https://longevity.technology/news/top-30-finalists-named-for-longevity-pitch-competition/"
     },
     {
-      "id": "longevity_7_5978",
+      "id": "longevity_10_6963",
       "source": "longevity",
       "title": "TreeFrog’s 3D neural therapy targets Parkinson’s decline",
       "summary": "TFG-001 therapy restored brain connections faster in preclinical models, hinting at a new direction for regenerative longevity medicine. What if treating Parkinson’s disease was not just about replacing missing dopamine, but rebuilding the brain’s br",
@@ -392,7 +500,7 @@
       "url": "https://longevity.technology/news/treefrogs-3d-neural-therapy-targets-parkinsons-decline/"
     },
     {
-      "id": "longevity_8_4698",
+      "id": "longevity_11_1046",
       "source": "longevity",
       "title": "Emagene.life, Adam Health launch men’s AI longevity care",
       "summary": "The partnership brings data-driven men’s health tracking, longevity optimization and functional medicine to Malaysia and Singapore. A man in his late 30s or early 40s powers through long workdays, grabs late-night meals after traffic-heavy commutes, ",
@@ -411,7 +519,7 @@
       "url": "https://longevity.technology/news/emagene-life-adam-health-launch-mens-ai-longevity-care/"
     },
     {
-      "id": "longevity_9_410",
+      "id": "longevity_12_7743",
       "source": "longevity",
       "title": "Tau-targeting drug slows early Alzheimer’s progression",
       "summary": "Biogen and Ionis report first Phase 2 evidence that reducing tau protein may also help slow cognitive decline. Alzheimer’s research may be entering its next chapter. Isn’t it that it’s been decades since Alzheimer’s drug development has chased the sa",
@@ -429,7 +537,7 @@
       "url": "https://longevity.technology/news/tau-targeting-drug-slows-early-alzheimers-progression/"
     },
     {
-      "id": "longevity_10_4058",
+      "id": "longevity_13_1065",
       "source": "longevity",
       "title": "Scribe Therapeutics tests epigenetic treatment to lower cholesterol without altering DNA",
       "summary": "Scribe Therapeutics has secured clearance from Australia’s Therapeutic Goods Administration to initiate a first-in-human clinical study of STX-1150 for hypercholesterolemia. The Phase 1, open-label study is planned as a single ascending dose phase fo",
@@ -448,7 +556,7 @@
       "url": "https://longevity.technology/news/scribe-therapeutics-tests-epigenetic-treatment-to-lower-cholesterol-without-altering-dna/"
     },
     {
-      "id": "longevity_11_9029",
+      "id": "longevity_14_7254",
       "source": "longevity",
       "title": "Alzinova advances ALZ-101 vaccine to Phase 2 trial following positive safety results",
       "summary": "Alzinova is preparing for a global phase II study of its vaccine candidate ALZ-101 after a Phase Ib program that the company describes as providing both safety reassurance and mechanistic evidence. According to the company, the Phase Ib trial showed ",
@@ -466,61 +574,7 @@
       "url": "https://longevity.technology/news/alzinova-advances-alz-101-vaccine-to-phase-2-trial-following-positive-safety-results/"
     },
     {
-      "id": "longevity_12_3300",
-      "source": "longevity",
-      "title": "MBX Biosciences to share updates on peptide therapies for metabolic disorders",
-      "summary": "MBX Biosciences, Inc. (Nasdaq: MBX) will present at the Jefferies 2026 Global Healthcare Conference in New York City, with Kent Hawryluk, President and Chief Executive Officer, and Sam Azoulay, M.D., Chief Medical Officer, slated to speak. The presen",
-      "date": "27 May 2026",
-      "dv": 20260527,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 40,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://longevity.technology/news/mbx-biosciences-to-share-updates-on-peptide-therapies-for-metabolic-disorders/"
-    },
-    {
-      "id": "longevity_13_4615",
-      "source": "longevity",
-      "title": "Multiple biotechs race toward regulatory milestones for muscle-wasting disease therapies",
-      "summary": "Biotech firms, including Regenxbio, Novartis and Dyne, are converging on regulatory milestones for therapies targeting Duchenne muscular dystrophy and myotonic dystrophy type 1, signaling a flurry of potential filings and confirmatory trials. Regenxb",
-      "date": "27 May 2026",
-      "dv": 20260527,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 60,
-      "tiktok": "10K-40K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://longevity.technology/news/multiple-biotechs-race-toward-regulatory-milestones-for-muscle-wasting-disease-therapies/"
-    },
-    {
-      "id": "longevity_14_6010",
-      "source": "longevity",
-      "title": "Sky Labs’ CART BP pro included in Korean hypertension guidelines",
-      "summary": "The Korean Society of Hypertension has incorporated ring-type cuffless blood pressure monitors into its 2026 guidelines, recommending them as a Class IIb option for out-of-office blood pressure monitoring, a first for the technology. According to Sky",
-      "date": "27 May 2026",
-      "dv": 20260527,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 52,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://longevity.technology/news/sky-labs-cart-bp-pro-included-in-korean-hypertension-guidelines/"
-    },
-    {
-      "id": "ieee_1_8259",
+      "id": "ieee_2_2261",
       "source": "ieee",
       "title": "South Africa Has AI Leverage. Its Draft Policy Leaves It Unused",
       "summary": "This article is adapted by the author with permission from Tech Policy Press. Read the original article.South Africa is not just another developing country struggling to govern artificial intelligence; it is the exception with leverage, and the windo",
@@ -538,10 +592,10 @@
       "url": "https://spectrum.ieee.org/south-africa-ai-policy"
     },
     {
-      "id": "lifespan_1_6774",
+      "id": "lifespan_2_2266",
       "source": "lifespan",
       "title": "Tau Protein Is Crucial for Encoding Long-Term Memory",
-      "summary": "Scientists have uncovered an unexpected function of the tau protein, which is mostly known for its role in Alzheimer’s and related disorders: helping encode long-term memory. This can inform novel approaches that [&#8230;]",
+      "summary": "Scientists have uncovered an unexpected function of the tau protein, which is mostly known for its role in Alzheimer’s and related disorders: helping encode long-term memory. This can inform novel approaches that target tau [1]. In sickness and [&#82",
       "date": "26 May 2026",
       "dv": 20260526,
       "cat": [
@@ -556,7 +610,7 @@
       "url": "https://lifespan.io/tau-protein-is-crucial-for-encoding-long-term-memory/?utm_source=rss&utm_medium=rss&utm_campaign=tau-protein-is-crucial-for-encoding-long-term-memory"
     },
     {
-      "id": "singularity_0_3224",
+      "id": "singularity_0_8324",
       "source": "singularity",
       "title": "Photosynthetic Drops Soothe Dry Eyes With Sunlight",
       "summary": "The drops, tested on mice, healed eye damage using light-sensitive particles—sourced from ordinary spinach. The post Photosynthetic Drops Soothe Dry Eyes With Sunlight appeared first on SingularityHub.",
@@ -574,7 +628,7 @@
       "url": "https://singularityhub.com/2026/05/26/photosynthetic-drops-soothe-dry-eyes-with-sunlight/"
     },
     {
-      "id": "mit_3_5962",
+      "id": "mit_4_6049",
       "source": "mit",
       "title": "Rethinking organizational design in the age of agentic AI",
       "summary": "Amid rapidly growing adoption of enterprise-level AI agents, there’s a disconnect emerging between ambition and execution.&#160; Although 85% of organizations say they want to be agentic within the next three years, 76% say their current operations a",
@@ -592,7 +646,7 @@
       "url": "https://www.technologyreview.com/2026/05/26/1137584/rethinking-organizational-design-in-the-age-of-agentic-ai/"
     },
     {
-      "id": "mit_4_8849",
+      "id": "mit_5_6462",
       "source": "mit",
       "title": "The Download: puncturing the AI jobs panic",
       "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. A reality check on the AI jobs hysteria Despite the growing hysteria over AI’s threat to white-colla",
@@ -610,7 +664,7 @@
       "url": "https://www.technologyreview.com/2026/05/26/1138028/the-download-ai-jobs-data/"
     },
     {
-      "id": "mit_5_9209",
+      "id": "mit_6_4835",
       "source": "mit",
       "title": "A reality check on the AI jobs hysteria",
       "summary": "Haven’t you heard? White-collar jobs are going away, decimated by AI. Waves of layoffs in the tech sector (most recently at Coinbase and Meta and Cisco) are said to presage what will soon come for all of us knowledge workers. But before you quit your",
@@ -628,7 +682,7 @@
       "url": "https://www.technologyreview.com/2026/05/26/1137855/a-reality-check-on-the-ai-jobs-hysteria/"
     },
     {
-      "id": "mit_6_8007",
+      "id": "mit_7_8752",
       "source": "mit",
       "title": "It’s time to address the looming crisis in entry-level work.",
       "summary": "Artificial intelligence has not so far produced a clean story of mass unemployment. Aggregate employment in developed countries remains broadly stable, and recent assessments have found limited evidence that AI has shifted the headline numbers. But a",
@@ -646,7 +700,7 @@
       "url": "https://www.technologyreview.com/2026/05/26/1137865/its-time-to-address-the-looming-crisis-in-entry-level-work/"
     },
     {
-      "id": "ieee_2_2226",
+      "id": "ieee_3_9022",
       "source": "ieee",
       "title": "What It Takes to Preserve Floppy Disks",
       "summary": "Floppy disks are several decades old—many of the disks are degrading and the data stored on them is at risk of being lost. In response, Leontien Talboom, a technical analyst at Cambridge University Libraries and Archives, led a roughly year-long proj",
@@ -664,7 +718,7 @@
       "url": "https://spectrum.ieee.org/floppy-disk-data-preservation-archives"
     },
     {
-      "id": "ieee_3_2226",
+      "id": "ieee_4_4489",
       "source": "ieee",
       "title": "Meet NASA Low Outgassing Standards With Adhesives for Aerospace and Optical Systems",
       "summary": "This sponsored article is brought to you by Master Bond.Outgassing is the release of volatile substances from a cured adhesive over time. These released materials, which may include residual solvents, unreacted monomers, or other chemical species, ca",
@@ -682,7 +736,7 @@
       "url": "https://spectrum.ieee.org/adhesive-outgassing-nasa-standards"
     },
     {
-      "id": "webrazzi_0_3757",
+      "id": "webrazzi_0_8057",
       "source": "webrazzi",
       "title": "Cyient Semiconductors, 500 milyon dolar değerlemeyle 30 milyon dolar yatırım aldı",
       "summary": "Hindistan merkezli çip tasarım girişimi Cyient Semiconductors, Edelweiss liderliğinde gerçekleşen turda 30 milyon dolar yatırım aldı. Bu yatırımla birlikte çip tasarım şirketinin değerlemesi ise 500 m...",
@@ -700,7 +754,7 @@
       "url": "https://webrazzi.com/2026/05/26/cyient-semiconductors-500-milyon-dolar-degerlemeyle-30-milyon-dolar-yatirim-aldi/"
     },
     {
-      "id": "webrazzi_1_2051",
+      "id": "webrazzi_1_1977",
       "source": "webrazzi",
       "title": "Ferrari'den, Jony Ive'ın şirketinin tasarladığı ilk elektrikli otomobil: Luce",
       "summary": "Ferrari, Jony Ive ve Mark Newson’ın girişimi LoveFrom ile iş birliğiyle tasarlanan ilk elektrikli aracı Luce'u görücüye çıkardı. Luce, Ferrari’nin ikinci dört kapılı ve ilk beş koltuklu otomobili ola...",
@@ -718,7 +772,7 @@
       "url": "https://webrazzi.com/2026/05/26/ferrari-den-jony-ive-in-sirketinin-tasarladigi-ilk-elektrikli-otomobil-luce/"
     },
     {
-      "id": "webrazzi_2_7526",
+      "id": "webrazzi_2_1732",
       "source": "webrazzi",
       "title": "Yapay zeka destekli sağlık girişimi Lucis, 20 milyon dolar yatırım aldı",
       "summary": "Yapay zeka destekli sağlık girişimi Lucis, 20 milyon dolar yatırım aldı. Şirketin 20 milyon dolarlık A serisi yatırım turuna Singular liderlik etti. Fransa merkezli Lucis'in yatırım turunda General Ca...",
@@ -736,7 +790,7 @@
       "url": "https://webrazzi.com/2026/05/26/yapay-zeka-destekli-saglik-girisimi-lucis-20-milyon-dolar-yatirim-aldi/"
     },
     {
-      "id": "webrazzi_3_8731",
+      "id": "webrazzi_3_9984",
       "source": "webrazzi",
       "title": "İnsansı robotlardan yapay zeka dostlarına: Ev robotlarında son durum",
       "summary": "Küresel ev robotları pazar hacmi, 2025 yılında 14,7 milyar dolar olarak tahmin edildi. Global Market Insights tarafından yayınlanan en son rapora göre, pazarın 2026'da 17,5 milyar dolardan 2031'de 41,...",
@@ -754,10 +808,10 @@
       "url": "https://webrazzi.com/2026/05/26/insansi-robotlardan-yapay-zeka-dostlarina-ev-robotlarinda-son-durum/"
     },
     {
-      "id": "lifespan_2_811",
+      "id": "lifespan_3_5486",
       "source": "lifespan",
       "title": "How Omega-3 Fatty Acids May Alleviate Kidney Disease",
-      "summary": "Researchers have discovered the role of cellular senescence in the interaction between omega-3 polyunsaturated fatty acids (PUFAs) and chronic kidney disease (CKD). Previous mixed results Several clinical trials have found that taking omega-3 PUFAs h",
+      "summary": "Researchers have discovered the role of cellular senescence in the interaction between omega-3 polyunsaturated fatty acids (PUFAs) and chronic kidney disease (CKD). Previous mixed results Several clinical trials have found that taking [&#8230;]",
       "date": "25 May 2026",
       "dv": 20260525,
       "cat": [
@@ -772,7 +826,7 @@
       "url": "https://lifespan.io/how-omega-3-fatty-acids-may-alleviate-kidney-disease/?utm_source=rss&utm_medium=rss&utm_campaign=how-omega-3-fatty-acids-may-alleviate-kidney-disease"
     },
     {
-      "id": "singularity_1_5348",
+      "id": "singularity_1_647",
       "source": "singularity",
       "title": "A Revolutionary Cancer Treatment Could Transform Autoimmune Disease",
       "summary": "Researchers are testing CAR T cell therapy as a way to reset the immune system in lupus, Graves’ disease, and other conditions where the body’s defenses go rogue. The post A Revolutionary Cancer Treatment Could Transform Autoimmune Disease appeared f",
@@ -790,7 +844,7 @@
       "url": "https://singularityhub.com/2026/05/25/a-revolutionary-cancer-treatment-could-transform-autoimmune-disease/"
     },
     {
-      "id": "ieee_4_3442",
+      "id": "ieee_5_7496",
       "source": "ieee",
       "title": "IEEE TryEngineering OnCampus Program Expands to 7 Universities",
       "summary": "The OnCampus program, administered by IEEE Educational Activities, last year expanded its engineering experiences from two to seven universities.Part of TryEngineering, the program is held at universities around the world, offering preuniversity stud",
@@ -808,7 +862,7 @@
       "url": "https://spectrum.ieee.org/tryengineering-oncampus-expansion"
     },
     {
-      "id": "ieee_5_2389",
+      "id": "ieee_6_8556",
       "source": "ieee",
       "title": "Reclaiming Social Engineering for Good",
       "summary": "“Social engineering” sounds like something out of a conspiracy thriller, charged with totalitarian control and fringe paranoia. More mundanely, it’s come to be associated with phishing and other scams, in which fraudsters manipulate people into discl",
@@ -826,7 +880,7 @@
       "url": "https://spectrum.ieee.org/social-engineering-good"
     },
     {
-      "id": "ieee_6_7976",
+      "id": "ieee_7_4094",
       "source": "ieee",
       "title": "AI with Model-Based Design: Virtual Sensor Modeling",
       "summary": "This webinar presents a workflow offering end-to-end solutions for designing, training, validating and verifying, compressing, and deploying AI-based virtual sensor models to embedded processors within a single environment.HighlightsIntegrate AI mode",
@@ -844,7 +898,7 @@
       "url": "https://content.knowledgehub.wiley.com/ai-with-model-based-design-virtual-sensor-modeling/"
     },
     {
-      "id": "webrazzi_4_9936",
+      "id": "webrazzi_4_6748",
       "source": "webrazzi",
       "title": "SolarSquare, yaklaşık 60 milyon dolar yatırım alıyor",
       "summary": "Yenilenebilir enerji alanında çalışan SolarSquare'in 40 milyon dolar yatırım aldığını 2024'ün aralık ayında sizlere aktarmıştık. Şirket, yeni bir yatırım haberiyle gündeme geldi.SolarSquare, C serisi ...",
@@ -862,7 +916,7 @@
       "url": "https://webrazzi.com/2026/05/25/solarsquare-yaklasik-60-milyon-dolar-yatirim-aliyor/"
     },
     {
-      "id": "webrazzi_5_9448",
+      "id": "webrazzi_5_4880",
       "source": "webrazzi",
       "title": "X, çalınan viral videolar üzerinden haksız kazanç elde edilmesini engelliyor",
       "summary": "Sosyal medya platformu X içerik üreticiliği ekosisteminde adaleti sağlamak ve platformdaki özgünlük oranını artırmak adına çok önemli bir politika değişikliğine gidiyor. Şirket diğer kullanıcılardan ç...",
@@ -880,7 +934,7 @@
       "url": "https://webrazzi.com/2026/05/25/x-calinan-viral-videolar-uzerinden-haksiz-kazanc-elde-edilmesini-engelliyor/"
     },
     {
-      "id": "webrazzi_6_7954",
+      "id": "webrazzi_6_9746",
       "source": "webrazzi",
       "title": "Anthropic, Mythos'un şimdiden 10 binden fazla güvenlik açığı tespit ettiğini açıkladı",
       "summary": "OpenAI rakibi Anthropic'in nisan ayında siber güvenlik koalisyonu Project Glasswing’i kurduğunu sizlere aktarmıştık. Şirket, yapay zeka kullanarak yapay zeka kaynaklı siber saldırıları önlemeyi amaçla...",
@@ -898,7 +952,7 @@
       "url": "https://webrazzi.com/2026/05/25/anthropic-mythos-un-simdiden-10-binden-fazla-guvenlik-acigi-tespit-ettigini-acikladi/"
     },
     {
-      "id": "webrazzi_7_3068",
+      "id": "webrazzi_7_8278",
       "source": "webrazzi",
       "title": "WWDC yaklaşırken, Apple'ın web sitesinde yeni bir Gen AI alt alan adı tespit edildi",
       "summary": "Apple'ın web sitesinde yeni bir Gen AI alt alan adı (subdomain) tespit edildi. Bu alt alan adı, yapay zekanın Haziran ayında düzenlenecek WWDC'de ana konularından biri olacağını gösteriyor. Apple'ın 8...",
@@ -916,7 +970,7 @@
       "url": "https://webrazzi.com/2026/05/25/wwdc-yaklasirken-apple-in-web-sitesinde-yeni-bir-gen-ai-alt-alan-adi-tespit-edildi/"
     },
     {
-      "id": "webrazzi_8_506",
+      "id": "webrazzi_8_728",
       "source": "webrazzi",
       "title": "Workup Girişimcilik Programı'nın 14. dönemine seçilen 10 girişim",
       "summary": "Türkiye İş Bankası’nın ana destekçisi olduğu Workup Girişimcilik Programı’nın 14'üncü dönemi başladı. Programa bu yıl Türkiye’nin farklı şehirlerinden seçilen 10 teknoloji girişimi dahil edildi. 9 yıl...",
@@ -934,7 +988,7 @@
       "url": "https://webrazzi.com/2026/05/25/workup-girisimcilik-programi-nin-14-donemine-secilen-10-girisim/"
     },
     {
-      "id": "webrazzi_9_4207",
+      "id": "webrazzi_9_7088",
       "source": "webrazzi",
       "title": "Vendorside, Türk Hava Yolları Girişim Sermayesi Yatırım Fonu'ndan yatırım aldı",
       "summary": "Kurumsal yazılım platformu Vendorside, Türk Hava Yolları Girişim Sermayesi Yatırım Fonu’ndan yatırım aldı. İstanbul merkezli şirkete yapılan yatırımın finansal detayları açıklanmadı. Öte yandan Türk H...",
@@ -952,7 +1006,7 @@
       "url": "https://webrazzi.com/2026/05/25/vendorside-turk-hava-yollari-girisim-sermayesi-yatirim-fonu-ndan-yatirim-aldi/"
     },
     {
-      "id": "webrazzi_10_7362",
+      "id": "webrazzi_10_1813",
       "source": "webrazzi",
       "title": "iOS 27 güncellemesiyle AirPods kontrolü daha basit hale geliyor",
       "summary": "Apple, yazılım tarafında kullanıcı deneyimini sadeleştirmeye yönelik adımlar atmaya devam ediyor. Şirketin bu yıl tanıtması beklenen iOS 27 güncellemesiyle birlikte özellikle AirPods kullanıcılarını i...",
@@ -970,7 +1024,7 @@
       "url": "https://webrazzi.com/2026/05/25/ios-27-guncellemesiyle-airpods-kontrolu-daha-basit-hale-geliyor/"
     },
     {
-      "id": "webrazzi_11_4160",
+      "id": "webrazzi_11_3817",
       "source": "webrazzi",
       "title": "Yapay zeka destekli Reddit topluluk analiz aracı: SniffSub",
       "summary": "SniffSub, markalar, ürünler ve projeler için Reddit üzerinde topluluk analizleri yapan bir platform olarak faaliyet gösteriyor. Kullanıcıların hedef kitlelerine ait konuşmaları, müşteri sorunlarını, s...",
@@ -988,7 +1042,7 @@
       "url": "https://webrazzi.com/2026/05/25/yapay-zeka-destekli-reddit-topluluk-analiz-araci-sniffsub/"
     },
     {
-      "id": "singularity_2_6682",
+      "id": "singularity_2_4493",
       "source": "singularity",
       "title": "This Week’s Awesome Tech Stories From Around the Web (Through May 23)",
       "summary": "Every week, we scour the web for important, insightful, and fascinating stories in science and technology. The post This Week’s Awesome Tech Stories From Around the Web (Through May 23) appeared first on SingularityHub.",
@@ -1006,10 +1060,10 @@
       "url": "https://singularityhub.com/2026/05/23/this-weeks-awesome-tech-stories-from-around-the-web-through-may-23-2/"
     },
     {
-      "id": "lifespan_3_4254",
+      "id": "lifespan_4_7116",
       "source": "lifespan",
       "title": "Mitochondrial Aging Linked to Losing Crucial Membrane Lipid",
-      "summary": "Scientists have found that the levels of phosphatidylcholine, the most abundant lipid in mitochondrial membranes, decline with age, driving mitochondrial aging in worms and possibly humans. Supplementing the lipid helped in an in vitro experiment [&#",
+      "summary": "Scientists have found that the levels of phosphatidylcholine, the most abundant lipid in mitochondrial membranes, decline with age, driving mitochondrial aging in worms and possibly humans. [&#8230;]",
       "date": "22 May 2026",
       "dv": 20260522,
       "cat": [
@@ -1024,7 +1078,7 @@
       "url": "https://lifespan.io/mitochondrial-aging-linked-to-losing-crucial-membrane-lipid/?utm_source=rss&utm_medium=rss&utm_campaign=mitochondrial-aging-linked-to-losing-crucial-membrane-lipid"
     },
     {
-      "id": "singularity_3_9277",
+      "id": "singularity_3_1556",
       "source": "singularity",
       "title": "Data Centers Now Consume 6% of US Electricity—and the Backlash Has Begun",
       "summary": "Strong opposition kicks in when data center demand surpasses 5% of a country's power supply. The post Data Centers Now Consume 6% of US Electricity—and the Backlash Has Begun appeared first on SingularityHub.",
@@ -1042,7 +1096,7 @@
       "url": "https://singularityhub.com/2026/05/22/data-centers-now-consume-6-of-electricity-in-the-us-and-the-backlash-has-begun/"
     },
     {
-      "id": "singularity_4_5468",
+      "id": "singularity_4_1468",
       "source": "singularity",
       "title": "AI Lab Partners Are Rewiring the Hunt for New Drugs",
       "summary": "Researchers used two AI systems, Robin and Co-Scientist, to collapse the timeline from idea to drug candidate. The post AI Lab Partners Are Rewiring the Hunt for New Drugs appeared first on SingularityHub.",
@@ -1060,7 +1114,7 @@
       "url": "https://singularityhub.com/2026/05/21/ai-lab-partners-are-rewiring-the-hunt-for-new-drugs/"
     },
     {
-      "id": "mit_7_6828",
+      "id": "mit_8_3865",
       "source": "mit",
       "title": "The Download: coding’s future, the ‘Steroid Olympics,’ and AI-driven science",
       "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Anthropic’s Code with Claude showed off coding’s future—whether you like it or not At Anthropic’s de",
@@ -1078,7 +1132,7 @@
       "url": "https://www.technologyreview.com/2026/05/22/1137845/the-download-coding-future-steroid-olympics-ai-science/"
     },
     {
-      "id": "mit_8_7718",
+      "id": "mit_9_7876",
       "source": "mit",
       "title": "Google I/O showed how the path for AI-driven science is shifting",
       "summary": "During Tuesday’s Google I/O keynote, Demis Hassabis, the CEO of Google DeepMind, proclaimed that we are currently “standing in the foothills of the singularity.” It was a striking statement—the singularity is the theoretical future moment when AI rap",
@@ -1096,25 +1150,7 @@
       "url": "https://www.technologyreview.com/2026/05/22/1137813/google-i-o-showed-how-the-path-for-ai-science-is-shifting/"
     },
     {
-      "id": "mit_9_8149",
-      "source": "mit",
-      "title": "The Enhanced Games fit right in with the rest of 2026’s longevity vibes",
-      "summary": "This Sunday, a group of 42 athletes will gather in Las Vegas to compete in a somewhat unusual sporting competition. Participants in the inaugural Enhanced Games are being encouraged to take performance-enhancing drugs. The goal is to “push the bounda",
-      "date": "22 May 2026",
-      "dv": 20260522,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 60,
-      "tiktok": "10K-40K",
-      "factStatus": "verified",
-      "tags": [
-        "longevity"
-      ],
-      "url": "https://www.technologyreview.com/2026/05/22/1137753/the-enhanced-games-fit-right-in-with-the-rest-of-2026s-longevity-vibes/"
-    },
-    {
-      "id": "webrazzi_12_213",
+      "id": "webrazzi_12_978",
       "source": "webrazzi",
       "title": "İşletmeler için lojistik yönetim platformu sunan Nuvolog, yatırım aldı",
       "summary": "İşletmeler için lojistik yönetim platformu sunan Nuvolog'un APY Ventures’tan tohum öncesi yatırım aldığını sizlere 2024'ün Eylül ayında sizlere aktarmıştık. Şirket, yeni bir yatırım haberiyle gündeme ...",
@@ -1132,7 +1168,7 @@
       "url": "https://webrazzi.com/2026/05/22/isletmeler-icin-lojistik-yonetim-platformu-sunan-nuvolog-tohum-yatirim-aldi/"
     },
     {
-      "id": "webrazzi_13_1765",
+      "id": "webrazzi_13_5597",
       "source": "webrazzi",
       "title": "Yapay Zeka Gündemi #52",
       "summary": "Bu haftanın yapay zeka gündemi; kurumsal ortaklıklardan işten çıkarmalara, yeni modellerden milyar dolarlık altyapı hamlelerine kadar sektörün ne kadar hızlı dönüşmeye başladığını bir kez daha gösterd...",
@@ -1148,42 +1184,6 @@
         "bilim"
       ],
       "url": "https://webrazzi.com/2026/05/22/yapay-zeka-gundemi-52/"
-    },
-    {
-      "id": "webrazzi_14_3824",
-      "source": "webrazzi",
-      "title": "Yapay zeka ekosistemini bir araya getiren platform: Megatek",
-      "summary": "Megatek, küresel çapta yapay zeka ekosisteminin kaynaklarını tek bir çatı altında toplayan bir dizin platformu olarak faaliyet gösteriyor. Platform, bu alandaki içerik üreticilerini, şirketleri, araşt...",
-      "date": "22 May 2026",
-      "dv": 20260522,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 40,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://webrazzi.com/2026/05/22/yapay-zeka-ekosistemini-bir-araya-getiren-platform-megatek-ai/"
-    },
-    {
-      "id": "lifespan_4_7375",
-      "source": "lifespan",
-      "title": "How an Oxidative Stress Regulator Makes Cataracts Worse",
-      "summary": "Researchers have outlined a key receptor and protein involved in the formation of cataracts, paving the way for potential treatments targeting them. Oxidative stress and cataracts are closely related Cataracts, which cloud the lenses of [&#8230;]",
-      "date": "21 May 2026",
-      "dv": 20260521,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 48,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://lifespan.io/how-an-oxidative-stress-regulator-makes-cataracts-worse/?utm_source=rss&utm_medium=rss&utm_campaign=how-an-oxidative-stress-regulator-makes-cataracts-worse"
     }
   ],
   "sources": [
