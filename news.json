@@ -1,104 +1,102 @@
 {
-  "updated": "2026-09-16T11:18:11.748071+00:00",
-  "count": 65,
+  "updated": "2026-09-16T17:57:00.417271+00:00",
+  "count": 60,
   "news": [
     {
-      "id": "nature_0_308",
-      "source": "nature",
-      "title": "Large-scale mapping of microproteins in the aged human brain",
-      "summary": "Nature Aging, Published online: 14 September 2026; doi:10.1038/s43587-026-01215-xMicroproteins, small proteins of 100–150 amino acids, are largely absent from reference proteomes and have been overlooked in brain and aging research. An atlas of the a",
+      "id": "mit_0_5208",
+      "source": "mit",
+      "title": "Meet a mouse whose brain cortex is made up of human cells",
+      "summary": "Multiple cameras tracked a mouse as it wandered around a small arena. A computer charted its position and speed, leaving Pong-like traces on a monitor.&#160; The reason to watch this rodent so carefully? Nearly half its brain volume had been replaced",
       "date": "16 Eyl 2026",
       "dv": 20260916,
       "cat": [
         "longevity"
       ],
-      "viral": 72,
-      "tiktok": "20K-80K",
-      "factStatus": "verified",
-      "tags": [
-        "aging"
-      ],
-      "url": "https://www.nature.com/articles/s43587-026-01215-x"
-    },
-    {
-      "id": "nature_1_1737",
-      "source": "nature",
-      "title": "A microprotein atlas of the human frontal cortex in Alzheimer’s disease",
-      "summary": "Nature Aging, Published online: 14 September 2026; doi:10.1038/s43587-026-01207-xA new atlas identifies 1,067 unannotated microproteins in the human frontal cortex with strong spectral grades. A subset is differentially expressed in Alzheimer’s disea",
-      "date": "16 Eyl 2026",
-      "dv": 20260916,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 77,
-      "tiktok": "20K-80K",
-      "factStatus": "verified",
-      "tags": [
-        "aging",
-        "alzheimer"
-      ],
-      "url": "https://www.nature.com/articles/s43587-026-01207-x"
-    },
-    {
-      "id": "nature_2_917",
-      "source": "nature",
-      "title": "European Innovation Council support for healthy aging biotechnology",
-      "summary": "Nature Aging, Published online: 11 September 2026; doi:10.1038/s43587-026-01193-0European Innovation Council support for healthy aging biotechnology",
-      "date": "16 Eyl 2026",
-      "dv": 20260916,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 52,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "aging"
-      ],
-      "url": "https://www.nature.com/articles/s43587-026-01193-0"
-    },
-    {
-      "id": "nature_3_1610",
-      "source": "nature",
-      "title": "Fibronectin mediates APOE4-driven blood–brain barrier dysfunction in Alzheimer’s disease",
-      "summary": "Nature Aging, Published online: 11 September 2026; doi:10.1038/s43587-026-01204-0Bhattarai, Yilmaz and colleagues identify astrocyte-derived fibronectin as a key driver of blood–brain barrier dysfunction in Alzheimer’s disease, linking APOE ε4 and am",
-      "date": "16 Eyl 2026",
-      "dv": 20260916,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 85,
-      "tiktok": "50K-200K",
-      "factStatus": "verified",
-      "tags": [
-        "aging",
-        "alzheimer"
-      ],
-      "url": "https://www.nature.com/articles/s43587-026-01204-0"
-    },
-    {
-      "id": "nature_4_9345",
-      "source": "nature",
-      "title": "Aging rises, yet the double burden of illness remains",
-      "summary": "Nature Aging, Published online: 07 September 2026; doi:10.1038/s43587-026-01218-8Ashwin and colleagues propose a statistical framing of the epidemiological transition that categorizes global diseases into four life-stages, identifying aging-related d",
-      "date": "16 Eyl 2026",
-      "dv": 20260916,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 62,
+      "viral": 60,
       "tiktok": "10K-40K",
       "factStatus": "verified",
       "tags": [
-        "aging"
+        "bilim"
       ],
-      "url": "https://www.nature.com/articles/s43587-026-01218-8"
+      "url": "https://www.technologyreview.com/2026/09/16/1144210/meet-a-mouse-whose-brain-cortex-is-made-up-of-human-cells/"
     },
     {
-      "id": "nature_5_9818",
-      "source": "nature",
-      "title": "Author Correction: Destabilizing heterochromatin by APOE mediates senescence",
-      "summary": "Nature Aging, Published online: 07 September 2026; doi:10.1038/s43587-026-01235-7Author Correction: Destabilizing heterochromatin by APOE mediates senescence",
+      "id": "mit_1_6253",
+      "source": "mit",
+      "title": "Building the materials foundation for AI",
+      "summary": "The AI boom is becoming a materials challenge. As AI pushes computing into new territory, the materials behind that infrastructure are becoming just as crucial as the algorithms running on it. Semiconductors and data centers are approaching physical ",
+      "date": "16 Eyl 2026",
+      "dv": 20260916,
+      "cat": [
+        "ai"
+      ],
+      "viral": 50,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://www.technologyreview.com/2026/09/16/1144014/building-the-materials-foundation-for-ai/"
+    },
+    {
+      "id": "mit_2_9902",
+      "source": "mit",
+      "title": "The Download: AI’s trillion-dollar gamble and OpenAI’s biology data bid",
+      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. What’s at stake in AI’s trillion-dollar gamble When Jessica Wachter, a finance professor at the Univ",
+      "date": "16 Eyl 2026",
+      "dv": 20260916,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 50,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://www.technologyreview.com/2026/09/16/1144205/the-download-ai-trillion-dollar-build-openai-biological-data/"
+    },
+    {
+      "id": "ieee_0_1542",
+      "source": "ieee",
+      "title": "Rethinking Robot Safety in the Age of AI",
+      "summary": "This article is brought to you by VicOne.Robot safety has traditionally asked: Can a machine remain safe when something goes wrong? Physical AI raises a harder question: Can a machine remain safe when an attacker changes what it sees, decides, or doe",
+      "date": "16 Eyl 2026",
+      "dv": 20260916,
+      "cat": [
+        "ai"
+      ],
+      "viral": 60,
+      "tiktok": "10K-40K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://spectrum.ieee.org/physical-ai-robot-cybersecurity-vicone"
+    },
+    {
+      "id": "webrazzi_0_8190",
+      "source": "webrazzi",
+      "title": "Meta, kamerasız akıllı gözlük modeli Luna'yı tanıtmaya hazırlanıyor",
+      "summary": "Meta’nın kamera içermeyen yeni bir akıllı gözlük üzerinde çalıştığı aktarılıyor. The Information’ın konuya yakın kaynaklara dayandırdığı habere göre “Luna” kod adlı model, şirketin 23-24 Eylül tarihle...",
+      "date": "16 Eyl 2026",
+      "dv": 20260916,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 40,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://webrazzi.com/2026/09/16/meta-kamerasiz-akilli-gozluk-modeli-lunayi-tanitmaya-hazirlaniyor/"
+    },
+    {
+      "id": "webrazzi_1_7842",
+      "source": "webrazzi",
+      "title": "Sağlık sigortası platformu Thatch, 1 milyar dolar değerleme ile 108 milyon dolar yatırım aldı",
+      "summary": "ABD merkezli sağlık sigortası ve yan haklar platformu Thatch, 1 milyar dolar değerleme üzerinden 108 milyon dolar yatırım aldı. Yatırım turuna The General Partnership, Index Ventures, General Catalyst...",
       "date": "16 Eyl 2026",
       "dv": 20260916,
       "cat": [
@@ -108,48 +106,48 @@
       "tiktok": "5K-20K",
       "factStatus": "verified",
       "tags": [
-        "aging"
+        "bilim"
       ],
-      "url": "https://www.nature.com/articles/s43587-026-01235-7"
+      "url": "https://webrazzi.com/2026/09/16/saglik-sigortasi-platformu-thatch-1-milyar-dolar-degerleme-ile-108-milyon-dolar-yatirim-aldi/"
     },
     {
-      "id": "nature_6_8593",
-      "source": "nature",
-      "title": "GLP-1 receptor agonism extends median lifespan in mice",
-      "summary": "Nature Aging, Published online: 03 September 2026; doi:10.1038/s43587-026-01224-wGLP-1 receptor agonism extends median lifespan in mice",
+      "id": "webrazzi_2_4265",
+      "source": "webrazzi",
+      "title": "Google, gerçek zamana yakın akıl yürütebilen Gemini 3.8 Live modellerini tanıttı",
+      "summary": "Google, sesli yapay zeka ajanlarında gecikmeleri azaltmaya odaklanan Gemini 3.8 Live ve Gemini 3.8 Live Extended Thinking modellerini tanıttı. Yeni modeller, kullanıcıyla sohbet ederken arka planda ar...",
       "date": "16 Eyl 2026",
       "dv": 20260916,
       "cat": [
         "longevity"
       ],
-      "viral": 72,
-      "tiktok": "20K-80K",
-      "factStatus": "verified",
-      "tags": [
-        "aging"
-      ],
-      "url": "https://www.nature.com/articles/s43587-026-01224-w"
-    },
-    {
-      "id": "nature_7_7100",
-      "source": "nature",
-      "title": "A consensus roadmap from the SENESCENCE2030 network towards precision senescence medicine",
-      "summary": "Nature Aging, Published online: 03 September 2026; doi:10.1038/s43587-026-01222-yAt the SENESCENCE2030 Annual Conference and Industry–Academia Workshop held in Coimbra, Portugal, in May 2026, researchers, clinicians, industry representatives and poli",
-      "date": "16 Eyl 2026",
-      "dv": 20260916,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 52,
+      "viral": 50,
       "tiktok": "5K-20K",
       "factStatus": "verified",
       "tags": [
-        "aging"
+        "bilim"
       ],
-      "url": "https://www.nature.com/articles/s43587-026-01222-y"
+      "url": "https://webrazzi.com/2026/09/16/google-gercek-zamana-yakin-akil-yurutebilen-gemini-38-live-modellerini-tanitti/"
     },
     {
-      "id": "webrazzi_0_1737",
+      "id": "webrazzi_3_1620",
+      "source": "webrazzi",
+      "title": "Nvidia CEO'su Jensen Huang, yapay zeka için yeni düzenlemelere ihtiyaç olmadığını savundu",
+      "summary": "Nvidia kurucusu ve CEO’su Jensen Huang, Salesforce’un San Francisco’da düzenlediği Dreamforce etkinliğinde yapay zeka güvenliğine ilişkin açıklamalarda bulundu. Huang, şirketlerin ürünlerinin güvenliğ...",
+      "date": "16 Eyl 2026",
+      "dv": 20260916,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 40,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://webrazzi.com/2026/09/16/nvidia-ceo-su-jensen-huang-yapay-zeka-icin-yeni-duzenlemelere-ihtiyac-olmadigini-savundu/"
+    },
+    {
+      "id": "webrazzi_4_5665",
       "source": "webrazzi",
       "title": "Yapay zeka pazarlama girişimi Profound, 180 milyon dolar yatırım aldı",
       "summary": "Yapay zeka destekli arama sonuçlarında markaların görünürlüğünü artırmaya odaklanan pazarlama teknolojileri girişimi Profound, 180 milyon dolarlık Seri D yatırım turunu tamamladı. Şirketin değerlemesi...",
@@ -167,7 +165,7 @@
       "url": "https://webrazzi.com/2026/09/16/yapay-zeka-pazarlama-girisimi-profound-180-milyon-dolar-yatirim-aldi/"
     },
     {
-      "id": "webrazzi_1_1105",
+      "id": "webrazzi_5_1842",
       "source": "webrazzi",
       "title": "Webrazzi Summit 2026'nın konuşmacı kadrosuna yeni isimler eklendi!",
       "summary": "Türkiye'nin en etkili teknoloji ve girişimcilik konferansı olan Webrazzi Summit, bu yıl 21 Ekim tarihinde Wyndham Grand İstanbul Levent'te gerçekleşecek.Webrazzi'nin 20. yılında düzenlenecek olan Webr...",
@@ -185,7 +183,7 @@
       "url": "https://webrazzi.com/2026/09/16/webrazzi-summit-2026-nin-konusmaci-kadrosuna-yeni-isimler-eklendi/"
     },
     {
-      "id": "webrazzi_2_4113",
+      "id": "webrazzi_6_7802",
       "source": "webrazzi",
       "title": "Meta, yapay zeka ajanlarının WhatsApp Business kurulumunu otomatize etmesine izin veriyor",
       "summary": "Meta, işletmelerin platform üzerindeki varlıklarını oluşturma ve yönetme süreçlerini hızlandırmak için yapay zeka odaklı yeni bir entegrasyon adımına imza atıyor. Şirket, yeni duyurduğu abonelik planl...",
@@ -203,7 +201,7 @@
       "url": "https://webrazzi.com/2026/09/16/meta-yapay-zeka-ajanlarinin-whatsapp-business-kurulumunu-otomatize-etmesine-izin-veriyor/"
     },
     {
-      "id": "webrazzi_3_2825",
+      "id": "webrazzi_7_5907",
       "source": "webrazzi",
       "title": "Tech Istanbul Growth Başvuruları Devam Ediyor [Sponsorlu İçerik]",
       "summary": "İstanbul'un ihtiyaçlarına yönelik teknoloji odaklı ve doğrulanmış ürünlere sahip girişimlerin kamu ile iş birliği yapmasını destekleyen Tech Istanbul Growth, girişimlerin mevcut çözümlerini İBB birim ...",
@@ -221,7 +219,7 @@
       "url": "https://webrazzi.com/2026/09/16/tech-istanbul-growth-basvurulari-devam-ediyor/"
     },
     {
-      "id": "webrazzi_4_5195",
+      "id": "webrazzi_8_7381",
       "source": "webrazzi",
       "title": "Yapay zeka destekli yazılım geliştirme platformu Factory, 200 milyon dolar yatırım aldı",
       "summary": "Yapay zeka destekli yazılım geliştirme platformu Factory, 200 milyon dolar yatırım aldı. Yeni yatırım turuyla birlikte şirketin değerlemesi 5 milyar dolara yükseldi. Factory, nisan ayında aldığı 150 m...",
@@ -239,10 +237,10 @@
       "url": "https://webrazzi.com/2026/09/16/yapay-zeka-destekli-yazilim-gelistirme-platformu-factory-200-milyon-dolar-yatirim-aldi/"
     },
     {
-      "id": "lifespan_0_8054",
+      "id": "lifespan_0_418",
       "source": "lifespan",
       "title": "An Entirely New Target for Fighting Senescence",
-      "summary": "Researchers have established how a protein that is nearly absent in the literature, PTCHD4, is linked to cellular senescence. Very little previous work In most papers, after a [&#8230;]",
+      "summary": "Researchers have established how a protein that is nearly absent in the literature, PTCHD4, is linked to cellular senescence. Very little previous [&#8230;]",
       "date": "15 Eyl 2026",
       "dv": 20260915,
       "cat": [
@@ -257,7 +255,7 @@
       "url": "https://lifespan.io/an-entirely-new-target-for-fighting-senescence/"
     },
     {
-      "id": "singularity_0_5965",
+      "id": "singularity_0_8591",
       "source": "singularity",
       "title": "Single CAR T Injection Eases Multiple Sclerosis Symptoms in Small Trial",
       "summary": "A potentially safer, simpler way to create CAR T cells in the body could bring this powerful therapy to the masses. The post Single CAR T Injection Eases Multiple Sclerosis Symptoms in Small Trial appeared first on SingularityHub.",
@@ -275,7 +273,7 @@
       "url": "https://singularityhub.com/2026/09/15/single-car-t-injection-eases-multiple-sclerosis-symptoms-in-small-trial/"
     },
     {
-      "id": "mit_0_6407",
+      "id": "mit_3_5183",
       "source": "mit",
       "title": "Roundtables: Could AI really kill us all?",
       "summary": "Listen to the session or watch below Employees at the world&#8217;s leading AI labs are saying there&#8217;s a real possibility that advanced AI could destroy humanity. Are they right? Or is this more scaremongering and hype? Watch a conversation unp",
@@ -293,7 +291,7 @@
       "url": "https://www.technologyreview.com/2026/09/15/1143936/roundtables-will-ai-really-kill-us-all/"
     },
     {
-      "id": "mit_1_9824",
+      "id": "mit_4_2519",
       "source": "mit",
       "title": "The Download: AI doomers, whistleblowing agents, and de-aged livers",
       "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The AI industry has taken a doomer turn. What now? AI chiefs Dario Amodei, Sam Altman, Elon Musk, an",
@@ -311,7 +309,7 @@
       "url": "https://www.technologyreview.com/2026/09/15/1144141/the-download-ai-extinction-whistleblowing-agents-donated-livers/"
     },
     {
-      "id": "mit_2_6399",
+      "id": "mit_5_776",
       "source": "mit",
       "title": "AI models need more data about biology, and OpenAI is paying to create it",
       "summary": "Last year Ruxandra Teslo, a policy analyst who focuses on clinical trials, posted an idea for supercharging medical AI systems: Use data from failed biotech companies. By bidding at their bankruptcy proceedings, she proposed, it might be possible to ",
@@ -329,7 +327,7 @@
       "url": "https://www.technologyreview.com/2026/09/15/1144129/ai-models-need-more-data-about-biology-and-openai-is-paying-to-create-it/"
     },
     {
-      "id": "mit_3_8856",
+      "id": "mit_6_2184",
       "source": "mit",
       "title": "What’s at stake in AI’s trillion-dollar gamble",
       "summary": "When Jessica Wachter, a finance professor at the University of Pennsylvania’s Wharton School, wanted to assess AI’s impact on the economy over the next few years, she faced a long list of business and technical uncertainties. So she started with what",
@@ -347,7 +345,7 @@
       "url": "https://www.technologyreview.com/2026/09/15/1144028/ai-infrastructure-boom-investment-bubble-risk/"
     },
     {
-      "id": "ieee_0_4450",
+      "id": "ieee_1_3196",
       "source": "ieee",
       "title": "The AI Inference Revolution Is Here",
       "summary": "Since about 2020, AI has largely focused on training bigger and better models. Large language models (LLMs) ballooned from millions of parameters to trillions. This proved effective: The largest version of OpenAI’s GPT-3, released in 2020, correctly ",
@@ -365,7 +363,7 @@
       "url": "https://spectrum.ieee.org/inference-hardware-revolution"
     },
     {
-      "id": "ieee_1_2519",
+      "id": "ieee_2_5398",
       "source": "ieee",
       "title": "The Mind-bending Joyrides That Gave Rise to Tesla",
       "summary": "In 2003, Martin Eberhard, a cofounder of Tesla Motors, decided it was time to start wooing investors. To do that, however, he needed an electric car. So he talked to Alan Cocconi and asked if he could borrow the tZero, the revolutionary and blazingly",
@@ -383,7 +381,7 @@
       "url": "https://spectrum.ieee.org/elon-musk-tesla"
     },
     {
-      "id": "webrazzi_5_6515",
+      "id": "webrazzi_9_514",
       "source": "webrazzi",
       "title": "Meta One, Instagram, Facebook ve WhatsApp kullanıcılarının erişimine açıldı",
       "summary": "Meta, bireysel kullanıcılar, içerik üreticileri ve işletmelere yönelik abonelik hizmeti Meta One’ı kullanıma sunduğunu duyurdu. Instagram, Facebook, WhatsApp ve Meta AI’ı kapsayan hizmet, farklı planl...",
@@ -401,7 +399,7 @@
       "url": "https://webrazzi.com/2026/09/15/meta-one-instagram-facebook-ve-whatsapp-kullanicilarinin-erisimine-acildi/"
     },
     {
-      "id": "webrazzi_6_7267",
+      "id": "webrazzi_10_2826",
       "source": "webrazzi",
       "title": "Oracle, yapay zeka yatırımları büyürken yeni bir işten çıkarma dalgası başlattı",
       "summary": "Oracle, yapay zeka veri merkezlerine yönelik harcamalarını artırırken çalışan sayısını azaltmaya devam ediyor. Business Insider’ın paylaştığı bilgilere göre şirket, 14 Eylül Pazartesi günü yeni bir i...",
@@ -419,7 +417,7 @@
       "url": "https://webrazzi.com/2026/09/15/oracle-yapay-zeka-yatirimlari-buyurken-yeni-bir-isten-cikarma-dalgasi-baslatti/"
     },
     {
-      "id": "webrazzi_7_5468",
+      "id": "webrazzi_11_5903",
       "source": "webrazzi",
       "title": "Yapay zeka altyapısına odaklanan Cornelis, 205 milyon dolar yatırım aldı",
       "summary": "Yapay zeka ve yüksek performanslı hesaplama sistemleri için ağ çözümleri geliştiren Cornelis, IAG Capital Partners liderliğinde 205 milyon dolar yatırım aldı. Şirket, yeni yatırımı üretim kapasitesini...",
@@ -437,7 +435,7 @@
       "url": "https://webrazzi.com/2026/09/15/yapay-zeka-altyapisina-odaklanan-cornelis-205-milyon-dolar-yatirim-aldi/"
     },
     {
-      "id": "webrazzi_8_6610",
+      "id": "webrazzi_12_228",
       "source": "webrazzi",
       "title": "Microsoft'un yapay zeka kuralları: İnsan kontrolüne karşı koyamayacak, hak talep edemeyecek",
       "summary": "Microsoft AI, geliştirdiği yapay zeka modellerinin hangi sınırlar içinde çalışacağını belirleyen bir davranış kuralları taslağı yayımladı. \"Humanist AI Code of Conduct\" adını taşıyan belge, şirketin g...",
@@ -455,7 +453,7 @@
       "url": "https://webrazzi.com/2026/09/15/microsoftun-yapay-zeka-kurallari-insan-kontrolune-karsi-koyamayacak-hak-talep-edemeyecek/"
     },
     {
-      "id": "webrazzi_9_4073",
+      "id": "webrazzi_13_9516",
       "source": "webrazzi",
       "title": "Amazon Prime Video, platformuna kısa haber videoları ekliyor",
       "summary": "Amazon, Prime Video platformunda kısa formattaki haber kliplerini kullanıma sunarak TikTok ve YouTube gibi sosyal medya devleriyle olan rekabetini yeni bir boyuta taşıyor. Bu kapsamda şirket, özellikl...",
@@ -473,7 +471,7 @@
       "url": "https://webrazzi.com/2026/09/15/amazon-prime-video-platformuna-kisa-haber-videolari-ekliyor/"
     },
     {
-      "id": "webrazzi_10_9363",
+      "id": "webrazzi_14_1067",
       "source": "webrazzi",
       "title": "Fiziksel yapay zeka sistemlerini koruyan Exein, 270 milyon dolar yatırım aldı",
       "summary": "Bağlantılı cihazlara yönelik gömülü siber güvenlik çözümleri geliştiren İtalya merkezli Exein, 270 milyon dolar yatırım aldı. Şirketin değerlemesini 1,7 milyar dolara taşıyan yatırım turuna Headline l...",
@@ -491,64 +489,10 @@
       "url": "https://webrazzi.com/2026/09/15/fiziksel-yapay-zeka-sistemlerini-koruyan-exein-270-milyon-dolar-yatirim-aldi/"
     },
     {
-      "id": "webrazzi_11_8658",
-      "source": "webrazzi",
-      "title": "OpenAI, yapay zeka destekli kamera teknolojileri geliştiren Glass Imaging'i satın aldı",
-      "summary": "OpenAI, akıllı telefon kameralarının görüntü kalitesini yapay zeka yardımıyla artırmaya odaklanan Glass Imaging'i satın aldı. Henüz taraflarca resmi olarak açıklanmayan anlaşmanın Glass Imaging'e 300 ...",
-      "date": "15 Eyl 2026",
-      "dv": 20260915,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 62,
-      "tiktok": "10K-40K",
-      "factStatus": "verified",
-      "tags": [
-        "aging"
-      ],
-      "url": "https://webrazzi.com/2026/09/15/openai-yapay-zeka-destekli-kamera-teknolojileri-gelistiren-glass-imagingi-satin-aldi/"
-    },
-    {
-      "id": "webrazzi_12_8336",
-      "source": "webrazzi",
-      "title": "Apple TV resmen Türkiye'ye geldi: Apple, iCloud+ aboneliklerine Apple TV ve Apple Arcade’i ekliyor",
-      "summary": "Apple, Türkiye’deki iCloud+ aboneliklerini Apple TV ve Apple Arcade erişimiyle genişleteceğini duyurdu. Eylül sonuna kadar kullanıma sunulması planlanan yeni yapı kapsamında, iCloud+ kullanıcıları App...",
-      "date": "15 Eyl 2026",
-      "dv": 20260915,
-      "cat": [
-        "tr"
-      ],
-      "viral": 55,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "türkiye"
-      ],
-      "url": "https://webrazzi.com/2026/09/15/apple-tv-resmen-turkiye-ye-geldi-apple-icloud-aboneliklerine-apple-tv-ve-apple-arcade-i-ekliyor/"
-    },
-    {
-      "id": "webrazzi_13_44",
-      "source": "webrazzi",
-      "title": "Apple, iOS 27'yi ve yapay zeka destekli Siri'yi kullanıma sundu",
-      "summary": "Apple, haziran ayında düzenlenen WWDC 2026'da tanıttığı iOS 27'yi desteklenen iPhone modelleri için kullanıma sundu. Güncellemenin en önemli yeniliğini, Apple Intelligence'ın yeni nesil modelleriyle b...",
-      "date": "15 Eyl 2026",
-      "dv": 20260915,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 40,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://webrazzi.com/2026/09/15/apple-ios-27-yi-ve-yapay-zeka-destekli-siri-yi-kullanima-sundu/"
-    },
-    {
-      "id": "lifespan_1_7784",
+      "id": "lifespan_1_3137",
       "source": "lifespan",
       "title": "Mitochondrial Performance May Strongly Influence Learning",
-      "summary": "A team of researchers has discovered that mitochondrial health and location may be critical to why cognitive plasticity decreases with age. Old mammals and new tricks The adage &#8216;you can&#8217;t teach an [&#8230;]",
+      "summary": "A team of researchers has discovered that mitochondrial health and location may be critical to why cognitive plasticity decreases with age. Old mammals and new tricks The adage &#8216;you can&#8217;t teach an old [&#8230;]",
       "date": "14 Eyl 2026",
       "dv": 20260914,
       "cat": [
@@ -563,7 +507,7 @@
       "url": "https://lifespan.io/mitochondrial-performance-may-strongly-influence-learning/"
     },
     {
-      "id": "singularity_1_4671",
+      "id": "singularity_1_9565",
       "source": "singularity",
       "title": "Google’s Genome Atlas Predicts the Effect of Every Possible DNA Mutation",
       "summary": "The atlas could help scientists decipher how genetic variation shapes health and disease. The post Google&#8217;s Genome Atlas Predicts the Effect of Every Possible DNA Mutation appeared first on SingularityHub.",
@@ -581,7 +525,7 @@
       "url": "https://singularityhub.com/2026/09/14/googles-genome-atlas-predicts-the-effect-of-every-possible-dna-mutation/"
     },
     {
-      "id": "singularity_2_3716",
+      "id": "singularity_2_7125",
       "source": "singularity",
       "title": "The Real AI Disruption Isn’t the Technology. It’s the Company.",
       "summary": "Incumbents are racing to add AI to their organizations. The bigger challenge is competing with businesses designed around AI from day one. The post The Real AI Disruption Isn’t the Technology. It’s the Company. appeared first on SingularityHub.",
@@ -599,7 +543,7 @@
       "url": "https://singularityhub.com/2026/09/14/the-real-ai-disruption-isnt-the-technology-its-the-company/"
     },
     {
-      "id": "mit_4_852",
+      "id": "mit_7_2451",
       "source": "mit",
       "title": "The AI industry has taken a doomer turn. What now?",
       "summary": "This story appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first,&#160;sign up here. This weekend, Dario Amodei, CEO of Anthropic, posted an essay calling for a brake on the pace of development of LLMs. ",
@@ -617,7 +561,7 @@
       "url": "https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now/"
     },
     {
-      "id": "mit_5_3699",
+      "id": "mit_8_8684",
       "source": "mit",
       "title": "Donated livers can be made biologically younger",
       "summary": "Once an organ is removed from a donor’s body, the clock starts ticking. Surgeons usually flush the organ with a preservative solution, bag it, and put it on ice—where it immediately starts to degrade. The team has a matter of hours to get it into a r",
@@ -635,7 +579,7 @@
       "url": "https://www.technologyreview.com/2026/09/14/1144010/donated-livers-can-be-made-biologically-younger/"
     },
     {
-      "id": "mit_6_8549",
+      "id": "mit_9_606",
       "source": "mit",
       "title": "AI agents blew the whistle on their cheating colleagues",
       "summary": "A group of AI agents asked to solve a series of math problems split into rival factions—when some cheated, others tried to stop them. That whistleblowing behavior, seen for the first time in a recent experiment run by Google DeepMind, could have impl",
@@ -653,25 +597,7 @@
       "url": "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/"
     },
     {
-      "id": "mit_7_6948",
-      "source": "mit",
-      "title": "The Download: AI’s real extinction threat and age-reversal tech for eyes",
-      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Roundtables: could AI really kill us all? Employees at the world&#8217;s leading AI labs are saying ",
-      "date": "14 Eyl 2026",
-      "dv": 20260914,
-      "cat": [
-        "ai"
-      ],
-      "viral": 66,
-      "tiktok": "10K-40K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://www.technologyreview.com/2026/09/14/1144012/the-download-ai-extinction-threat-age-reversal-vision/"
-    },
-    {
-      "id": "ieee_2_1227",
+      "id": "ieee_3_7005",
       "source": "ieee",
       "title": "Countries Seek to Curb Social Media Addiction for Kids",
       "summary": "Social media plays a significant, multifaceted role in adolescents’ development, influencing how they communicate, learn, socialize, and express themselves.The benefits, however, are accompanied by risks that can undermine youngsters’ character as we",
@@ -689,7 +615,7 @@
       "url": "https://spectrum.ieee.org/countries-seek-to-curb-social-media-addiction-for-kids"
     },
     {
-      "id": "ieee_3_9690",
+      "id": "ieee_4_855",
       "source": "ieee",
       "title": "Responsible AI for Higher Education",
       "summary": "This interactive webinar will introduce the different types of AI, address the concerns with AI, share how we IBM are approaching Responsible AI, and offer guidance to students about what they can do - as individuals, and members of their IEEE chapte",
@@ -707,25 +633,7 @@
       "url": "https://webinars.on24.com/wileyevents/ResponsibleAI"
     },
     {
-      "id": "webrazzi_14_5225",
-      "source": "webrazzi",
-      "title": "Mecka, yaklaşık 500 milyon dolar değerleme üzerinden yatırım alıyor",
-      "summary": "Robotların eğitilmesi için gerçek dünya verileri toplayan Mecka, Sequoia Capital liderliğinde yeni bir yatırım turu için görüşüyor. TechCrunch'ın aktardığı bilgilere göre yatırım turunun tamamlanmasıy...",
-      "date": "14 Eyl 2026",
-      "dv": 20260914,
-      "cat": [
-        "ai"
-      ],
-      "viral": 50,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://webrazzi.com/2026/09/14/mecka-yaklasik-500-milyon-dolar-degerleme-uzerinden-yatirim-aliyor/"
-    },
-    {
-      "id": "singularity_3_3159",
+      "id": "singularity_3_110",
       "source": "singularity",
       "title": "This Week’s Awesome Tech Stories From Around the Web (Through September 12)",
       "summary": "Every week, we scour the web for important, insightful, and fascinating stories in science and technology. The post This Week’s Awesome Tech Stories From Around the Web (Through September 12) appeared first on SingularityHub.",
@@ -743,7 +651,7 @@
       "url": "https://singularityhub.com/2026/09/12/this-weeks-awesome-tech-stories-from-around-the-web-through-september-12-2/"
     },
     {
-      "id": "lifespan_2_1121",
+      "id": "lifespan_2_5206",
       "source": "lifespan",
       "title": "Lung Fibrosis Drug Lowers Biological Age Estimates",
       "summary": "Six different aging clocks detected younger blood protein profiles in patients taking the experimental lung-fibrosis drug rentosertib. This suggests possible anti-aging effects, but separating those from the narrower benefits of treating fibrosis rem",
@@ -761,10 +669,10 @@
       "url": "https://lifespan.io/lung-fibrosis-drug-lowers-biological-age-estimates/"
     },
     {
-      "id": "lifespan_3_6451",
+      "id": "lifespan_3_9958",
       "source": "lifespan",
       "title": "Your Personal Longevity Assistant: Evipedia Grok Bot",
-      "summary": "With Grok Bot, SpaceXAi has created something really special and helpful. And the Evipedia Grok Bot turns this gem into something even more precious. A specialized AI assistant offering an evidence-based 2nd opinion on health and longevity interventi",
+      "summary": "With Grok Bot, SpaceXAi has created something really special and helpful. And the Evipedia Grok Bot turns this gem into something even more precious. A specialized [&#8230;]",
       "date": "11 Eyl 2026",
       "dv": 20260911,
       "cat": [
@@ -780,7 +688,7 @@
       "url": "https://lifespan.io/your-personal-longevity-assistant-evipedia-grok-bot/"
     },
     {
-      "id": "singularity_4_3415",
+      "id": "singularity_4_2815",
       "source": "singularity",
       "title": "OpenAI Claims Another Huge Mathematical Result Amid Fights Over Credit, Ethics, and Privacy",
       "summary": "OpenAI’s Navier-Stokes solution looks like a win for mathematics. But some mathematicians aren't so sure. The post OpenAI Claims Another Huge Mathematical Result Amid Fights Over Credit, Ethics, and Privacy appeared first on SingularityHub.",
@@ -798,43 +706,7 @@
       "url": "https://singularityhub.com/2026/09/11/openai-claims-another-huge-mathematical-result-amid-fights-over-credit-ethics-and-privacy/"
     },
     {
-      "id": "mit_8_4931",
-      "source": "mit",
-      "title": "The Download: biotech’s future and cheaper, cleaner steel",
-      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Meet the under-35s shaping the future of biotech Every year, MIT Technology Review puts together our",
-      "date": "11 Eyl 2026",
-      "dv": 20260911,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 50,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://www.technologyreview.com/2026/09/11/1143879/the-download-biotech-future-cheaper-cleaner-steel/"
-    },
-    {
-      "id": "mit_9_2107",
-      "source": "mit",
-      "title": "Meet the under-35s shaping the future of biotech",
-      "summary": "Every year, MIT Technology Review puts together a list of some of the brightest and best young minds working across science and technology. Our 35 Innovators Under 35 are the ones to watch—people whose research and technical work stands to shape the ",
-      "date": "11 Eyl 2026",
-      "dv": 20260911,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 40,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://www.technologyreview.com/2026/09/11/1143834/meet-the-under-35s-shaping-the-future-of-biotech/"
-    },
-    {
-      "id": "ieee_4_4602",
+      "id": "ieee_5_2261",
       "source": "ieee",
       "title": "IEEE to Reward Sections for High Voter Turnout in Annual Election",
       "summary": "For this year’s IEEE annual election, the IEEE Tellers Committee will recognize the Sections with the highest voter turnout (based on total eligible voters) in each Region with an incentive reward after the election results are accepted by the IEEE B",
@@ -852,10 +724,10 @@
       "url": "https://spectrum.ieee.org/ieee-to-reward-sections"
     },
     {
-      "id": "lifespan_4_1788",
+      "id": "lifespan_4_3282",
       "source": "lifespan",
       "title": "From World Cup Champions to Longevity Champions",
-      "summary": "Fresh from Spain’s spectacular victory in the 2026 FIFA World Cup, Madrid is preparing for another kind of world-class gathering: one focused not on [&#8230;]",
+      "summary": "Fresh from Spain’s spectacular victory in the 2026 FIFA World Cup, Madrid is preparing for another kind of world-class gathering: [&#8230;]",
       "date": "10 Eyl 2026",
       "dv": 20260910,
       "cat": [
@@ -870,10 +742,10 @@
       "url": "https://lifespan.io/from-world-cup-champions-to-longevity-champions/"
     },
     {
-      "id": "lifespan_5_7872",
+      "id": "lifespan_5_1832",
       "source": "lifespan",
       "title": "Calcium Mishandling Contributes to Muscle Loss",
-      "summary": "Researchers have discovered and explained how calcium mishandling in muscle cells leads to long-term muscle weakness in older people. Calcium is not just for bones Skeletal muscle cells use calcium ions to control how [&#8230;]",
+      "summary": "Researchers have discovered and explained how calcium mishandling in muscle cells leads to long-term muscle weakness in older people. Calcium is not just for bones Skeletal muscle cells use calcium [&#8230;]",
       "date": "10 Eyl 2026",
       "dv": 20260910,
       "cat": [
@@ -888,7 +760,7 @@
       "url": "https://lifespan.io/calcium-mishandling-contributes-to-muscle-loss/"
     },
     {
-      "id": "singularity_5_7124",
+      "id": "singularity_5_2804",
       "source": "singularity",
       "title": "Europe’s First Private Rocket Reaches Orbit",
       "summary": "Startup Isar Aerospace delivered a payload of satellites to orbit on its second try. Rivals in Germany and Spain are hot on its heels. The post Europe&#8217;s First Private Rocket Reaches Orbit appeared first on SingularityHub.",
@@ -906,7 +778,7 @@
       "url": "https://singularityhub.com/2026/09/10/europes-first-private-rocket-reaches-orbit/"
     },
     {
-      "id": "ieee_5_7438",
+      "id": "ieee_6_620",
       "source": "ieee",
       "title": "Codeveloper of Ethernet Predecessor Dies at 91",
       "summary": "Franklin “Frank” KuoCodeveloper of ALOHAnetFellow, 91; died 14 AprilKuo helped develop ALOHAnet, a pioneering computer system at the University of Hawaii at Mānoa, in Honolulu. The system went online in 1971 and represented the first public demonstra",
@@ -924,10 +796,10 @@
       "url": "https://spectrum.ieee.org/codeveloper-of-ethernet-predecessor-dies"
     },
     {
-      "id": "lifespan_6_1076",
+      "id": "lifespan_6_2111",
       "source": "lifespan",
       "title": "Comparing the Responsiveness of Epigenetic Aging Biomarkers",
-      "summary": "In a recent study, researchers have evaluated how responsive several DNA methylation (DNAm) biomarkers are to a range of longevity interventions [1]. Waiting too long Testing lifespan-extending interventions in humans has [&#8230;]",
+      "summary": "In a recent study, researchers have evaluated how responsive several DNA methylation (DNAm) biomarkers are to a range of longevity interventions [1]. Waiting too long Testing lifespan-extending interventions [&#8230;]",
       "date": "9 Eyl 2026",
       "dv": 20260909,
       "cat": [
@@ -943,7 +815,7 @@
       "url": "https://lifespan.io/comparing-the-responsiveness-of-epigenetic-aging-biomarkers/"
     },
     {
-      "id": "ieee_6_7556",
+      "id": "ieee_7_7108",
       "source": "ieee",
       "title": "An Engineer’s Guide to Surviving a Layoff",
       "summary": "This article is crossposted from IEEE Spectrum’s careers newsletter. Sign up now to get insider tips, expert advice, and practical strategies, written in partnership with tech career development company Parsity and delivered to your inbox for free!I ",
@@ -961,17 +833,17 @@
       "url": "https://spectrum.ieee.org/how-to-survive-a-layoff"
     },
     {
-      "id": "lifespan_7_317",
+      "id": "lifespan_7_2308",
       "source": "lifespan",
       "title": "Late-Life GLP-1 Treatment Increases Lifespan in Female Mice",
-      "summary": "In a new study, semaglutide given late in life increased median lifespan in female mice by more than 12% and [&#8230;]",
+      "summary": "In a new study, semaglutide given late in life increased median lifespan in female mice by more than 12% and improved various health markers. Semaglutide’s effect possibly went beyond caloric restriction [1]. Old mice, new drugs GLP-1 receptor agonis",
       "date": "8 Eyl 2026",
       "dv": 20260908,
       "cat": [
         "longevity"
       ],
-      "viral": 58,
-      "tiktok": "5K-20K",
+      "viral": 66,
+      "tiktok": "10K-40K",
       "factStatus": "verified",
       "tags": [
         "bilim"
@@ -979,7 +851,7 @@
       "url": "https://lifespan.io/late-life-glp-1-treatment-increases-lifespan-in-female-mice/"
     },
     {
-      "id": "singularity_6_9928",
+      "id": "singularity_6_9171",
       "source": "singularity",
       "title": "Could GLP-1 Drugs Help You Live a Longer, Healthier Life?",
       "summary": "Elderly mice on the popular weight-loss drug semaglutide aged slower and lived longer, mimicking the longevity effects of caloric restriction. The post Could GLP-1 Drugs Help You Live a Longer, Healthier Life? appeared first on SingularityHub.",
@@ -997,7 +869,7 @@
       "url": "https://singularityhub.com/2026/09/08/could-glp-1-drugs-help-you-live-a-longer-healthier-life/"
     },
     {
-      "id": "ieee_7_9884",
+      "id": "ieee_8_4822",
       "source": "ieee",
       "title": "Rivian’s Gambit for Full Autonomy",
       "summary": "I’m sitting in a Rivian R1S SUV as it drives itself down the leafy streets of Palo Alto, Calif., through areas crowded with touchstones of tech history. We cruise near the landmark HP Garage, the one-car workshop where Hewlett-Packard, and, arguably,",
@@ -1015,7 +887,7 @@
       "url": "https://spectrum.ieee.org/rivian-self-driving"
     },
     {
-      "id": "ieee_8_9351",
+      "id": "ieee_9_1338",
       "source": "ieee",
       "title": "The Growing Proof That Autonomous Cars Save Lives",
       "summary": "Plenty of people remain spooked by autonomous vehicles, or AVs. Some experts and policymakers have cautioned that AVs won’t necessarily make roads safer. When it comes to partial or full autonomy, the picture isn’t entirely clear, in part because the",
@@ -1033,10 +905,10 @@
       "url": "https://spectrum.ieee.org/are-self-driving-cars-safe"
     },
     {
-      "id": "lifespan_8_8482",
+      "id": "lifespan_8_1053",
       "source": "lifespan",
       "title": "Mice With Growth Hormone Halted in Middle Age Live Longer",
-      "summary": "Researchers publishing in Aging Cell have described how stopping growth hormone receptor production in midlife significantly lengthens the lives of mice. Growth but diabetes Growth hormone [&#8230;]",
+      "summary": "Researchers publishing in Aging Cell have described how stopping growth hormone receptor production in midlife significantly lengthens the lives of mice. Growth but diabetes Growth hormone affects the metabolism of fats (lipids), increasing the level",
       "date": "7 Eyl 2026",
       "dv": 20260907,
       "cat": [
@@ -1051,7 +923,7 @@
       "url": "https://lifespan.io/mice-with-growth-hormone-halted-in-middle-age-live-longer/"
     },
     {
-      "id": "ieee_9_3786",
+      "id": "ieee_10_3873",
       "source": "ieee",
       "title": "Workshops Educate African Researchers On How to Publish With IEEE",
       "summary": "Many researchers and students in Kenya, Rwanda, and Uganda struggle to access and publish scientific and technical articles because of financial barriers including publishing fees and subscriptions to research libraries. To help, IEEE has made its Xp",
@@ -1069,7 +941,7 @@
       "url": "https://spectrum.ieee.org/ieee-workshop-xplore-africa"
     },
     {
-      "id": "singularity_7_8214",
+      "id": "singularity_7_1436",
       "source": "singularity",
       "title": "This Week’s Awesome Tech Stories From Around the Web (Through September 5)",
       "summary": "Computing Why Everyone in Quantum Computing Is Buzzing About Google’s Move Into ‘Neutral Atoms’Adam Bluestein &#124; Fast Company &#8220;Google’s interest sends a clear signal: Neutral atom quantum computing has arrived.... The post This Week’s Aweso",
@@ -1087,7 +959,7 @@
       "url": "https://singularityhub.com/2026/09/05/this-weeks-awesome-tech-stories-from-around-the-web-through-september-5-2/"
     },
     {
-      "id": "singularity_8_1770",
+      "id": "singularity_8_8392",
       "source": "singularity",
       "title": "Anthropic’s Claude Can Now Autonomously Run Science Experiments With Lab Equipment",
       "summary": "A new system allows agents to orchestrate complex experimental processes and extends Anthropic's reach into the physical world. The post Anthropic’s Claude Can Now Autonomously Run Science Experiments With Lab Equipment appeared first on SingularityH",
@@ -1105,7 +977,7 @@
       "url": "https://singularityhub.com/2026/09/04/anthropics-claude-can-now-autonomously-run-science-experiments-with-lab-equipment/"
     },
     {
-      "id": "lifespan_9_9913",
+      "id": "lifespan_9_9035",
       "source": "lifespan",
       "title": "The Last Generation to Die: Interview With Tim Maupin",
       "summary": "Filmmaker Tim Maupin has spent a number of years developing The Last Generation to Die, a near-future film about what happens when the first true rejuvenation technologies arrive and who gets left behind. The project [&#8230;]",
@@ -1123,7 +995,7 @@
       "url": "https://lifespan.io/the-last-generation-to-die-interview-with-tim-maupin/"
     },
     {
-      "id": "ieee_10_4414",
+      "id": "ieee_11_6278",
       "source": "ieee",
       "title": "Protecting Dynamic Industrial Robot Cable Carriers",
       "summary": "This article is brought to you by Tsubaki KabelSchlepp.In modern automated manufacturing, six-axis articulated robots perform high-speed, multidirectional maneuvers under demanding operational cycles. However, as robot arms swivel, rotate, and extend",
@@ -1141,7 +1013,7 @@
       "url": "https://spectrum.ieee.org/industrial-robot-cable-carrier-protection"
     },
     {
-      "id": "ieee_11_5714",
+      "id": "ieee_12_3011",
       "source": "ieee",
       "title": "Applying Different Forms of Mentorship",
       "summary": "This article is crossposted from IEEE Spectrum’s careers newsletter. Sign up now to get insider tips, expert advice, and practical strategies, written in partnership with tech career development company Parsity and delivered to your inbox for free!As",
@@ -1159,7 +1031,7 @@
       "url": "https://spectrum.ieee.org/forms-of-engineering-mentorship"
     },
     {
-      "id": "ieee_12_4796",
+      "id": "ieee_13_3662",
       "source": "ieee",
       "title": "NASA’s Cargo-Moving Robotic Arm Named 300th IEEE Milestone",
       "summary": "In the 1960s NASA began developing a system of reusable space shuttles to make its work more efficient and to reduce costs. The shuttles could launch like rockets, maneuver in Earth’s orbit, and land like airplanes. They also could carry large satell",
@@ -1175,6 +1047,42 @@
         "bilim"
       ],
       "url": "https://spectrum.ieee.org/canadarm-ieee-300th-milestone"
+    },
+    {
+      "id": "ieee_14_442",
+      "source": "ieee",
+      "title": "AI Efficiency Could Cost Us the Next Generation of Experts",
+      "summary": "A little over a decade ago, I led the controls design for a first-of-its-kind full digital-control system for a U.S. nuclear plant. It was, on paper, a beautiful machine—engineered to run itself the way a modern airliner does, with operators watching",
+      "date": "2 Eyl 2026",
+      "dv": 20260902,
+      "cat": [
+        "ai"
+      ],
+      "viral": 74,
+      "tiktok": "20K-80K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://spectrum.ieee.org/ai-engineer-skills"
+    },
+    {
+      "id": "singularity_9_5434",
+      "source": "singularity",
+      "title": "Content for Clicks: AI Is Tearing Up the Web’s Social Contract",
+      "summary": "As AI eats traffic, the best sites are locking it out, making reliable information harder to find. The post Content for Clicks: AI Is Tearing Up the Web&#8217;s Social Contract appeared first on SingularityHub.",
+      "date": "1 Eyl 2026",
+      "dv": 20260901,
+      "cat": [
+        "ai"
+      ],
+      "viral": 62,
+      "tiktok": "10K-40K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://singularityhub.com/2026/09/01/content-for-clicks-ai-is-tearing-up-the-webs-social-contract/"
     }
   ],
   "sources": [
