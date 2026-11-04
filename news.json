@@ -1,9 +1,81 @@
 {
-  "updated": "2026-11-04T14:12:55.679304+00:00",
+  "updated": "2026-11-04T20:39:09.618263+00:00",
   "count": 65,
   "news": [
     {
-      "id": "mit_0_9876",
+      "id": "singularity_0_8712",
+      "source": "singularity",
+      "title": "Microsoft’s Medical AI Is Over Twice as Good Diagnosing Diseases as Doctors",
+      "summary": "The system, MAI-DxO, was not only more accurate, but it also spent much less on tests to make its diagnoses. The post Microsoft’s Medical AI Is Over Twice as Good Diagnosing Diseases as Doctors appeared first on SingularityHub.",
+      "date": "4 Kas 2026",
+      "dv": 20261104,
+      "cat": [
+        "ai"
+      ],
+      "viral": 62,
+      "tiktok": "10K-40K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://singularityhub.com/2026/11/04/microsofts-medical-ai-is-over-twice-as-good-diagnosing-diseases-as-doctors/"
+    },
+    {
+      "id": "mit_0_7381",
+      "source": "mit",
+      "title": "Texas was the new epicenter of the AI data center buildout. That might be kaput.",
+      "summary": "Texas is the fastest-growing data center market in the US and ground zero for Big Tech&#8217;s largest AI buildouts. But the blue wave that swept the Lone Star State may jeopardize that position. Democrat James Talarico won the US Senate seat against",
+      "date": "4 Kas 2026",
+      "dv": 20261104,
+      "cat": [
+        "ai"
+      ],
+      "viral": 50,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/"
+    },
+    {
+      "id": "mit_1_8335",
+      "source": "mit",
+      "title": "Roundtables: Inside the Quest for Cognitive Immortality",
+      "summary": "Tuesday, November 17, 2026 In an effort to reach an elusive continuity of the self, some far-thinking technologists are working on ways to keep your brain going—even beyond death. Join science editor Mary Beth Griggs and senior editor for biomedicine",
+      "date": "4 Kas 2026",
+      "dv": 20261104,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 60,
+      "tiktok": "10K-40K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://www.technologyreview.com/2026/11/04/1148049/roundtables-inside-the-quest-for-cognitive-immortality/"
+    },
+    {
+      "id": "mit_2_8103",
+      "source": "mit",
+      "title": "What’s next for US energy policy after the midterm elections?",
+      "summary": "I’ve been locked in to my various screens since results from midterm elections started to roll in last night. And it didn’t take long to see the beginning of the blue wave: Democrats took control of both the US House of Representatives and the Senate",
+      "date": "4 Kas 2026",
+      "dv": 20261104,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 40,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://www.technologyreview.com/2026/11/04/1148022/us-energy-midterm/"
+    },
+    {
+      "id": "mit_3_2098",
       "source": "mit",
       "title": "The Download: blended meat, restored sight, and the agentic web",
       "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. These startups hope “blended” food will cut our appetite for red meat&#160; In the fall of 2025, Jef",
@@ -21,7 +93,7 @@
       "url": "https://www.technologyreview.com/2026/11/04/1148001/the-download-blended-meat-sight-restoring-implant-agentic-web/"
     },
     {
-      "id": "mit_1_6904",
+      "id": "mit_4_9594",
       "source": "mit",
       "title": "Securing the agentic enterprise with data lineage",
       "summary": "A sales representative asks an AI agent for customer pricing, and the agent pulls data from multiple sources: restricted pricing systems, internal communications, and archived quotes. The output looks accurate to the agent, so a second agent uses the",
@@ -39,7 +111,7 @@
       "url": "https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/"
     },
     {
-      "id": "nature_0_1574",
+      "id": "nature_0_8141",
       "source": "nature",
       "title": "Unblurring the menopause transition",
       "summary": "Nature Aging, Published online: 04 November 2026; doi:10.1038/s43587-026-01276-yUnblurring the menopause transition",
@@ -57,7 +129,7 @@
       "url": "https://www.nature.com/articles/s43587-026-01276-y"
     },
     {
-      "id": "nature_1_8736",
+      "id": "nature_1_1241",
       "source": "nature",
       "title": "Screening for Parkinson’s disease across questionnaires using language models",
       "summary": "Nature Aging, Published online: 04 November 2026; doi:10.1038/s43587-026-01271-3Health questionnaires have the potential to facilitate early disease detection. However, differences in question wording and formats often prevent artificial intelligence",
@@ -78,7 +150,7 @@
       "url": "https://www.nature.com/articles/s43587-026-01271-3"
     },
     {
-      "id": "nature_2_1291",
+      "id": "nature_2_1042",
       "source": "nature",
       "title": "Language modeling screens Parkinson’s disease with self-reported questionnaires",
       "summary": "Nature Aging, Published online: 04 November 2026; doi:10.1038/s43587-026-01260-6Reyes et al. developed Quest2Dx, an AI model to screen Parkinson’s disease based on health questionnaires, identifying key predictors from the questions to provide a low-",
@@ -98,7 +170,7 @@
       "url": "https://www.nature.com/articles/s43587-026-01260-6"
     },
     {
-      "id": "nature_3_764",
+      "id": "nature_3_9894",
       "source": "nature",
       "title": "Deep and quantitative proteomic profiling of low-volume mouse serum in a cross-sectional analysis of aging",
       "summary": "Nature Aging, Published online: 02 November 2026; doi:10.1038/s43587-026-01242-8To address the technically challenging task of profiling the age-associated blood proteome in sample-limited mouse studies, the authors present a quantitative nanoparticl",
@@ -116,7 +188,7 @@
       "url": "https://www.nature.com/articles/s43587-026-01242-8"
     },
     {
-      "id": "nature_4_8845",
+      "id": "nature_4_3893",
       "source": "nature",
       "title": "Oocyte-specific OMC1 is required for maintaining chromosome cohesion through reproductive life",
       "summary": "Nature Aging, Published online: 29 October 2026; doi:10.1038/s43587-026-01245-5Mammalian oocytes undergo prolonged meiotic arrest during which sister chromatids are linked by cohesin complexes. Cohesion deterioration during aging results in aneuploid",
@@ -134,7 +206,7 @@
       "url": "https://www.nature.com/articles/s43587-026-01245-5"
     },
     {
-      "id": "nature_5_9904",
+      "id": "nature_5_6917",
       "source": "nature",
       "title": "Statins promote bone anabolism in estrogen deficiency by inducing osteogenic differentiation of skeletal stem/progenitor cells",
       "summary": "Nature Aging, Published online: 27 October 2026; doi:10.1038/s43587-026-01257-1Yang et al. demonstrate that statins can compensate for reduced estrogen signaling in skeletal stem and progenitor cells, promoting bone anabolism during estrogen deficien",
@@ -152,7 +224,7 @@
       "url": "https://www.nature.com/articles/s43587-026-01257-1"
     },
     {
-      "id": "nature_6_7911",
+      "id": "nature_6_2689",
       "source": "nature",
       "title": "Type 2 immunity as a counter-regulatory axis in aging",
       "summary": "Nature Aging, Published online: 23 October 2026; doi:10.1038/s43587-026-01265-1Chronic low-grade inflammation is a hallmark of aging, but the endogenous programs that normally restrain it are far less understood than its drivers. Type 2 immunity is c",
@@ -171,7 +243,7 @@
       "url": "https://www.nature.com/articles/s43587-026-01265-1"
     },
     {
-      "id": "nature_7_8628",
+      "id": "nature_7_1269",
       "source": "nature",
       "title": "Uncovering the transcriptional hallmarks of endothelial cell aging via integrated single-cell analysis",
       "summary": "Nature Aging, Published online: 23 October 2026; doi:10.1038/s43587-026-01247-3The Human Aging Endothelial Cell Atlas reveals how gene expression patterns of the human endothelium change with age, identifying reduced angiogenesis, altered mechanical ",
@@ -190,7 +262,25 @@
       "url": "https://www.nature.com/articles/s43587-026-01247-3"
     },
     {
-      "id": "webrazzi_0_5335",
+      "id": "webrazzi_0_2687",
+      "source": "webrazzi",
+      "title": "Traversal, 1 milyar dolar değerleme üzerinden 120 milyon dolar yatırım aldı",
+      "summary": "Yapay zeka destekli yazılım altyapısı yönetim platformu Traversal, 120 milyon dolar yatırım aldı. Şirketin 120 milyon dolarlık B serisi yatırım turuna Kleiner Perkins, Redpoint Ventures ve Khosla Vent...",
+      "date": "4 Kas 2026",
+      "dv": 20261104,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 40,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://webrazzi.com/2026/11/04/traversal-1-milyar-dolar-degerleme-uzerinden-120-milyon-dolar-yatirim-aldi/"
+    },
+    {
+      "id": "webrazzi_1_3397",
       "source": "webrazzi",
       "title": "Google'ın okullara sunduğu yapay zeka kontrolü Search erişimini de etkileyebilir",
       "summary": "Google, K-12 düzeyindeki öğrencilerin yapay zeka araçlarına erişimini okul yönetimlerinin kontrolüne bırakmaya hazırlanıyor. Ancak şirketin yeni yaklaşımı dikkat çekici bir kısıtlamayı da beraberinde ...",
@@ -208,7 +298,7 @@
       "url": "https://webrazzi.com/2026/11/04/googlein-okullara-sundugu-yapay-zeka-kontrolu-search-erisimini-de-etkileyebilir/"
     },
     {
-      "id": "webrazzi_1_3527",
+      "id": "webrazzi_2_6040",
       "source": "webrazzi",
       "title": "Applied Compute, 3,25 milyar dolar değerleme üzerinden 350 milyon dolar yatırım aldı",
       "summary": "Kurumsal şirketler için yapay zeka modelleri geliştiren Applied Compute, 350 milyon dolar yatırım aldı. Şirketin 350 milyon dolarlık yatırım turuna Elad Gil liderlik etti. ABD merkezli Applied Compute...",
@@ -226,7 +316,7 @@
       "url": "https://webrazzi.com/2026/11/04/applied-compute-3-25-milyar-dolar-degerleme-uzerinden-350-milyon-dolar-yatirim-aldi/"
     },
     {
-      "id": "webrazzi_2_8860",
+      "id": "webrazzi_3_969",
       "source": "webrazzi",
       "title": "Netflix, yapay zeka destekli AI Discover özelliğini kullanıma sunuyor",
       "summary": "Netflix, kullanıcıların izleyecek içerik bulmasını kolaylaştırmak için yapay zeka destekli yeni özelliğini duyurdu. Netflix'in TV uygulamasına eklenen yeni Discover sekmesi, kullanıcıların ruh hali, i...",
@@ -244,7 +334,7 @@
       "url": "https://webrazzi.com/2026/11/04/netflix-yapay-zeka-destekli-ai-discover-ozelligini-kullanima-sunuyor/"
     },
     {
-      "id": "webrazzi_3_6675",
+      "id": "webrazzi_4_6838",
       "source": "webrazzi",
       "title": "Apple Watch için yapay zeka destekli Audio Intelligence özellikleri beta testine açılıyor",
       "summary": "Apple, Apple Watch için geliştirdiği yapay zeka destekli Audio Intelligence özelliklerini beta testine açıyor. İlk olarak iOS 27.3 güncellemesiyle geliştiricilerin kullanımına sunulan teknoloji, Apple...",
@@ -262,7 +352,7 @@
       "url": "https://webrazzi.com/2026/11/04/apple-watch-icin-yapay-zeka-destekli-audio-intelligence-ozellikleri-beta-testine-aciliyor/"
     },
     {
-      "id": "webrazzi_4_3160",
+      "id": "webrazzi_5_710",
       "source": "webrazzi",
       "title": "Anthropic'ten yapay zeka yanıtlarının kaynağını doğrulayan açık kaynaklı sistem: FlashProve",
       "summary": "Anthropic, yapay zeka modellerinden alınan yanıtların gerçekten belirtilen model tarafından üretildiğini doğrulamayı sağlayacak açık kaynaklı bir sistem üzerinde çalışıyor. FlashProve adı verilen prot...",
@@ -280,7 +370,7 @@
       "url": "https://webrazzi.com/2026/11/04/anthropicten-yapay-zeka-yanitlarinin-kaynagini-dogrulayan-acik-kaynakli-sistem-flashprove/"
     },
     {
-      "id": "webrazzi_5_8532",
+      "id": "webrazzi_6_5159",
       "source": "webrazzi",
       "title": "Canva, çalışanlarının yüzde 22'sini kapsayan yeniden yapılanmaya gidiyor",
       "summary": "Squarespace'in çalışanlarının yaklaşık yüzde 19'unu işten çıkardığını dün sizlere aktarmıştık. 2026'da teknoloji dünyasında işten çıkarmalar devam ediyor. Tasarım platformu Canva da şirket genelinde y...",
@@ -298,7 +388,7 @@
       "url": "https://webrazzi.com/2026/11/04/canva-calisanlarinin-yuzde-22-sini-kapsayan-yeniden-yapilanmaya-gidiyor/"
     },
     {
-      "id": "webrazzi_6_3415",
+      "id": "webrazzi_7_7744",
       "source": "webrazzi",
       "title": "Yapay zeka donanımları platformu Stoa, 212'den yatırım aldı",
       "summary": "Yapay zeka donanımları platformu Stoa, 212'den yatırım aldığını açıkladı. Yatırım turunun finansal detaylarının henüz açıklanmadığını belirtelim. Stoa, aldığı yatırımı ürünlerini geliştirmek, mühendis...",
@@ -316,7 +406,7 @@
       "url": "https://webrazzi.com/2026/11/04/yapay-zeka-donanimlari-platformu-stoa-212den-yatirim-aldi/"
     },
     {
-      "id": "webrazzi_7_8625",
+      "id": "webrazzi_8_7236",
       "source": "webrazzi",
       "title": "Meta, yapay zeka yatırımları için 15 milyar dolarlık tahvil ihracına gidiyor",
       "summary": "Facebook, Instagram ve WhatsApp'ın çatı şirketi Meta, ABD Menkul Kıymetler ve Borsa Komisyonu'na (SEC) sunduğu bildirime göre, yapay zeka yatırımlarını finanse etmek için 15 milyar dolar borçlanacak. ...",
@@ -334,7 +424,7 @@
       "url": "https://webrazzi.com/2026/11/04/meta-yapay-zeka-yatirimlari-icin-15-milyar-dolarlik-tahvil-ihracina-gidiyor/"
     },
     {
-      "id": "webrazzi_8_4960",
+      "id": "webrazzi_9_5714",
       "source": "webrazzi",
       "title": "OpenAI açkladı: ChatGPT'nin arama hacmi Google'ın yüzde 20'sine ulaştı",
       "summary": "OpenAI, ChatGPT üzerinden gerçekleştirilen web aramalarının hacminin, Google’daki arama hacminin yüzde 20’sine ulaştığını açıkladı. Şirketin ChatGPT tüketici ürünleri lideri Adam Fry, söz konusu veriy...",
@@ -352,7 +442,7 @@
       "url": "https://webrazzi.com/2026/11/04/openai-ackladi-chatgpt-nin-arama-hacmi-google-in-yuzde-20-sine-ulasti/"
     },
     {
-      "id": "webrazzi_9_6884",
+      "id": "webrazzi_10_2247",
       "source": "webrazzi",
       "title": "fal, 16 milyar dolar değerlemeyle 1,3 milyar dolar yatırım aldı",
       "summary": "Türk girişimciler Burkay Gür ve Görkem Yurtseven tarafından kurulan fal, 16 milyar dolar değerleme üzerinden 1,3 milyar dolar yatırım aldı. Yapay zeka modellerinin çalıştırılmasına yönelik altyapı sun...",
@@ -370,10 +460,10 @@
       "url": "https://webrazzi.com/2026/11/04/fal-16-milyar-dolar-degerlemeyle-1-3-milyar-dolar-yatirim-aldi/"
     },
     {
-      "id": "lifespan_0_8932",
+      "id": "lifespan_0_4306",
       "source": "lifespan",
       "title": "Why Male Mice Lose Anti-Cancer Immunity Earlier",
-      "summary": "A new study found that shrinking reserves of naive T cells weaken tumor recognition in male mice by middle age more than in females. Restoring thymic activity improved protection [1]. Do men lose anti-cancer defenses [&#8230;]",
+      "summary": "A new study found that shrinking reserves of naive T cells weaken tumor recognition in male mice by middle age more than in females. Restoring thymic activity improved protection [1]. Do men lose anti-cancer defenses with age? CD8+ [&#8230;]",
       "date": "3 Kas 2026",
       "dv": 20261103,
       "cat": [
@@ -388,7 +478,7 @@
       "url": "https://lifespan.io/why-male-mice-lose-anti-cancer-immunity-earlier/"
     },
     {
-      "id": "singularity_0_2420",
+      "id": "singularity_1_9881",
       "source": "singularity",
       "title": "Scientists Can Now Ask AI to Design Proteins Using Plain Language",
       "summary": "New AI tools could help more biologists experiment with problems once restricted to a handful of specialists. The post Scientists Can Now Ask AI to Design Proteins Using Plain Language appeared first on SingularityHub.",
@@ -406,7 +496,7 @@
       "url": "https://singularityhub.com/2026/11/02/scientists-can-now-ask-ai-to-design-proteins-using-plain-language/"
     },
     {
-      "id": "mit_2_9389",
+      "id": "mit_5_3973",
       "source": "mit",
       "title": "The Download: controlling AI agents and “Super Intelligence” loyalty tests",
       "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How “reverse game theory” could keep AI agents in check A new approach known as “reverse game theory",
@@ -424,7 +514,7 @@
       "url": "https://www.technologyreview.com/2026/11/03/1147940/the-download-controlling-ai-agents-trump-super-intelligence/"
     },
     {
-      "id": "mit_3_5213",
+      "id": "mit_6_3041",
       "source": "mit",
       "title": "How “reverse game theory” could keep AI agents in check",
       "summary": "A new approach known as “reverse game theory” aims to control powerful AI models by designing systems that incentivize them to stick to the rules. As AI models become more capable, safety researchers are scrambling to ensure they are “aligned” with h",
@@ -442,7 +532,7 @@
       "url": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/"
     },
     {
-      "id": "mit_4_7334",
+      "id": "mit_7_3343",
       "source": "mit",
       "title": "Here’s who is falling in line for Trump’s “Super Intelligence” loyalty test",
       "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. At the end of September, President Trump signed an executive order that contained just one directive, ordering g",
@@ -460,7 +550,7 @@
       "url": "https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/"
     },
     {
-      "id": "ieee_0_5239",
+      "id": "ieee_0_5216",
       "source": "ieee",
       "title": "IEEE Computer Society Chapter Offers Webinars With Industry Experts",
       "summary": "To help engineers keep up with emerging technologies such as AI, cloud computing, and sustainable infrastructure, and learn how they can be applied in practice, the IEEE Computer Society’s Central Indiana Chapter recently launched its Tech Talk Serie",
@@ -478,7 +568,7 @@
       "url": "https://spectrum.ieee.org/ieee-industry-experts-webinar"
     },
     {
-      "id": "webrazzi_10_6979",
+      "id": "webrazzi_11_2753",
       "source": "webrazzi",
       "title": "Yapay zeka platformu Trajectory, 45 milyon dolar yatırım aldı",
       "summary": "Yapay zeka platformu Trajectory, 45 milyon dolar yatırım aldı. Şirketin 45 milyon dolarlık A serisi yatırım turuna Sequoia liderlik etti. ABD merkezli Trajectory'nin yatırım turunda Nvidia, Bessemer V...",
@@ -496,7 +586,7 @@
       "url": "https://webrazzi.com/2026/11/03/yapay-zeka-platformu-trajectory-45-milyon-dolar-yatirim-aldi/"
     },
     {
-      "id": "webrazzi_11_4931",
+      "id": "webrazzi_12_6368",
       "source": "webrazzi",
       "title": "Apple'ın robotik ekranlı akıllı ev cihazı HomeView Ultra 2028'e ertelenebilir",
       "summary": "Apple'ın akıllı ev ürünleri ailesini robotik cihazlarla genişletmeye hazırlandığı konuşuluyor. The Information'ın aktardığı bilgilere göre Apple, şirket içinde J595 kod adıyla anılan, masa üzerinde ku...",
@@ -514,7 +604,7 @@
       "url": "https://webrazzi.com/2026/11/03/apple-in-robotik-ekranli-akilli-ev-cihazi-homeview-ultra-2028-e-ertelenebilir/"
     },
     {
-      "id": "webrazzi_12_6452",
+      "id": "webrazzi_13_3375",
       "source": "webrazzi",
       "title": "OpenAI, ChatGPT'nin Chat ve Work sekmelerini birleştiriyor",
       "summary": "OpenAI, ChatGPT'nin masaüstü uygulamasında kullanıcı deneyimini sadeleştirecek önemli bir değişikliğe hazırlanıyor. Şirket, şu anda ayrı sekmeler altında sunulan Chat ve Work özelliklerini tek bir ara...",
@@ -532,7 +622,7 @@
       "url": "https://webrazzi.com/2026/11/03/openai-chatgptnin-chat-ve-work-sekmelerini-birlestiriyor/"
     },
     {
-      "id": "webrazzi_13_5433",
+      "id": "webrazzi_14_5912",
       "source": "webrazzi",
       "title": "Apple'ın stokları bir yılda yüzde 154 arttı",
       "summary": "Apple’ın stokları, 2026 mali yılının dördüncü çeyreğinde yıllık bazda yüzde 154,3 artarak 14,54 milyar dolara ulaştı. Şirketin finansal sonuçlarına göre stoklar, bir önceki çeyrekteki 11,09 milyar dol...",
@@ -550,28 +640,10 @@
       "url": "https://webrazzi.com/2026/11/03/applein-stoklari-bir-yilda-yuzde-154-artti/"
     },
     {
-      "id": "webrazzi_14_4487",
-      "source": "webrazzi",
-      "title": "BMW, şehir içi sürüş desteğini 2027'de kullanıma sunacak",
-      "summary": "BMW, gelişmiş sürüş destek özelliklerini şehir içi yollara taşıyor. Şirket, navigasyon destekli kısmi otomatik sürüş sistemini 2027 yılından itibaren belirli modellerinde kullanıma sunmayı planlıyor. ...",
-      "date": "3 Kas 2026",
-      "dv": 20261103,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 40,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://webrazzi.com/2026/11/03/bmw-sehir-ici-surus-destegini-2027de-kullanima-sunacak/"
-    },
-    {
-      "id": "lifespan_1_5453",
+      "id": "lifespan_1_91",
       "source": "lifespan",
       "title": "Rejuvenation Roundup October 2026",
-      "summary": "As the weather cools down, the race for functional interventions heats up, and members of our field have been looking for ways to push through bottlenecks both regulatory and scientific. Here&#8217;s what we&#8217;ve reported last [&#8230;]",
+      "summary": "As the weather cools down, the race for functional interventions heats up, and members of our field have been looking for ways to push through bottlenecks both regulatory and scientific. Here&#8217;s what we&#8217;ve reported last month. Interviews [",
       "date": "2 Kas 2026",
       "dv": 20261102,
       "cat": [
@@ -586,7 +658,7 @@
       "url": "https://lifespan.io/rejuvenation-roundup-october-2026/"
     },
     {
-      "id": "mit_5_1244",
+      "id": "mit_8_1678",
       "source": "mit",
       "title": "Raising the quality of insights in agentic analytics",
       "summary": "In just a few years, generative AI has changed the face of enterprise analytics, notably by making analytics accessible to users across the organization. Agentic AI promises to do even more, by automating entire workflows and taking actions based on ",
@@ -604,7 +676,7 @@
       "url": "https://www.technologyreview.com/2026/11/02/1147660/raising-the-quality-of-insights-in-agentic-analytics/"
     },
     {
-      "id": "mit_6_7886",
+      "id": "mit_9_46",
       "source": "mit",
       "title": "Stop counting tokens, start counting what ships",
       "summary": "When a developer gives an AI agent a coding task, the agent does more than answer once. It plans, generates code, runs tests, and repeats the process to correct errors. A single task can use 10 to 50 times more tokens than a basic chat prompt. The mo",
@@ -622,43 +694,7 @@
       "url": "https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/"
     },
     {
-      "id": "mit_7_3983",
-      "source": "mit",
-      "title": "The Download: the agentic web arrives and the drive for safer roads",
-      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The agentic web is here In 2001, a decade after inventing the World Wide Web, Tim Berners-Lee articu",
-      "date": "2 Kas 2026",
-      "dv": 20261102,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 50,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://www.technologyreview.com/2026/11/02/1147889/the-download-agentic-web-arrives-eliminating-traffic-deaths/"
-    },
-    {
-      "id": "mit_8_2820",
-      "source": "mit",
-      "title": "The agentic web is here",
-      "summary": "In 2001, a decade after he invented the World Wide Web, Tim Berners-Lee articulated a new vision. Together with two colleagues, he published an article in the magazine Scientific American in which he outlined what he called the “Semantic Web”: an int",
-      "date": "2 Kas 2026",
-      "dv": 20261102,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 40,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/"
-    },
-    {
-      "id": "ieee_1_5526",
+      "id": "ieee_1_1452",
       "source": "ieee",
       "title": "Guarding the Gates of Knowledge",
       "summary": "A recent scroll through social media got me thinking about trust. About half my feed was filled with AI slop that astute users would call out as being machine-generated, often to the embarrassment of the rube who unknowingly spread it and sometimes t",
@@ -676,7 +712,7 @@
       "url": "https://spectrum.ieee.org/ai-slop-trust-science"
     },
     {
-      "id": "singularity_1_6504",
+      "id": "singularity_2_101",
       "source": "singularity",
       "title": "This Week’s Awesome Tech Stories From Around the Web (Through October 31)",
       "summary": "Every week, we scour the web for important, insightful, and fascinating stories in science and technology. The post This Week’s Awesome Tech Stories From Around the Web (Through October 31) appeared first on SingularityHub.",
@@ -694,7 +730,7 @@
       "url": "https://singularityhub.com/2026/10/31/this-weeks-awesome-tech-stories-from-around-the-web-through-october-31-2/"
     },
     {
-      "id": "ieee_2_2316",
+      "id": "ieee_2_3059",
       "source": "ieee",
       "title": "When Electric Cars Were for Women",
       "summary": "At the turn of the last century, the automobile industry was still new and evolving rapidly. In 1898, there were about 50 carmakers in the United States. A decade later, that number had increased fivefold. In 1901, the companies produced 7,000 vehicl",
@@ -712,7 +748,7 @@
       "url": "https://spectrum.ieee.org/early-electric-vehicles"
     },
     {
-      "id": "lifespan_2_8094",
+      "id": "lifespan_2_1679",
       "source": "lifespan",
       "title": "An Anti-Senescence Vaccine Increases Mouse Lifespan",
       "summary": "In a new study, late-life treatment with a three-element senolytic vaccine led to lower senescence markers and a 12% increase in median lifespan [&#8230;]",
@@ -730,7 +766,7 @@
       "url": "https://lifespan.io/an-anti-senescence-vaccine-increases-mouse-lifespan/"
     },
     {
-      "id": "singularity_2_3887",
+      "id": "singularity_3_3705",
       "source": "singularity",
       "title": "AI May Quickly Generate Ideas—but Teams of People Are Still More Creative",
       "summary": "How is AI affecting collaboration and creativity? Cognitive scientists ran an experiment to find out. The post AI May Quickly Generate Ideas—but Teams of People Are Still More Creative appeared first on SingularityHub.",
@@ -748,28 +784,10 @@
       "url": "https://singularityhub.com/2026/10/30/ai-may-quickly-generate-ideas-but-teams-of-people-are-still-more-creative/"
     },
     {
-      "id": "mit_9_417",
-      "source": "mit",
-      "title": "The Download: GLP-1s and eating disorders, self-aware cities, and forever chemicals",
-      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Eating disorders are on the rise. GLP-1s could make things worse. GLP-1 weight-loss drugs are one of",
-      "date": "30 Eki 2026",
-      "dv": 20261030,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 73,
-      "tiktok": "20K-80K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://www.technologyreview.com/2026/10/30/1147843/the-download-glp-1s-eating-disorders-forever-chemicals/"
-    },
-    {
-      "id": "lifespan_3_2840",
+      "id": "lifespan_3_9350",
       "source": "lifespan",
       "title": "An Astrocytic Factor Slows Whole-Body Aging in Mice",
-      "summary": "In Aging Cell, researchers have described how increasing fibroblast growth factor 13 (FGF13) in astrocytes reduces aging throughout the bodies of mice. A factor from [&#8230;]",
+      "summary": "In Aging Cell, researchers have described how increasing fibroblast growth factor 13 (FGF13) in astrocytes reduces aging throughout the bodies of mice. A factor from a well-known family FGFs are signaling molecules that share structural and functiona",
       "date": "29 Eki 2026",
       "dv": 20261029,
       "cat": [
@@ -784,7 +802,7 @@
       "url": "https://lifespan.io/an-astrocytic-factor-slows-whole-body-aging-in-mice/"
     },
     {
-      "id": "singularity_3_2703",
+      "id": "singularity_4_1380",
       "source": "singularity",
       "title": "CRISPR Prime Editing Rewrites DNA in the Human Body for the First Time",
       "summary": "The first patient received a dose of the high-precision gene editor in a new clinical trial for Wilson disease. Researchers hope it's a one-and-done fix. The post CRISPR Prime Editing Rewrites DNA in the Human Body for the First Time appeared first o",
@@ -802,7 +820,7 @@
       "url": "https://singularityhub.com/2026/10/29/crispr-prime-editing-rewrites-dna-in-the-human-body-for-the-first-time/"
     },
     {
-      "id": "ieee_3_256",
+      "id": "ieee_3_7312",
       "source": "ieee",
       "title": "Consumer Appetite for Personal AI Goes Mainstream",
       "summary": "This article is brought to you by Qualcomm Technologies.For many consumers, much of the promise and appeal of AI is personal. Consumers are looking past generic tools and want to know how these technologies will help them in their daily lives. These ",
@@ -820,7 +838,7 @@
       "url": "https://spectrum.ieee.org/ai-personal-assistant-intelligent-wearables"
     },
     {
-      "id": "lifespan_4_2109",
+      "id": "lifespan_4_9266",
       "source": "lifespan",
       "title": "Rejuvenation Factor Extends Lifespan and Healthspan in Mice",
       "summary": "A recent study identified SRSF1, an RNA-processing and splicing factor, as a molecule with geroprotective potential. Inducing SRSF1 expression rejuvenated human cells in vitro, extended lifespan, and significantly reduced frailty in mice [1]. Alterna",
@@ -838,7 +856,7 @@
       "url": "https://lifespan.io/rejuvenation-factor-extends-lifespan-and-healthspan-in-mice/"
     },
     {
-      "id": "ieee_4_8102",
+      "id": "ieee_4_2564",
       "source": "ieee",
       "title": "Systems Thinking Is Vital in the Age of AI",
       "summary": "Modern engineering projects increasingly combine human judgment with machine capability. An engineer can define a problem, then ask an artificial intelligence tool to search relevant research and technical standards, generate design options, test the",
@@ -856,7 +874,7 @@
       "url": "https://spectrum.ieee.org/systems-thinking-vital-in-ai"
     },
     {
-      "id": "ieee_5_4407",
+      "id": "ieee_5_1753",
       "source": "ieee",
       "title": "How Beta Technologies Is Clearing the Runway for Electric Flight",
       "summary": "In the cockpit of Beta Technologies’ Alia CX300, pilot Chris Caputo steers onto Runway 33 at Patrick Leahy Burlington International Airport in Vermont. Cleared for takeoff, he releases the brakes and nudges the throttle forward.At the back of the air",
@@ -874,10 +892,10 @@
       "url": "https://spectrum.ieee.org/beta-technologies-electric-aircraft"
     },
     {
-      "id": "lifespan_5_795",
+      "id": "lifespan_5_5392",
       "source": "lifespan",
       "title": "ARDD 2026: Traditional Biology to AI-Driven Breakthroughs",
-      "summary": "One of the oldest and biggest longevity conferences moved this year across the Atlantic, from Copenhagen to Boston. The new location brought ARDD close to several [&#8230;]",
+      "summary": "One of the oldest and biggest longevity conferences moved this year across the Atlantic, from Copenhagen to Boston. The new location brought ARDD close to several important longevity hubs and might have contributed to this edition’s practical, entrep",
       "date": "27 Eki 2026",
       "dv": 20261027,
       "cat": [
@@ -892,10 +910,10 @@
       "url": "https://lifespan.io/ardd-2026-traditional-biology-to-ai-driven-breakthroughs/"
     },
     {
-      "id": "lifespan_6_5992",
+      "id": "lifespan_6_9497",
       "source": "lifespan",
       "title": "Life Biosciences Announces First-in-Human Phase 1 Trial Data",
-      "summary": "Life Biosciences (“Life Bio”), a biotechnology company pioneering cellular rejuvenation medicines to reverse diseases of aging, announced interim data from its Phase 1 clinical trial [&#8230;]",
+      "summary": "Life Biosciences (“Life Bio”), a biotechnology company pioneering cellular rejuvenation medicines to reverse diseases of aging, announced interim data from its Phase 1 clinical trial of ER-100 in [&#8230;]",
       "date": "27 Eki 2026",
       "dv": 20261027,
       "cat": [
@@ -910,7 +928,7 @@
       "url": "https://lifespan.io/life-biosciences-announces-first-in-human-phase-1-trial-data/"
     },
     {
-      "id": "singularity_4_3341",
+      "id": "singularity_5_4377",
       "source": "singularity",
       "title": "Study Could Help Explain Why Colder Body Temperature Extends Lifespan in Many Species",
       "summary": "By chilling roundworms, scientists traced a molecular pathway hinting at one way cold might extend lifespan. The post Study Could Help Explain Why Colder Body Temperature Extends Lifespan in Many Species appeared first on SingularityHub.",
@@ -928,7 +946,7 @@
       "url": "https://singularityhub.com/2026/10/27/study-could-help-explain-why-colder-body-temperature-extends-lifespan-in-many-species/"
     },
     {
-      "id": "ieee_6_5477",
+      "id": "ieee_6_2961",
       "source": "ieee",
       "title": "Your Robot’s Safety Functions Already Work. What If the Input Lies?",
       "summary": "This article is brought to you by VicOne.A mobile robot slows for someone in a hallway. A collaborative arm eases its movement as a worker approaches. A humanoid pauses to let a person pass. Each response depends on information about the robot or its",
@@ -946,7 +964,7 @@
       "url": "https://spectrum.ieee.org/ai-robot-safety-cybersecurity-vicone"
     },
     {
-      "id": "ieee_7_8195",
+      "id": "ieee_7_3606",
       "source": "ieee",
       "title": "I Used AI to Fake a Scientific Paper. Here’s What Happened",
       "summary": "Science has a spam problem. And the spam filter is getting clogged up. According to all reports, academic publishing is drowning in what has come to be called AI slop: low-quality, mass-produced content generated with AI. By 2025, an estimated 57 per",
@@ -964,17 +982,17 @@
       "url": "https://spectrum.ieee.org/ai-generated-scientific-papers"
     },
     {
-      "id": "lifespan_7_3498",
+      "id": "lifespan_7_1921",
       "source": "lifespan",
       "title": "The Regulatory Bottleneck in Aging Biology",
-      "summary": "Researchers are developing biomedical repair therapies to address multiple age-related diseases at once, yet they are forced to put them through regulatory pathways built for single-disease drugs. The result [&#8230;]",
+      "summary": "Researchers are developing biomedical repair therapies to address multiple age-related diseases at once, yet they are forced to put them through regulatory pathways [&#8230;]",
       "date": "26 Eki 2026",
       "dv": 20261026,
       "cat": [
         "longevity"
       ],
-      "viral": 70,
-      "tiktok": "20K-80K",
+      "viral": 62,
+      "tiktok": "10K-40K",
       "factStatus": "verified",
       "tags": [
         "aging"
@@ -982,7 +1000,7 @@
       "url": "https://lifespan.io/the-regulatory-bottleneck-in-aging-biology/"
     },
     {
-      "id": "singularity_5_9078",
+      "id": "singularity_6_6438",
       "source": "singularity",
       "title": "Is AI Really a Black Box? Neural Networks May Be Easier to Understand Than We Thought",
       "summary": "It's widely believed AI's inner workings are largely inscrutable. A former OpenAI researcher now says this narrative could be wrong. The post Is AI Really a Black Box? Neural Networks May Be Easier to Understand Than We Thought appeared first on Sing",
@@ -1001,7 +1019,7 @@
       "url": "https://singularityhub.com/2026/10/26/is-ai-really-a-black-box-neural-networks-may-be-easier-to-understand-than-we-thought/"
     },
     {
-      "id": "ieee_8_3860",
+      "id": "ieee_8_2381",
       "source": "ieee",
       "title": "IEEE Xplore Digital Library Adds AI Assistant",
       "summary": "IEEE recently released the IEEE Xplore AI Research Suite, built on the full text of millions of peer-reviewed publications in the IEEE Xplore Digital Library. The library offers full-text access to IEEE standards, journals, magazines, conference proc",
@@ -1019,7 +1037,7 @@
       "url": "https://spectrum.ieee.org/ieee-xplore-digital-library-ai"
     },
     {
-      "id": "ieee_9_8491",
+      "id": "ieee_9_2678",
       "source": "ieee",
       "title": "Build a Hidden Lock With a Magnetic Imager",
       "summary": "Like many a nerd, I have a certain fascination with locks. This originates in reading the memoir Surely You’re Joking, Mr. Feynman as a teenager, in which Richard Feynman recounts picking locks and cracking combinations while at his day job working o",
@@ -1037,7 +1055,7 @@
       "url": "https://spectrum.ieee.org/magnetic"
     },
     {
-      "id": "ieee_10_7090",
+      "id": "ieee_10_7081",
       "source": "ieee",
       "title": "Poetry for Engineers: Of Code and Shortleaf Pine",
       "summary": "I step into the warm moist airamong the columns of the pines,their net of twigs and rootscomplex as any lines of code.The trees purify and anchor.Their branches balance my restlessness.Their calling is to be present,mine to develop apps. Our tasksver",
@@ -1055,7 +1073,7 @@
       "url": "https://spectrum.ieee.org/poetry-for-engineers-of-code-and-shortleaf-pine"
     },
     {
-      "id": "singularity_6_428",
+      "id": "singularity_7_313",
       "source": "singularity",
       "title": "This Week’s Awesome Tech Stories From Around the Web (Through October 24)",
       "summary": "Every week, we scour the web for important, insightful, and fascinating stories in science and technology. The post This Week’s Awesome Tech Stories From Around the Web (Through October 24) appeared first on SingularityHub.",
@@ -1073,10 +1091,10 @@
       "url": "https://singularityhub.com/2026/10/24/this-weeks-awesome-tech-stories-from-around-the-web-through-october-24-2/"
     },
     {
-      "id": "lifespan_8_3681",
+      "id": "lifespan_8_3129",
       "source": "lifespan",
       "title": "Laura Minquini on the Quest for Female Longevity",
-      "summary": "Laura Minquini is not a scientist, but that hasn’t stopped her from joining the front lines of the war on aging: specifically, female reproductive aging. [&#8230;]",
+      "summary": "Laura Minquini is not a scientist, but that hasn’t stopped her from joining the front lines of the war on aging: specifically, female reproductive aging. Several years ago, after a successful stint in consumer technology, Laura discovered the longevi",
       "date": "23 Eki 2026",
       "dv": 20261023,
       "cat": [
@@ -1092,7 +1110,7 @@
       "url": "https://lifespan.io/laura-minquini-on-the-quest-for-female-longevity/"
     },
     {
-      "id": "singularity_7_4238",
+      "id": "singularity_8_7431",
       "source": "singularity",
       "title": "Why Calling for a ‘Kill Switch’ Is the Wrong Way to Think About Reining in AI",
       "summary": "There is no big red button or glass box hiding a lever. The post Why Calling for a ‘Kill Switch’ Is the Wrong Way to Think About Reining in AI appeared first on SingularityHub.",
@@ -1110,7 +1128,7 @@
       "url": "https://singularityhub.com/2026/10/23/why-calling-for-a-kill-switch-is-the-wrong-way-to-think-about-reining-in-ai/"
     },
     {
-      "id": "ieee_11_9483",
+      "id": "ieee_11_3602",
       "source": "ieee",
       "title": "From Chip Lab to Center Stage",
       "summary": "Many engineers are more comfortable working behind the scenes developing technology than speaking to consumers about products. But Preethi Ashwath has learned to take center stage, talking about the “hearable” and wearable devices she has had a hand ",
@@ -1128,10 +1146,10 @@
       "url": "https://spectrum.ieee.org/preethi-ashwath-chip-designer"
     },
     {
-      "id": "lifespan_9_3567",
+      "id": "lifespan_9_6183",
       "source": "lifespan",
       "title": "How Some Neuronal Cilia May Affect the Whole Body",
-      "summary": "A team of researchers has written a paper with a surprising finding: that many of the benefits of caloric restriction and increased NAD+ may be due to their effects on the cilia of [&#8230;]",
+      "summary": "A team of researchers has written a paper with a surprising finding: that many of the benefits of caloric restriction and increased NAD+ may be due [&#8230;]",
       "date": "22 Eki 2026",
       "dv": 20261022,
       "cat": [
@@ -1146,7 +1164,7 @@
       "url": "https://lifespan.io/how-some-neuronal-cilia-may-affect-the-whole-body/"
     },
     {
-      "id": "singularity_8_4518",
+      "id": "singularity_9_4232",
       "source": "singularity",
       "title": "This AI Model Designs Enzymes With Atomic Precision",
       "summary": "A trio of papers showcases AI-designed molecular scissors and an upgraded tool that builds proteins atom by atom. The post This AI Model Designs Enzymes With Atomic Precision appeared first on SingularityHub.",
@@ -1162,24 +1180,6 @@
         "bilim"
       ],
       "url": "https://singularityhub.com/2026/10/22/a-new-ai-model-designs-enzymes-with-atomic-precision/"
-    },
-    {
-      "id": "ieee_12_4995",
-      "source": "ieee",
-      "title": "Why AI Can’t Replace Engineering Teams",
-      "summary": "This article is crossposted from IEEE Spectrum’s careers newsletter. Sign up now to get insider tips, expert advice, and practical strategies, written in partnership with tech career development company Parsity and delivered to your inbox for free!If",
-      "date": "22 Eki 2026",
-      "dv": 20261022,
-      "cat": [
-        "ai"
-      ],
-      "viral": 50,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://spectrum.ieee.org/engineering-jobs-that-ai-cant-replace"
     }
   ],
   "sources": [
