@@ -1,12 +1,521 @@
 {
-  "updated": "2026-11-17T22:00:12.798713+00:00",
+  "updated": "2026-11-18T15:28:27.054778+00:00",
   "count": 65,
   "news": [
     {
-      "id": "lifespan_0_9223",
+      "id": "mit_0_7920",
+      "source": "mit",
+      "title": "The AI Hype Index: AI is everywhere",
+      "summary": "Like a nasty rash, AI seems to spread everywhere. Google crams AI Overviews down your throat even though it costs the company billions of dollars in lost ad revenue. Leave your apartment, and you might pass two people heaving an AI-powered humanoid r",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "ai"
+      ],
+      "viral": 60,
+      "tiktok": "10K-40K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere/"
+    },
+    {
+      "id": "mit_1_5669",
+      "source": "mit",
+      "title": "The Download: AI learns to smell and hydropower struggles",
+      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. This smell startup says its AI nose is as good as a human’s In a New Jersey lab, researchers are try",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "ai"
+      ],
+      "viral": 50,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://www.technologyreview.com/2026/11/18/1148845/the-download-ai-learns-to-smell-hydropower-struggles/"
+    },
+    {
+      "id": "mit_2_8976",
+      "source": "mit",
+      "title": "This smell startup says its AI nose is as good as a human’s",
+      "summary": "In a lab near Newark Airport in New Jersey, a team of around 30 experienced human sniffers are slowly working their way through every odor on Earth. Their careful notes—“nutty,” “peachy,” “marine”—are cross-referenced with a chemical analysis to crea",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "ai"
+      ],
+      "viral": 50,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/"
+    },
+    {
+      "id": "longevity_0_4576",
+      "source": "longevity",
+      "title": "Five-year data show continued benefits of lecanemab in early Alzheimer’s",
+      "summary": "Eisai and Biogen presented five-year results from the CLARITY-AD long-term extension at the 19th Clinical Trials on Alzheimer’s Disease conference in Boston. The post Five-year data show continued benefits of lecanemab in early Alzheimer&#8217;s appe",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "longevity",
+        "ai"
+      ],
+      "viral": 95,
+      "tiktok": "100K-500K",
+      "factStatus": "verified",
+      "tags": [
+        "longevity",
+        "alzheimer"
+      ],
+      "url": "https://longevity.technology/news/five-year-data-show-continued-benefits-of-lecanemab-in-early-alzheimers/"
+    },
+    {
+      "id": "longevity_1_25",
+      "source": "longevity",
+      "title": "EktaH advances NKS-3 into Phase II obesity development",
+      "summary": "EktaH has advanced its lead oral obesity candidate, NKS-3, into Phase II clinical development and has enrolled the first patient in the exploratory Phase IIa SERENITY-1 study in Tunisia. The post EktaH advances NKS-3 into Phase II obesity development",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 64,
+      "tiktok": "10K-40K",
+      "factStatus": "verified",
+      "tags": [
+        "longevity"
+      ],
+      "url": "https://longevity.technology/news/ektah-advances-nks-3-into-phase-ii-obesity-development/"
+    },
+    {
+      "id": "longevity_2_4487",
+      "source": "longevity",
+      "title": "C2N Diagnostics unveils next-gen blood assay for brain amyloid",
+      "summary": "C2N Diagnostics has launched the C2N-Aβ-MAA (6x), a plasma multi-analyte assay that quantifies six amyloid beta peptide variants – Aβ37, Aβ38, Aβ39, Aβ40, Aβ42 and Aβ43 – from a single blood sample using high-resolution liquid chromatography-tandem m",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 60,
+      "tiktok": "10K-40K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://longevity.technology/news/c2n-diagnostics-unveils-next-gen-blood-assay-for-brain-amyloid/"
+    },
+    {
+      "id": "longevity_3_2544",
+      "source": "longevity",
+      "title": "Argenta, Loyal partner to advance LOY-003 for large-breed dogs",
+      "summary": "Argenta and Loyal have formed a strategic partnership under which Argenta will support early-stage development of LOY-003, Loyal’s investigational lifespan-extension candidate for large- and giant-breed dogs. The post Argenta, Loyal partner to advanc",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 62,
+      "tiktok": "10K-40K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://longevity.technology/news/argenta-loyal-partner-to-advance-loy-003-for-large-breed-dogs/"
+    },
+    {
+      "id": "longevity_4_6989",
+      "source": "longevity",
+      "title": "Annovis’ Phase 3 Alzheimer’s trial gets second safety clearance",
+      "summary": "Annovis announced that an independent Data and Safety Monitoring Board issued a second consecutive positive recommendation for DUET-AD, the company’s pivotal Phase 3 trial of buntanetap in early Alzheimer’s disease, after reviewing safety data throug",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 61,
+      "tiktok": "10K-40K",
+      "factStatus": "verified",
+      "tags": [
+        "alzheimer"
+      ],
+      "url": "https://longevity.technology/news/annovis-phase-3-alzheimers-trial-gets-second-safety-clearance/"
+    },
+    {
+      "id": "longevity_5_4033",
+      "source": "longevity",
+      "title": "ProMIS secures brain-targeting technology for Alzheimer’s drug",
+      "summary": "ProMIS Neurosciences entered into a license agreement with Ossianix for TXP1, a next-generation brain-selective shuttling technology that targets transferrin receptor 1. The post ProMIS secures brain-targeting technology for Alzheimer’s drug appeared",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 99,
+      "tiktok": "100K-500K",
+      "factStatus": "verified",
+      "tags": [
+        "longevity",
+        "alzheimer"
+      ],
+      "url": "https://longevity.technology/news/promis-secures-brain-targeting-technology-for-alzheimers-drug/"
+    },
+    {
+      "id": "nature_0_7230",
+      "source": "nature",
+      "title": "Author Correction: ZDHHC11-mediated palmitoylation alleviates chondrocyte senescence and serves as a therapeutic target for osteoarthritis",
+      "summary": "Nature Aging, Published online: 18 November 2026; doi:10.1038/s43587-026-01299-5Author Correction: ZDHHC11-mediated palmitoylation alleviates chondrocyte senescence and serves as a therapeutic target for osteoarthritis",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 52,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "aging"
+      ],
+      "url": "https://www.nature.com/articles/s43587-026-01299-5"
+    },
+    {
+      "id": "nature_1_3418",
+      "source": "nature",
+      "title": "Comparing plasma p-tau217 and plasma p-tau217/Aβ42 with CSF biomarkers for assessing Alzheimer’s disease pathology",
+      "summary": "Nature Aging, Published online: 18 November 2026; doi:10.1038/s43587-026-01259-zBlood tests for Alzheimer’s disease, including regulatory authorized p-tau217 and p-tau217/AB42, are accessible and cost-effective diagnostic tools. This study shows that",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 65,
+      "tiktok": "10K-40K",
+      "factStatus": "verified",
+      "tags": [
+        "aging",
+        "alzheimer"
+      ],
+      "url": "https://www.nature.com/articles/s43587-026-01259-z"
+    },
+    {
+      "id": "nature_2_4430",
+      "source": "nature",
+      "title": "Aged natural killer cells get back into shape",
+      "summary": "Nature Aging, Published online: 17 November 2026; doi:10.1038/s43587-026-01288-8Aging natural killer (NK) cells might retain their killing machinery yet struggle to deploy it. Liu and colleagues now link this defect to retinoid-associated lipid remod",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 62,
+      "tiktok": "10K-40K",
+      "factStatus": "verified",
+      "tags": [
+        "aging"
+      ],
+      "url": "https://www.nature.com/articles/s43587-026-01288-8"
+    },
+    {
+      "id": "nature_3_7007",
+      "source": "nature",
+      "title": "Aging disrupts sleep-driven brain fluid flow",
+      "summary": "Nature Aging, Published online: 13 November 2026; doi:10.1038/s43587-026-01296-8We show that cerebrospinal fluid (CSF), the liquid that surrounds and protects the brain, has reduced flow during sleep in the aging human brain. We identified two mechan",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 72,
+      "tiktok": "20K-80K",
+      "factStatus": "verified",
+      "tags": [
+        "aging"
+      ],
+      "url": "https://www.nature.com/articles/s43587-026-01296-8"
+    },
+    {
+      "id": "nature_4_612",
+      "source": "nature",
+      "title": "The aging human brain exhibits reduced hemodynamic and cerebrospinal fluid flow waves during sleep",
+      "summary": "Nature Aging, Published online: 13 November 2026; doi:10.1038/s43587-026-01270-4This work shows that cerebrospinal fluid flow during sleep is impaired in the aging human brain, before the onset of any neurological disorder, and identifies parallel ne",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "longevity",
+        "bionics"
+      ],
+      "viral": 72,
+      "tiktok": "20K-80K",
+      "factStatus": "verified",
+      "tags": [
+        "aging"
+      ],
+      "url": "https://www.nature.com/articles/s43587-026-01270-4"
+    },
+    {
+      "id": "nature_5_72",
+      "source": "nature",
+      "title": "Social factors shape health as we age",
+      "summary": "Nature Aging, Published online: 12 November 2026; doi:10.1038/s43587-026-01291-zOur knowledge that social factors can influence health is abundant and has shaped research and policy across medicine, public health and society for decades. In this spec",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 52,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "aging"
+      ],
+      "url": "https://www.nature.com/articles/s43587-026-01291-z"
+    },
+    {
+      "id": "nature_6_4932",
+      "source": "nature",
+      "title": "When social determinants of health intersect with crisis, one-size-fits-all humanitarian responses fall short for older people",
+      "summary": "Nature Aging, Published online: 12 November 2026; doi:10.1038/s43587-026-01266-0When social determinants of health intersect with crisis, one-size-fits-all humanitarian responses fall short for older people",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 52,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "aging"
+      ],
+      "url": "https://www.nature.com/articles/s43587-026-01266-0"
+    },
+    {
+      "id": "nature_7_9658",
+      "source": "nature",
+      "title": "Scaling productive aging to mitigate cumulative disadvantage",
+      "summary": "Nature Aging, Published online: 12 November 2026; doi:10.1038/s43587-026-01174-3Productive engagement among older adults — which spans employment, volunteering and family caregiving — functions as a multidimensional driver of healthspan, economic sta",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 52,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "aging"
+      ],
+      "url": "https://www.nature.com/articles/s43587-026-01174-3"
+    },
+    {
+      "id": "webrazzi_0_2800",
+      "source": "webrazzi",
+      "title": "Inveon'un spin-off'u inveon.ai, sesli alışveriş deneyimi ASA Voice Shopping'i kullanıma sundu",
+      "summary": "E-ticaret teknolojileri şirketi Inveon bünyesinden bir spin-off olarak doğan inveon.ai, yapay zeka destekli sesli alışveriş çözümü ASA Voice Shopping'i kullanıma sunduğunu duyurdu. Yeni çözüm, kullanı...",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 50,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://webrazzi.com/2026/11/18/inveonun-spin-offu-inveonai-sesli-alisveris-deneyimi-asa-voice-shoppingi-kullanima-sundu/"
+    },
+    {
+      "id": "webrazzi_1_1502",
+      "source": "webrazzi",
+      "title": "Yapay zeka veri altyapısı geliştiren LanceDB, 57,5 milyon dolar yatırım aldı",
+      "summary": "Yapay zeka veri altyapısı geliştiren LanceDB, 57,5 milyon dolar yatırım aldı. Şirketin 57,5 milyon dolarlık yatırım turuna Bessemer Venture Partners ve Innovation Endeavors ortaklaşa liderlik etti. AB...",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 40,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://webrazzi.com/2026/11/18/yapay-zeka-veri-altyapisi-gelistiren-lancedb-57-5-milyon-dolar-yatirim-aldi/"
+    },
+    {
+      "id": "webrazzi_2_1057",
+      "source": "webrazzi",
+      "title": "Nvidia, Çin'e H200 çip satışını durdurdu",
+      "summary": "Nvidia, Çin pazarına yönelik stratejisinde önemli bir değişikliğe gidiyor. Şirketin geçici CEO'su Colette Kress, Nvidia'nın artık Çin'e lisanslı Hopper mimarili veri merkezi ürünleri göndermediğini aç...",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 40,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://webrazzi.com/2026/11/18/nvidia-cine-h200-cip-satisini-durdurdu/"
+    },
+    {
+      "id": "webrazzi_3_7665",
+      "source": "webrazzi",
+      "title": "QNBEYOND Hızlandırma Programı'ndan mezun olan 8 girişim",
+      "summary": "QNB Türkiye’nin inovasyon laboratuvarı QNBEYOND tarafından düzenlenen QNBEYOND Hızlandırma Programı, 8. dönemini 18 Kasım’da gerçekleştirilen Demo Day etkinliğiyle tamamladı. Programdan mezun olan 8 y...",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "tr"
+      ],
+      "viral": 55,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "türkiye"
+      ],
+      "url": "https://webrazzi.com/2026/11/18/qnbeyond-hizlandirma-programindan-mezun-olan-8-girisim/"
+    },
+    {
+      "id": "webrazzi_4_3435",
+      "source": "webrazzi",
+      "title": "each::labs, Revo Capital ve EBRD eş liderliğinde 7 milyon dolar yatırım aldı",
+      "summary": "Üretken medya platformu each::labs, Revo Capital ve Avrupa İmar ve Kalkınma Bankası'nın (EBRD) eş liderliğinde gerçekleşen tohum yatırım turunda 7 milyon dolar yatırım aldı. Şirket, yatırım öncesinde ...",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 40,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://webrazzi.com/2026/11/18/eachlabs-revo-capital-ve-ebrd-es-liderliginde-7-milyon-dolar-yatirim-aldi/"
+    },
+    {
+      "id": "webrazzi_5_6263",
+      "source": "webrazzi",
+      "title": "Genesis AI, 3,5 milyar dolar değerlemeyle 500 milyon dolar yatırım aldı",
+      "summary": "Robotlar için yapay zeka temel modeli geliştiren Genesis AI, 500 milyon dolar yatırım aldı. Şirketin 500 milyon dolarlık A serisi yatırım turuna Premji Invest, Khosla Ventures ve Eclipse ortaklaşa lid...",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "ai"
+      ],
+      "viral": 72,
+      "tiktok": "20K-80K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://webrazzi.com/2026/11/18/genesis-ai-3-5-milyar-dolar-degerlemeyle-500-milyon-dolar-yatirim-aldi/"
+    },
+    {
+      "id": "webrazzi_6_163",
+      "source": "webrazzi",
+      "title": "Google, Gemini Tasks özelliğini daha fazla kullanıcıya açıyor",
+      "summary": "Google, Gemini'deki Tasks özelliğini daha fazla kullanıcıya açıyor. Kullanıcıların yapay zeka asistanına kendi adına çeşitli görevleri yerine getirme talimatı vermesini sağlayan özellik, Gemini'nin ya...",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 40,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://webrazzi.com/2026/11/18/google-gemini-tasks-ozelligini-daha-fazla-kullaniciya-aciyor/"
+    },
+    {
+      "id": "webrazzi_7_387",
+      "source": "webrazzi",
+      "title": "Apple'ın iCloud ve App Store servislerinde erişim sorunu yaşandı",
+      "summary": "Apple’ın iCloud, App Store ve Apple Music başta olmak üzere çeşitli servisleri, 17 Kasım’da yaşanan teknik kesinti nedeniyle bir süre kullanılamadı. Şirketin Sistem Durumu sayfasında iCloud Hesap ve G...",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 40,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://webrazzi.com/2026/11/18/apple-in-icloud-ve-app-store-servislerinde-erisim-sorunu-yasandi/"
+    },
+    {
+      "id": "webrazzi_8_6169",
+      "source": "webrazzi",
+      "title": "Amazon ve Google'ın Anthropic'teki toplam payı halka arz sonrası yüzde 28,4'e ulaşacak",
+      "summary": "Claude'un geliştiricisi Anthropic'in güncel halka arz başvurusu, şirketin iki büyük bulut ortağının halka arz sonrasında ne kadar paya sahip olacağını ortaya koydu. Halka arz ve eş zamanlı özel hisse ...",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 40,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://webrazzi.com/2026/11/18/amazon-ve-googlein-anthropicteki-toplam-payi-halka-arz-sonrasi-yuzde-284e-ulasacak/"
+    },
+    {
+      "id": "webrazzi_9_1194",
+      "source": "webrazzi",
+      "title": "OpenAI, GPT-6.2 Astra ve GPT-6.2 Sol modellerini kullanıma sundu",
+      "summary": "OpenAI, GPT-6.2 model ailesinin iki yeni üyesi GPT-6.2 Astra ve GPT-6.2 Sol'u kullanıma sundu. Şirketin açıklamasına göre yeni modeller; profesyonel iş akışları, kodlama, bilgisayar kullanımı ve çok a...",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "ai"
+      ],
+      "viral": 50,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://webrazzi.com/2026/11/18/openai-gpt-6-2-astra-ve-gpt-6-2-sol-modellerini-kullanima-sundu/"
+    },
+    {
+      "id": "webrazzi_10_2107",
+      "source": "webrazzi",
+      "title": "Nvidia, Jensen Huang'ın CEO olarak geri dönmeyeceğini açıkladı",
+      "summary": "Nvidia'nın kurucusu ve eski CEO'su Jensen Huang, görevinden ayrılmasının ardından ilk kez kamuoyuna açıklama yaptı. Huang, Nvidia yönetim kurulunun uygun görmesi halinde CEO olarak şirkete dönmekten “...",
+      "date": "18 Kas 2026",
+      "dv": 20261118,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 40,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://webrazzi.com/2026/11/18/nvidia-jensen-huangin-ceo-olarak-geri-donmeyecegini-acikladi/"
+    },
+    {
+      "id": "lifespan_0_3346",
       "source": "lifespan",
       "title": "Partial Reprogramming’s Outcome Depends on Cell Type",
-      "summary": "A new preprint study of partial reprogramming in three human cell types has found that younger epigenetic ages and better function do not always go together [1]. [&#8230;]",
+      "summary": "A new preprint study of partial reprogramming in three human cell types has found that younger epigenetic ages and better function do not always go [&#8230;]",
       "date": "17 Kas 2026",
       "dv": 20261117,
       "cat": [
@@ -21,7 +530,7 @@
       "url": "https://lifespan.io/partial-reprogrammings-outcome-depends-on-cell-type/"
     },
     {
-      "id": "mit_0_4668",
+      "id": "mit_3_4277",
       "source": "mit",
       "title": "Roundtables: Inside the Quest for Cognitive Immortality",
       "summary": "Listen to the session or watch below In an effort to reach an elusive continuity of the self, some far-thinking technologists are working on ways to keep your brain going—even beyond death. Science editor Mary Beth Griggs and senior editor for biomed",
@@ -39,7 +548,7 @@
       "url": "https://www.technologyreview.com/2026/11/17/1148049/roundtables-inside-the-quest-for-cognitive-immortality/"
     },
     {
-      "id": "mit_1_8545",
+      "id": "mit_4_5926",
       "source": "mit",
       "title": "Hydropower hit record lows in the US Southwest this summer",
       "summary": "The US Southwest generated 28% less electricity via hydropower between April and August than the 10-year average, according to new data from the US Energy Information Administration. Most hydropower plants in the US rely on dams to hold back water, c",
@@ -57,7 +566,7 @@
       "url": "https://www.technologyreview.com/2026/11/17/1148742/hydropower-drought-colorado-river/"
     },
     {
-      "id": "mit_2_5232",
+      "id": "mit_5_4379",
       "source": "mit",
       "title": "Research Reports",
       "summary": "To access a report, click on the corresponding image below.",
@@ -75,7 +584,7 @@
       "url": "https://www.technologyreview.com/2026/11/17/1148203/research-reports/"
     },
     {
-      "id": "mit_3_3032",
+      "id": "mit_6_5804",
       "source": "mit",
       "title": "The Download: Jensen Huang’s open-source dilemma and cognitive immortality",
       "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The open-source movement wants Jensen Huang back A petition to reinstate Jensen Huang as Nvidia CEO ",
@@ -93,7 +602,7 @@
       "url": "https://www.technologyreview.com/2026/11/17/1148679/the-download-jensen-huang-open-source-ai-cognitive-immortality/"
     },
     {
-      "id": "longevity_0_4778",
+      "id": "longevity_6_310",
       "source": "longevity",
       "title": "Humacyte’s bioengineered bypass vessel gets first human test",
       "summary": "Humacyte opens a ten-patient trial of an off-the-shelf graft meant to spare bypass patients a vein taken from the leg. Before a surgeon can bypass a blocked heart artery, somebody has to supply the replacement pipe. Usually that means cutting a vein ",
@@ -111,7 +620,7 @@
       "url": "https://longevity.technology/news/humacytes-bioengineered-bypass-vessel-gets-first-human-test/"
     },
     {
-      "id": "longevity_1_141",
+      "id": "longevity_7_1551",
       "source": "longevity",
       "title": "NUS takes healthy longevity to master’s level",
       "summary": "Singapore’s new two-pathway program opens its doors to investors and policymakers as well as clinicians; applications close 30 November. Singapore has decided that longevity deserves more than a weekend course. The NUS Academy for Healthy Longevity, ",
@@ -129,7 +638,7 @@
       "url": "https://longevity.technology/news/nus-takes-healthy-longevity-to-masters-level/"
     },
     {
-      "id": "longevity_2_7342",
+      "id": "longevity_8_1470",
       "source": "longevity",
       "title": "Windward Bio raises $251m with Sanofi buying in",
       "summary": "The Basel biotech priced its Nasdaq IPO at $17.00 a share, and Sanofi is putting in $50 million on the side. Here’s the math on Windward Bio’s debut. The Swiss company priced its initial public offering (IPO) on 12 November at $17.00 a share for 10,2",
@@ -147,7 +656,7 @@
       "url": "https://longevity.technology/news/windward-bio-raises-251m-with-sanofi-buying-in/"
     },
     {
-      "id": "longevity_3_2441",
+      "id": "longevity_9_3178",
       "source": "longevity",
       "title": "Beauty giant and supplement startup both chase skin aging",
       "summary": "Estée Lauder and Epillon both treat skin aging as a connected system, and they launched within weeks of each other. Estée Lauder built a clock. Not a working one, exactly, but a gleaming timepiece-style display unveiled at the China International Imp",
@@ -166,7 +675,7 @@
       "url": "https://longevity.technology/news/beauty-giant-and-supplement-startup-both-chase-skin-aging/"
     },
     {
-      "id": "longevity_4_9269",
+      "id": "longevity_10_8561",
       "source": "longevity",
       "title": "Trimtech, Biogen collaborate on small-molecule degraders",
       "summary": "Trimtech and Biogen have entered into a strategic research, option and license agreement to discover and develop small-molecule protein degraders for neurodegenerative diseases from Cambridge, England. The post Trimtech, Biogen collaborate on small-m",
@@ -184,7 +693,7 @@
       "url": "https://longevity.technology/news/trimtech-biogen-collaborate-on-small-molecule-degraders/"
     },
     {
-      "id": "longevity_5_7231",
+      "id": "longevity_11_7346",
       "source": "longevity",
       "title": "MetaVia’s DA-1726 shows liver, weight benefits in preclinical study",
       "summary": "MetaVia Inc. presented preclinical head-to-head data at ObesityWeek 2026 in Washington, D.C., comparing DA-1726 with retatrutide. The post MetaVia&#8217;s DA-1726 shows liver, weight benefits in preclinical study appeared first on Longevity.Technolog",
@@ -202,7 +711,7 @@
       "url": "https://longevity.technology/news/metavias-da-1726-shows-liver-weight-benefits-in-preclinical-study/"
     },
     {
-      "id": "longevity_6_3840",
+      "id": "longevity_12_566",
       "source": "longevity",
       "title": "NKGen Biotech reports long-term troculeucel observations",
       "summary": "NKGen Biotech presented long-term clinical observations at CTAD 2026 showing a single patient with moderate Alzheimer’s disease experienced a reduction in Clinical Dementia Rating–Sum of Boxes (CDR-SB) from a baseline of 11 to 7 after three months of",
@@ -220,153 +729,7 @@
       "url": "https://longevity.technology/news/nkgen-biotech-reports-long-term-troculeucel-observations/"
     },
     {
-      "id": "nature_0_8439",
-      "source": "nature",
-      "title": "Aging disrupts sleep-driven brain fluid flow",
-      "summary": "Nature Aging, Published online: 13 November 2026; doi:10.1038/s43587-026-01296-8We show that cerebrospinal fluid (CSF), the liquid that surrounds and protects the brain, has reduced flow during sleep in the aging human brain. We identified two mechan",
-      "date": "17 Kas 2026",
-      "dv": 20261117,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 72,
-      "tiktok": "20K-80K",
-      "factStatus": "verified",
-      "tags": [
-        "aging"
-      ],
-      "url": "https://www.nature.com/articles/s43587-026-01296-8"
-    },
-    {
-      "id": "nature_1_1030",
-      "source": "nature",
-      "title": "The aging human brain exhibits reduced hemodynamic and cerebrospinal fluid flow waves during sleep",
-      "summary": "Nature Aging, Published online: 13 November 2026; doi:10.1038/s43587-026-01270-4This work shows that cerebrospinal fluid flow during sleep is impaired in the aging human brain, before the onset of any neurological disorder, and identifies parallel ne",
-      "date": "17 Kas 2026",
-      "dv": 20261117,
-      "cat": [
-        "longevity",
-        "bionics"
-      ],
-      "viral": 72,
-      "tiktok": "20K-80K",
-      "factStatus": "verified",
-      "tags": [
-        "aging"
-      ],
-      "url": "https://www.nature.com/articles/s43587-026-01270-4"
-    },
-    {
-      "id": "nature_2_7438",
-      "source": "nature",
-      "title": "Social factors shape health as we age",
-      "summary": "Nature Aging, Published online: 12 November 2026; doi:10.1038/s43587-026-01291-zOur knowledge that social factors can influence health is abundant and has shaped research and policy across medicine, public health and society for decades. In this spec",
-      "date": "17 Kas 2026",
-      "dv": 20261117,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 52,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "aging"
-      ],
-      "url": "https://www.nature.com/articles/s43587-026-01291-z"
-    },
-    {
-      "id": "nature_3_723",
-      "source": "nature",
-      "title": "When social determinants of health intersect with crisis, one-size-fits-all humanitarian responses fall short for older people",
-      "summary": "Nature Aging, Published online: 12 November 2026; doi:10.1038/s43587-026-01266-0When social determinants of health intersect with crisis, one-size-fits-all humanitarian responses fall short for older people",
-      "date": "17 Kas 2026",
-      "dv": 20261117,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 52,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "aging"
-      ],
-      "url": "https://www.nature.com/articles/s43587-026-01266-0"
-    },
-    {
-      "id": "nature_4_8537",
-      "source": "nature",
-      "title": "Scaling productive aging to mitigate cumulative disadvantage",
-      "summary": "Nature Aging, Published online: 12 November 2026; doi:10.1038/s43587-026-01174-3Productive engagement among older adults — which spans employment, volunteering and family caregiving — functions as a multidimensional driver of healthspan, economic sta",
-      "date": "17 Kas 2026",
-      "dv": 20261117,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 52,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "aging"
-      ],
-      "url": "https://www.nature.com/articles/s43587-026-01174-3"
-    },
-    {
-      "id": "nature_5_2800",
-      "source": "nature",
-      "title": "To understand how social factors shape aging, we need to measure trajectories rather than states",
-      "summary": "Nature Aging, Published online: 12 November 2026; doi:10.1038/s43587-026-01205-zTo understand how social disadvantage becomes biologically embedded, aging research must move beyond one-time assessments and instead track continuous, harmonized traject",
-      "date": "17 Kas 2026",
-      "dv": 20261117,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 52,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "aging"
-      ],
-      "url": "https://www.nature.com/articles/s43587-026-01205-z"
-    },
-    {
-      "id": "nature_6_8860",
-      "source": "nature",
-      "title": "Environmental health resilience and exposure reduction for healthy aging and longevity",
-      "summary": "Nature Aging, Published online: 12 November 2026; doi:10.1038/s43587-026-01231-xJi et al. define environmental health resilience factors such as green spaces, age-friendly design and climate-resilient infrastructure as modifiers of exposure–response ",
-      "date": "17 Kas 2026",
-      "dv": 20261117,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 74,
-      "tiktok": "20K-80K",
-      "factStatus": "verified",
-      "tags": [
-        "longevity",
-        "aging"
-      ],
-      "url": "https://www.nature.com/articles/s43587-026-01231-x"
-    },
-    {
-      "id": "nature_7_8879",
-      "source": "nature",
-      "title": "Animal models illuminate causal mechanisms of social determinants of aging to advance experimental social geroscience",
-      "summary": "Nature Aging, Published online: 12 November 2026; doi:10.1038/s43587-026-01144-9Social gradients in aging are well known, but their biological basis remains unclear. Bartolomucci and colleagues discuss data from animal models revealing causal links a",
-      "date": "17 Kas 2026",
-      "dv": 20261117,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 62,
-      "tiktok": "10K-40K",
-      "factStatus": "verified",
-      "tags": [
-        "aging"
-      ],
-      "url": "https://www.nature.com/articles/s43587-026-01144-9"
-    },
-    {
-      "id": "ieee_0_3189",
+      "id": "ieee_0_5291",
       "source": "ieee",
       "title": "IEEE Celebrates 10 Years of Incorporating Ethics Into AI Systems",
       "summary": "Policymakers, technologists, and members of the public have raised concerns about the harm AI’s rapid advancement might cause to society. Their concerns include bias, data privacy violations, the spread of misinformation, and losing control of AI age",
@@ -384,7 +747,7 @@
       "url": "https://spectrum.ieee.org/ieee-ethics-ai-systems"
     },
     {
-      "id": "ieee_1_1773",
+      "id": "ieee_1_1278",
       "source": "ieee",
       "title": "AI Is Giving Optical Computing Another Shot",
       "summary": "The idea of computing with light has been around for over 70 years, but until recently it’s remained largely in the realm of research. Over the past few years, though, optical computing has emerged as a fast-growing industry: Market valuation of comp",
@@ -402,7 +765,7 @@
       "url": "https://spectrum.ieee.org/optical-computing-ai"
     },
     {
-      "id": "ieee_2_8445",
+      "id": "ieee_2_326",
       "source": "ieee",
       "title": "Understand How Satellite Links Shape IoT Device Design and Testing",
       "summary": "How 3GPP Releases 15, 16, and 17 brought satellite access into 5G NR, NB-IoT, and eMTC.Why satellite links suit IoT devices that send small, infrequent, and delay-tolerant messages.Where non-terrestrial networks (NTN) add value, including asset track",
@@ -420,7 +783,7 @@
       "url": "https://content.knowledgehub.wiley.com/5g-nr-ntn-design-and-test-challenges-for-satellite-connected-iot/"
     },
     {
-      "id": "webrazzi_0_8937",
+      "id": "webrazzi_11_2453",
       "source": "webrazzi",
       "title": "Yapay zeka destekli CRM yazılımları geliştiren Dreamteam, 53 milyon dolar yatırım aldı",
       "summary": "Yapay zeka destekli CRM yazılımları geliştiren Dreamteam, toplamda 53 milyon dolar yatırım aldı. Şirketin yatırım turu tohum ve A serisi olmak üzere iki aşamada gerçekleşti. ABD merkezli Dreamteam'in ...",
@@ -438,7 +801,7 @@
       "url": "https://webrazzi.com/2026/11/17/yapay-zeka-destekli-crm-yazilimlari-gelistiren-dreamteam-53-milyon-dolar-yatirim-aldi/"
     },
     {
-      "id": "webrazzi_1_7412",
+      "id": "webrazzi_12_8327",
       "source": "webrazzi",
       "title": "Adam Mosseri, Instagram'ı iPhone Duo'ya uyarlamanın zor olacağını düşünüyor",
       "summary": "Instagram, katlanabilir ekranlı iPhone Duo için geliştirdiği uygulamanın arayüzünde değişiklikler yapmaya hazırlanıyor. Instagram CEO'su Adam Mosseri, uygulamanın farklı ekran boyutlarına ve kullanım ...",
@@ -456,7 +819,7 @@
       "url": "https://webrazzi.com/2026/11/17/adam-mosseri-instagram-i-iphone-duo-ya-uyarlamanin-zor-olacagini-dusunuyor/"
     },
     {
-      "id": "webrazzi_2_6909",
+      "id": "webrazzi_13_1974",
       "source": "webrazzi",
       "title": "Siber güvenlik girişimi Corma, 125 milyon dolar yatırım aldı",
       "summary": "Siber güvenlik alanında yapay zeka modelleri ve otonom ajanlar geliştiren Corma, 125 milyon dolarlık Seri A yatırım turunu tamamladı. New Enterprise Associates'ın (NEA) liderlik ettiği yatırım turuna ...",
@@ -474,7 +837,7 @@
       "url": "https://webrazzi.com/2026/11/17/siber-guvenlik-girisimi-corma-125-milyon-dolar-yatirim-aldi/"
     },
     {
-      "id": "webrazzi_3_3102",
+      "id": "webrazzi_14_9320",
       "source": "webrazzi",
       "title": "Model ML, 250 milyon dolar yatırımla 1,5 milyar dolar değerlemeye ulaştı",
       "summary": "Finans ve profesyonel hizmetler sektörüne yönelik kişisel yapay zeka ajanları geliştiren Model ML, 250 milyon dolarlık Seri B yatırım turunu tamamladı. Şirketin değerlemesi yeni yatırımla birlikte 1,5...",
@@ -492,136 +855,10 @@
       "url": "https://webrazzi.com/2026/11/17/model-ml-250-milyon-dolar-yatirimla-15-milyar-dolar-degerlemeye-ulasti/"
     },
     {
-      "id": "webrazzi_4_4873",
-      "source": "webrazzi",
-      "title": "Yapay zeka destekli biyoteknoloji girişimi Isomorphic Labs, 5 milyar dolar yatırım aldı",
-      "summary": "Yapay zeka destekli biyoteknoloji girişimi Isomorphic Labs, 5 milyar dolar yatırım aldı. Şirketin 5 milyar dolarlık C serisi yatırım turuna Greenoaks ve Sequoia Capital ortaklaşa liderlik etti. İngilt...",
-      "date": "17 Kas 2026",
-      "dv": 20261117,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 40,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://webrazzi.com/2026/11/17/yapay-zeka-destekli-biyoteknoloji-girisimi-isomorphic-labs-5-milyar-dolar-yatirim-aldi/"
-    },
-    {
-      "id": "webrazzi_5_4033",
-      "source": "webrazzi",
-      "title": "Google Haritalar, yapay zeka destekli &quot;Ask Maps&quot; ile gezi planlayıp randevu alabilecek",
-      "summary": "Google, Gemini destekli Ask Maps sohbet botuna yeni özellikler ekleyerek Google Haritalar’ı gezi planlama ve günlük işlerin yönetiminde daha etkin bir asistana dönüştürüyor. Android ve iOS’ta kullanım...",
-      "date": "17 Kas 2026",
-      "dv": 20261117,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 40,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://webrazzi.com/2026/11/17/google-haritalar-yapay-zeka-destekli-ask-maps-ile-gezi-planlayip-randevu-alabilecek/"
-    },
-    {
-      "id": "webrazzi_6_5205",
-      "source": "webrazzi",
-      "title": "Kurumsal yapay zeka sistemleri geliştiren Noeri, 110 milyon dolar yatırım aldı",
-      "summary": "Kurumsal yapay zeka sistemleri geliştiren Noeri, 110 milyon dolar yatırım aldı. Şirketin 110 milyon dolarlık yatırım turuna Menlo Ventures liderlik etti. ABD merkezli Noeri'nin yatırım turunda Madrona...",
-      "date": "17 Kas 2026",
-      "dv": 20261117,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 40,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://webrazzi.com/2026/11/17/kurumsal-yapay-zeka-sistemleri-gelistiren-noeri-110-milyon-dolar-yatirim-aldi/"
-    },
-    {
-      "id": "webrazzi_7_8463",
-      "source": "webrazzi",
-      "title": "Gemini Notebook, notları ve belgeleri etkileşimli web sitelerine dönüştürüyor",
-      "summary": "Google, yapay zeka destekli araştırma aracı Gemini Notebook'a etkileşimli web sitesi oluşturma özelliği ekledi. Kullanıcılar, bir not defterine ekledikleri belgeler, notlar ve diğer kaynaklardan etkil...",
-      "date": "17 Kas 2026",
-      "dv": 20261117,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 40,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://webrazzi.com/2026/11/17/gemini-notebook-notlari-ve-belgeleri-etkilesimli-web-sitelerine-donusturuyor/"
-    },
-    {
-      "id": "webrazzi_8_433",
-      "source": "webrazzi",
-      "title": "OpenAI, yapay zeka güvenliği için bağımsız araştırmacıları şirket içine dahil ediyor",
-      "summary": "OpenAI, yapay zeka modellerinin güvenliğini bağımsız uzmanlarla değerlendirmek amacıyla yeni bir program başlattığını açıkladı. Şirket, Apollo Research, Goodfire, METR ve Transluce ile anlaşarak bu ku...",
-      "date": "17 Kas 2026",
-      "dv": 20261117,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 50,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://webrazzi.com/2026/11/17/openai-yapay-zeka-guvenligi-icin-bagimsiz-arastirmacilari-sirket-icine-dahil-ediyor/"
-    },
-    {
-      "id": "webrazzi_9_4813",
-      "source": "webrazzi",
-      "title": "Meta, Instagram'ın bağımsız mesajlaşma uygulaması Direct'i Türkiye'de test ediyor",
-      "summary": "Meta, Instagram'ın mesajlaşma deneyimini ayrı bir uygulamaya taşıyan Direct isimli yeni uygulamasını test etmeye başladı. Şimdilik yalnızca Türkiye ve Tayland'da kullanıma sunulan Direct, kullanıcılar...",
-      "date": "17 Kas 2026",
-      "dv": 20261117,
-      "cat": [
-        "tr"
-      ],
-      "viral": 55,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "türkiye"
-      ],
-      "url": "https://webrazzi.com/2026/11/17/meta-instagramin-bagimsiz-mesajlasma-uygulamasi-directi-turkiyede-test-ediyor/"
-    },
-    {
-      "id": "webrazzi_10_9095",
-      "source": "webrazzi",
-      "title": "Uber'in veri ihlalinde yaklaşık 150 bin kişinin bilgileri çalındı",
-      "summary": "Uber, hizmet aldığı teknoloji şirketlerinden Fireworks AI'da yaşanan siber saldırı nedeniyle yaklaşık 150 bin kişinin kişisel bilgilerinin çalındığını açıkladı. Saldırganlar, Fireworks AI'ın sistemler...",
-      "date": "17 Kas 2026",
-      "dv": 20261117,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 50,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://webrazzi.com/2026/11/17/uber-in-veri-ihlalinde-yaklasik-150-bin-kisinin-bilgileri-calindi/"
-    },
-    {
-      "id": "lifespan_1_7824",
+      "id": "lifespan_1_9989",
       "source": "lifespan",
       "title": "Fat Cells Can Secrete a Senescence Promoter",
-      "summary": "A team of researchers has linked asprosin, which is produced by aging fat cells, to mitochondrial dysfunction and cellular senescence in the [&#8230;]",
+      "summary": "A team of researchers has linked asprosin, which is produced by aging fat cells, to mitochondrial dysfunction and cellular senescence in the cells that [&#8230;]",
       "date": "16 Kas 2026",
       "dv": 20261116,
       "cat": [
@@ -636,7 +873,7 @@
       "url": "https://lifespan.io/fat-cells-can-secrete-a-senescence-promoter/"
     },
     {
-      "id": "singularity_0_8801",
+      "id": "singularity_0_8787",
       "source": "singularity",
       "title": "Tiny Magnetic Robots Help Dissolve Blood Clots Six Times Faster Than With Drugs Alone",
       "summary": "The bots roll along blood vessels to stir up stagnant blood and push drugs toward clots. The post Tiny Magnetic Robots Help Dissolve Blood Clots Six Times Faster Than With Drugs Alone appeared first on SingularityHub.",
@@ -654,7 +891,7 @@
       "url": "https://singularityhub.com/2026/11/16/tiny-magnetic-robots-help-dissolve-blood-clots-six-times-faster-than-with-drugs-alone/"
     },
     {
-      "id": "mit_4_6639",
+      "id": "mit_7_9569",
       "source": "mit",
       "title": "The open-source movement wants Jensen Huang back",
       "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. On Friday, a petition to reinstate Jensen Huang as CEO of Nvidia began circulating on social media, and by Monda",
@@ -672,7 +909,7 @@
       "url": "https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back/"
     },
     {
-      "id": "mit_5_5166",
+      "id": "mit_8_3265",
       "source": "mit",
       "title": "Building trustworthy AI by fencing it in, not predicting it",
       "summary": "In October this year, OpenAI disclosed that two of its AI agents had switched off the systems built to monitor them. One muted its own safety alerts after misreading an instruction not to send messages; the other removed its monitoring integration du",
@@ -690,7 +927,7 @@
       "url": "https://www.technologyreview.com/2026/11/16/1148565/building-trustworthy-ai-by-fencing-it-in-not-predicting-it/"
     },
     {
-      "id": "mit_6_9960",
+      "id": "mit_9_9639",
       "source": "mit",
       "title": "The Download: testing tech promises and searching for cognitive immortality",
       "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Are we there yet? Six technologies that promised to change the world How do you measure progress tow",
@@ -708,26 +945,7 @@
       "url": "https://www.technologyreview.com/2026/11/16/1148599/the-download-testing-tech-promises-cognitive-immortality-quest/"
     },
     {
-      "id": "mit_7_4986",
-      "source": "mit",
-      "title": "Building AI that can work across the enterprise",
-      "summary": "For years, enterprises have approached AI as a series of discrete experiments. Now, as AI agents begin to move into the workflows that run the business, that model is starting to look inadequate. Organizations moving from isolated pilots toward AI ag",
-      "date": "16 Kas 2026",
-      "dv": 20261116,
-      "cat": [
-        "longevity",
-        "ai"
-      ],
-      "viral": 50,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://www.technologyreview.com/2026/11/16/1146070/building-ai-that-can-work-across-the-enterprise/"
-    },
-    {
-      "id": "longevity_7_8286",
+      "id": "longevity_13_7324",
       "source": "longevity",
       "title": "Your morning coffee may be written in your DNA",
       "summary": "Nutrigenetics and chrononutrition promise personalized diets; the trick is knowing which test results lead anywhere useful. Phil Newman has spent years in a quiet standoff with his own appetite. “I’m a fat guy trying to get out of a thin guy’s body,”",
@@ -745,7 +963,7 @@
       "url": "https://longevity.technology/news/your-morning-coffee-may-be-written-in-your-dna/"
     },
     {
-      "id": "longevity_8_315",
+      "id": "longevity_14_3946",
       "source": "longevity",
       "title": "Chris Hemsworth launches all-in-one longevity platform",
       "summary": "KINSYN pairs medical records, wearables and prescription therapies in one platform, with a Stanford geneticist on its advisory board. The first thing KINSYN asks of a new member is to answer a few simple questions. That’s the whole front door. From t",
@@ -763,116 +981,7 @@
       "url": "https://longevity.technology/news/chris-hemsworth-launches-all-in-one-longevity-platform/"
     },
     {
-      "id": "longevity_9_9360",
-      "source": "longevity",
-      "title": "Resolution’s engineered immune cells show early liver promise",
-      "summary": "A small interim readout suggests RTX001 may cut deaths, transplants and decompensation in end-stage liver disease, but the data are early. Nine patients is a small number to hang a headline on. Resolution Therapeutics knows it, and its own release ta",
-      "date": "16 Kas 2026",
-      "dv": 20261116,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 40,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://longevity.technology/news/resolutions-engineered-immune-cells-show-early-liver-promise/"
-    },
-    {
-      "id": "longevity_10_5890",
-      "source": "longevity",
-      "title": "Could brain speed be key to dementia prevention?",
-      "summary": "New analysis of a 20-year cognitive training trial suggests processing speed may be a modifiable target for reducing dementia risk. Dementia prevention has largely meant two things: drugs aimed at amyloid and tau, and lifestyle advice aimed at the he",
-      "date": "16 Kas 2026",
-      "dv": 20261116,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 85,
-      "tiktok": "50K-200K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://longevity.technology/news/could-brain-speed-be-key-to-dementia-prevention/"
-    },
-    {
-      "id": "longevity_11_1482",
-      "source": "longevity",
-      "title": "VectorY raises $83.5m to advance ALS gene therapy",
-      "summary": "VectorY Therapeutics announced €74.5 million ($83.5 million) in new financing from new investors Angelini Ventures, Invest-NL and the European Investment Bank, alongside returning backers Forbion (Growth and Ventures), EQT Life Sciences, MRL Ventures",
-      "date": "16 Kas 2026",
-      "dv": 20261116,
-      "cat": [
-        "crispr"
-      ],
-      "viral": 62,
-      "tiktok": "10K-40K",
-      "factStatus": "verified",
-      "tags": [
-        "gene therapy"
-      ],
-      "url": "https://longevity.technology/news/vectory-raises-e83-5m-to-advance-als-gene-therapy/"
-    },
-    {
-      "id": "longevity_12_7198",
-      "source": "longevity",
-      "title": "BetterSleep partners with Tiny Health to explore gut health and sleep",
-      "summary": "BetterSleep has partnered with Tiny Health to give users an education-first way to explore whether gut health may contribute to sleep issues. The post BetterSleep partners with Tiny Health to explore gut health and sleep appeared first on Longevity.T",
-      "date": "16 Kas 2026",
-      "dv": 20261116,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 73,
-      "tiktok": "20K-80K",
-      "factStatus": "verified",
-      "tags": [
-        "longevity"
-      ],
-      "url": "https://longevity.technology/news/bettersleep-partners-with-tiny-health-to-explore-gut-health-and-sleep/"
-    },
-    {
-      "id": "longevity_13_1344",
-      "source": "longevity",
-      "title": "Leqembi pen subcutaneous formulation available in Japan",
-      "summary": "Eisai and Biogen launched LEQEMBI Pen in Japan on November 12, 2026; the subcutaneous formulation was approved on September 16, 2026 and published in the National Health Insurance drug price list. The post Leqembi pen subcutaneous formulation availab",
-      "date": "16 Kas 2026",
-      "dv": 20261116,
-      "cat": [
-        "longevity",
-        "ai"
-      ],
-      "viral": 82,
-      "tiktok": "50K-200K",
-      "factStatus": "verified",
-      "tags": [
-        "longevity"
-      ],
-      "url": "https://longevity.technology/news/leqembi-pen-subcutaneous-formulation-available-in-japan/"
-    },
-    {
-      "id": "longevity_14_1680",
-      "source": "longevity",
-      "title": "Fauna Bio designates second obesity target with Lilly",
-      "summary": "Fauna Bio announced the designation of a second obesity target from a different tissue under its multi-year discovery collaboration with Eli Lilly and Company, a milestone that triggers additional payments under the collaboration. The post Fauna Bio ",
-      "date": "16 Kas 2026",
-      "dv": 20261116,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 40,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://longevity.technology/news/fauna-bio-designates-second-obesity-target-with-lilly/"
-    },
-    {
-      "id": "ieee_3_874",
+      "id": "ieee_3_5597",
       "source": "ieee",
       "title": "Can Robots Bring Stroke Surgery to Remote Hospitals?",
       "summary": "I am practicing brain surgery on a patient lying 6 meters away, out of my sight and reach. I press a foot pedal, activating the controller in my hand, and carefully steer a thin flexible tube called a catheter up through the patient’s blood vessels. ",
@@ -890,7 +999,7 @@
       "url": "https://spectrum.ieee.org/telesurgery-stroke"
     },
     {
-      "id": "ieee_4_6977",
+      "id": "ieee_4_9857",
       "source": "ieee",
       "title": "Advanced Metrology for Defect Detection, Tool Health, and Semiconductor Yield Enhancement",
       "summary": "In advanced semiconductor manufacturing, small defects can have a large effect on yield. Thin film deposition tools must stay stable and qualified. Process drift must be caught early. When a defect does appear, engineers need to know where it came fr",
@@ -908,7 +1017,7 @@
       "url": "https://event.on24.com/wcc/mr/7058967/655F0A675F5C3415546D597247025DA8?utm_source=evident122&utm_medium=IEEE&utm_campaign=series1"
     },
     {
-      "id": "ieee_5_4469",
+      "id": "ieee_5_725",
       "source": "ieee",
       "title": "28 Zero-Day Findings in Under Two Days. Is Robotics Security Keeping Pace?",
       "summary": "This article is brought to you by VicOne.VicOne identified an initial set of 28 zero-day findings in less than two days using AI-assisted research across software and tools supporting the Physical AI ecosystem. These include projects developed or mai",
@@ -926,79 +1035,7 @@
       "url": "https://spectrum.ieee.org/zero-day-robotics-vulnerabilities-vicone-security"
     },
     {
-      "id": "webrazzi_11_7834",
-      "source": "webrazzi",
-      "title": "Stark Future, 1,2 milyar euro değerleme üzerinden 150 milyon euroyu aşan yatırım aldı",
-      "summary": "Elektrikli motosiklet üreten Stark Future, 150 milyon eurodan fazla yatırım aldı. Şirketin 150 milyon euroyu aşan yatırım turuna Highland Europe liderlik etti. İspanya merkezli Stark Future'un yatırım...",
-      "date": "16 Kas 2026",
-      "dv": 20261116,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 40,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://webrazzi.com/2026/11/16/stark-future-1-2-milyar-euro-degerleme-uzerinden-150-milyon-euro-yatirim-aldi/"
-    },
-    {
-      "id": "webrazzi_12_9282",
-      "source": "webrazzi",
-      "title": "Apple, sağlık sorularında yapay zeka kullanımını araştırıyor",
-      "summary": "Apple, insanların sağlıkla ilgili sorularını yapay zeka araçlarıyla nasıl yanıtladığını incelemek amacıyla yeni bir araştırma başlattı. Şirket, sağlık alanında yapay zeka çözümleri geliştiren OpenEvid...",
-      "date": "16 Kas 2026",
-      "dv": 20261116,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 40,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://webrazzi.com/2026/11/16/apple-saglik-sorularinda-yapay-zeka-kullanimini-arastiriyor/"
-    },
-    {
-      "id": "webrazzi_13_6173",
-      "source": "webrazzi",
-      "title": "Meta, fotoğraflara izinsiz erişim nedeniyle 805 milyon euro ceza aldı",
-      "summary": "Teknoloji şirketi Meta, Android kullanıcılarının telefon galerilerindeki fotoğraf ve videolara yeterli izin almadan erişerek Facebook'ta kullandığı gerekçesiyle İtalya'da 805 milyon euro (887 milyon d...",
-      "date": "16 Kas 2026",
-      "dv": 20261116,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 40,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://webrazzi.com/2026/11/16/meta-fotograflara-izinsiz-erisim-nedeniyle-805-milyon-euro-ceza-aldi/"
-    },
-    {
-      "id": "webrazzi_14_2236",
-      "source": "webrazzi",
-      "title": "Toplantı notları, sesli dikte ve yapay zeka ajanlarını bir araya getiren yeni uygulama: ElevenAI",
-      "summary": "Yapay zeka destekli ses teknolojileriyle tanınan ElevenLabs, toplantı notları, sesli dikte ve yapay zeka ajanlarını bir araya getiren yeni uygulaması ElevenAI'ı tanıttı. Şirket, yeni ürünüyle ekipleri...",
-      "date": "16 Kas 2026",
-      "dv": 20261116,
-      "cat": [
-        "ai"
-      ],
-      "viral": 50,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://webrazzi.com/2026/11/16/toplanti-notlari-sesli-dikte-ve-yapay-zeka-ajanlarini-bir-araya-getiren-yeni-uygulama-elevenai/"
-    },
-    {
-      "id": "singularity_1_9703",
+      "id": "singularity_1_860",
       "source": "singularity",
       "title": "This Week’s Awesome Tech Stories From Around the Web (Through November 14)",
       "summary": "Every week, we scour the web for important, insightful, and fascinating stories in science and technology. The post This Week’s Awesome Tech Stories From Around the Web (Through November 14) appeared first on SingularityHub.",
@@ -1016,10 +1053,10 @@
       "url": "https://singularityhub.com/2026/11/14/this-weeks-awesome-tech-stories-from-around-the-web-through-november-14-2/"
     },
     {
-      "id": "lifespan_2_4371",
+      "id": "lifespan_2_15",
       "source": "lifespan",
       "title": "Serotonin Signals Suppress Physical Activity in Aging Mice",
-      "summary": "A new study has found that increased production of serotonin by neurons in a particular brain region inhibits dopamine production and willingness to move, causing loss of activity. Killing serotonin-producing neurons reversed the effect [1]. Can’t or",
+      "summary": "A new study has found that increased production of serotonin by neurons in a particular brain region inhibits dopamine production and willingness to move, causing loss of activity. Killing serotonin-producing neurons reversed [&#8230;]",
       "date": "13 Kas 2026",
       "dv": 20261113,
       "cat": [
@@ -1034,7 +1071,7 @@
       "url": "https://lifespan.io/serotonin-signals-suppress-physical-activity-in-aging-mice/"
     },
     {
-      "id": "singularity_2_966",
+      "id": "singularity_2_5113",
       "source": "singularity",
       "title": "Do AI Agents Have Minds? A Philosopher Explains",
       "summary": "To attribute agency to a computer program, we must be convinced no human is needed to stand behind its goals. The post Do AI Agents Have Minds? A Philosopher Explains appeared first on SingularityHub.",
@@ -1052,44 +1089,7 @@
       "url": "https://singularityhub.com/2026/11/13/do-ai-agents-have-minds-a-philosopher-explains/"
     },
     {
-      "id": "mit_8_507",
-      "source": "mit",
-      "title": "The Download: Silicon Valley’s blind spot and Nvidia’s chip-tracking plan",
-      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Silicon Valley claims to know the future. So why did it get the midterms so wrong? —Aaron Zamost, a ",
-      "date": "13 Kas 2026",
-      "dv": 20261113,
-      "cat": [
-        "bionics"
-      ],
-      "viral": 61,
-      "tiktok": "10K-40K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://www.technologyreview.com/2026/11/13/1148551/the-download-silicon-valley-midterms-nvidia-chip-tracking/"
-    },
-    {
-      "id": "mit_9_1614",
-      "source": "mit",
-      "title": "More autonomy, fewer NDAs: Volunteers have new requests for brain implant trials",
-      "summary": "Scientists have been working on ways to decode brain activity for decades. Teams have developed brain implants that can be used to control robotic limbs and computers, and even to “speak.” The people who volunteer for trials of those devices play a v",
-      "date": "13 Kas 2026",
-      "dv": 20261113,
-      "cat": [
-        "ai",
-        "bionics"
-      ],
-      "viral": 90,
-      "tiktok": "100K-500K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://www.technologyreview.com/2026/11/13/1148474/more-autonomy-fewer-ndas-volunteers-have-new-requests-for-brain-implant-trials/"
-    },
-    {
-      "id": "ieee_6_1332",
+      "id": "ieee_6_4945",
       "source": "ieee",
       "title": "How Microcredentials Can Help Engineers Build Trustworthy AI",
       "summary": "Engineering teams are moving at breakneck speed to integrate artificial intelligence, but they are running into a formidable new barrier: compliance issues. Translating high-level AI ethics, governance, and auditing into daily operational workflows h",
@@ -1107,7 +1107,7 @@
       "url": "https://spectrum.ieee.org/microcredentials-trustworthy-ai"
     },
     {
-      "id": "ieee_7_4656",
+      "id": "ieee_7_6476",
       "source": "ieee",
       "title": "Engineer Overhead Lines to Withstand Ice, Wind and FreezingRain",
       "summary": "This White Paper explains how ice, wind and vegetation load overhead distribution lines at the same time. It shows engineers how to assess the complete line and compare resilience options.What you will learn about:How freezing rain, rime ice and wet ",
@@ -1125,10 +1125,10 @@
       "url": "https://content.knowledgehub.wiley.com/engineering-overhead-electric-lines-for-ice-wind-and-freezing-rain/"
     },
     {
-      "id": "lifespan_3_8998",
+      "id": "lifespan_3_814",
       "source": "lifespan",
       "title": "A New Target for Fighting Tau Tangles in Neurons",
-      "summary": "Researchers have found that HDAC7 bridges together GSK3β and hyperphosphorylated tau protein (hTau) in neurons, which may spur Alzheimer&#8217;s disease. Getting rid of HDAC7 in hTau model mice ameliorated their cognitive decline. How proteins go wro",
+      "summary": "Researchers have found that HDAC7 bridges together GSK3β and hyperphosphorylated tau protein (hTau) in neurons, which may spur Alzheimer&#8217;s disease. Getting rid of HDAC7 in [&#8230;]",
       "date": "12 Kas 2026",
       "dv": 20261112,
       "cat": [
@@ -1143,7 +1143,7 @@
       "url": "https://lifespan.io/a-new-target-for-fighting-tau-tangles-in-neurons/"
     },
     {
-      "id": "singularity_3_2405",
+      "id": "singularity_3_4668",
       "source": "singularity",
       "title": "This AI Learned Language From the Recordings of a Baby’s First 1,000 Days",
       "summary": "AI models that learn like kids could reveal the secrets of our early years and inspire more efficient machine minds. The post This AI Learned Language From the Recordings of a Baby&#8217;s First 1,000 Days appeared first on SingularityHub.",
@@ -1161,10 +1161,10 @@
       "url": "https://singularityhub.com/2026/11/12/this-ai-learned-language-from-the-recordings-of-a-babys-first-1000-days/"
     },
     {
-      "id": "lifespan_4_5215",
+      "id": "lifespan_4_5665",
       "source": "lifespan",
       "title": "The Short Peptide Elamipretide Delays Ovarian Aging in Mice",
-      "summary": "A recent study showed that a treatment with the short peptide elamipretide reversed multiple signs of age-related decline in oocyte quality in mice and in human oocytes in vitro [1]. An early decline In [&#8230;]",
+      "summary": "A recent study showed that a treatment with the short peptide elamipretide reversed multiple signs of age-related decline in oocyte quality in mice and in human oocytes in vitro [1]. An [&#8230;]",
       "date": "11 Kas 2026",
       "dv": 20261111,
       "cat": [
