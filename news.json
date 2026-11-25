@@ -1,9 +1,27 @@
 {
-  "updated": "2026-11-25T17:01:05.044170+00:00",
+  "updated": "2026-11-25T22:55:53.771879+00:00",
   "count": 65,
   "news": [
     {
-      "id": "singularity_0_8481",
+      "id": "lifespan_0_1775",
+      "source": "lifespan",
+      "title": "Chronic, Not Occasional, Loneliness Increases Dementia Risk",
+      "summary": "A new study that tracked over 1500 people who were at least 65 years old, and that lasted for almost 30 years, suggests that experiencing chronic loneliness increases the risk [&#8230;]",
+      "date": "25 Kas 2026",
+      "dv": 20261125,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 40,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://lifespan.io/chronic-not-occasional-loneliness-increases-dementia-risk/"
+    },
+    {
+      "id": "singularity_0_4758",
       "source": "singularity",
       "title": "This AI Tweaks LLM Neural Networks Like a Gene Editor",
       "summary": "OpenAI’s GPT-6 Astra looked at raw numbers behind neural networks to decipher what they do, repair faults, and write working AI models from scratch. The post This AI Tweaks LLM Neural Networks Like a Gene Editor appeared first on SingularityHub.",
@@ -22,7 +40,25 @@
       "url": "https://singularityhub.com/2026/11/25/this-ai-tweaks-llm-neural-networks-like-a-gene-editor/"
     },
     {
-      "id": "mit_0_2104",
+      "id": "mit_0_3850",
+      "source": "mit",
+      "title": "How data centers are driving a US natural-gas boom",
+      "summary": "In May 2025, my colleague David Rotman wrote a feature story describing how AI could keep us dependent on natural gas. Just 18 months later, I’ve lost count of how many times he’s already been proved right. Sure, it’s technically possible to meet the",
+      "date": "25 Kas 2026",
+      "dv": 20261125,
+      "cat": [
+        "ai"
+      ],
+      "viral": 50,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://www.technologyreview.com/2026/11/25/1149836/data-centers-gas-power-plants/"
+    },
+    {
+      "id": "mit_1_6311",
       "source": "mit",
       "title": "The Download: AI swamping open records, and firefighting for permafrost",
       "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. AI is straining America’s open records systems AI has intensified investors&#8217; interest in publi",
@@ -40,7 +76,7 @@
       "url": "https://www.technologyreview.com/2026/11/25/1149808/the-download-ai-open-records-permafrost-fires/"
     },
     {
-      "id": "mit_1_4287",
+      "id": "mit_2_5072",
       "source": "mit",
       "title": "AI is straining America’s open records systems",
       "summary": "In Panton, Vermont, population 660, town clerk Kyle Rowe did it all. He crafted budgets, paid vendors, handled property tax disputes, and served as the town’s zoning supervisor and presiding elections officer. During morning office hours at the town ",
@@ -58,7 +94,7 @@
       "url": "https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/"
     },
     {
-      "id": "longevity_0_8612",
+      "id": "longevity_0_6075",
       "source": "longevity",
       "title": "Funding healthspan: why syndicates suit early-stage prevention",
       "summary": "Peers Capital on early access, investor conviction and the Gulf’s growing appetite for health and longevity. Companies are staying private for longer, and a growing share of the value they create stays private with them; by the time a promising healt",
@@ -76,7 +112,43 @@
       "url": "https://longevity.technology/news/funding-healthspan-why-syndicates-suit-early-stage-prevention/"
     },
     {
-      "id": "longevity_1_8",
+      "id": "longevity_1_509",
+      "source": "longevity",
+      "title": "Corsera’s yearly shot aims to stop heart disease before it starts",
+      "summary": "Healthy volunteers are receiving two RNAi drugs – one lowering LDL cholesterol, one blood pressure – with first data due in early 2027. Boston-based Corsera Health has started a Phase 1 trial in Australia and New Zealand of a pair of RNA-based drugs ",
+      "date": "25 Kas 2026",
+      "dv": 20261125,
+      "cat": [
+        "ai"
+      ],
+      "viral": 96,
+      "tiktok": "100K-500K",
+      "factStatus": "verified",
+      "tags": [
+        "bilim"
+      ],
+      "url": "https://longevity.technology/news/corseras-yearly-shot-aims-to-stop-heart-disease-before-it-starts/"
+    },
+    {
+      "id": "longevity_2_8495",
+      "source": "longevity",
+      "title": "Avexitide cuts post-bypass sugar crashes by 55%",
+      "summary": "Amylyx’s Phase 3 LUCIDITY trial in 78 adults met its primary endpoint, and the company plans to file with the FDA by year-end. After gastric bypass surgery, some patients find their blood sugar dropping sharply after they eat. The condition is called",
+      "date": "25 Kas 2026",
+      "dv": 20261125,
+      "cat": [
+        "longevity"
+      ],
+      "viral": 48,
+      "tiktok": "5K-20K",
+      "factStatus": "verified",
+      "tags": [
+        "FDA"
+      ],
+      "url": "https://longevity.technology/news/avexitide-cuts-post-bypass-sugar-crashes-by-55/"
+    },
+    {
+      "id": "longevity_3_2078",
       "source": "longevity",
       "title": "Alzheon’s second Phase 3 targets APOE4/4 carriers",
       "summary": "The company is taking an oral Alzheimer’s drug into a trial of 550 people with two APOE4 copies, with new brain-bleed and p-tau217 data. About 15% of people with Alzheimer’s disease carry two copies of the APOE4 gene. They carry the highest genetic r",
@@ -94,7 +166,7 @@
       "url": "https://longevity.technology/news/alzheons-second-phase-3-targets-apoe4-4-carriers/"
     },
     {
-      "id": "longevity_2_6275",
+      "id": "longevity_4_1682",
       "source": "longevity",
       "title": "Yaqrit secures China deal for liver dialysis system",
       "summary": "Yaqrit’s wholly owned subsidiary Cytox has signed a distribution agreement with Guorun International Medical Group HK to make the CE-marked Dialive dialysis system available in hospitals in the Boao Lecheng International Medical Tourism Pilot Zone in",
@@ -112,7 +184,7 @@
       "url": "https://longevity.technology/news/yaqrit-secures-china-deal-for-liver-dialysis-system/"
     },
     {
-      "id": "longevity_3_2499",
+      "id": "longevity_5_3547",
       "source": "longevity",
       "title": "HERVolution immunotherapy improves blood sugar control in mice",
       "summary": "HERVolution Therapeutics announced the publication of preclinical findings in the journal Molecular Metabolism that report an immunotherapy targeting an endogenous retrovirus improved insulin sensitivity and preserved glucose control in a mouse model",
@@ -130,7 +202,7 @@
       "url": "https://longevity.technology/news/hervolution-immunotherapy-improves-blood-sugar-control-in-mice/"
     },
     {
-      "id": "nature_0_8943",
+      "id": "nature_0_2874",
       "source": "nature",
       "title": "Bone force loading extends lifespan in mice",
       "summary": "Nature Aging, Published online: 25 November 2026; doi:10.1038/s43587-026-01303-yBone force loading extends lifespan in mice",
@@ -148,7 +220,7 @@
       "url": "https://www.nature.com/articles/s43587-026-01303-y"
     },
     {
-      "id": "nature_1_4421",
+      "id": "nature_1_5918",
       "source": "nature",
       "title": "Author Correction: m6A epitranscriptomic regulation of tissue homeostasis during primate aging",
       "summary": "Nature Aging, Published online: 20 November 2026; doi:10.1038/s43587-026-01298-6Author Correction: m6A epitranscriptomic regulation of tissue homeostasis during primate aging",
@@ -166,7 +238,7 @@
       "url": "https://www.nature.com/articles/s43587-026-01298-6"
     },
     {
-      "id": "nature_2_514",
+      "id": "nature_2_6196",
       "source": "nature",
       "title": "Author Correction: ZDHHC11-mediated palmitoylation alleviates chondrocyte senescence and serves as a therapeutic target for osteoarthritis",
       "summary": "Nature Aging, Published online: 18 November 2026; doi:10.1038/s43587-026-01299-5Author Correction: ZDHHC11-mediated palmitoylation alleviates chondrocyte senescence and serves as a therapeutic target for osteoarthritis",
@@ -184,7 +256,7 @@
       "url": "https://www.nature.com/articles/s43587-026-01299-5"
     },
     {
-      "id": "nature_3_9297",
+      "id": "nature_3_5843",
       "source": "nature",
       "title": "Comparing plasma p-tau217 and plasma p-tau217/Aβ42 with CSF biomarkers for assessing Alzheimer’s disease pathology",
       "summary": "Nature Aging, Published online: 18 November 2026; doi:10.1038/s43587-026-01259-zBlood tests for Alzheimer’s disease, including regulatory authorized p-tau217 and p-tau217/AB42, are accessible and cost-effective diagnostic tools. This study shows that",
@@ -203,7 +275,7 @@
       "url": "https://www.nature.com/articles/s43587-026-01259-z"
     },
     {
-      "id": "nature_4_3110",
+      "id": "nature_4_6755",
       "source": "nature",
       "title": "Aged natural killer cells get back into shape",
       "summary": "Nature Aging, Published online: 17 November 2026; doi:10.1038/s43587-026-01288-8Aging natural killer (NK) cells might retain their killing machinery yet struggle to deploy it. Liu and colleagues now link this defect to retinoid-associated lipid remod",
@@ -221,7 +293,7 @@
       "url": "https://www.nature.com/articles/s43587-026-01288-8"
     },
     {
-      "id": "nature_5_8545",
+      "id": "nature_5_2863",
       "source": "nature",
       "title": "Aging disrupts sleep-driven brain fluid flow",
       "summary": "Nature Aging, Published online: 13 November 2026; doi:10.1038/s43587-026-01296-8We show that cerebrospinal fluid (CSF), the liquid that surrounds and protects the brain, has reduced flow during sleep in the aging human brain. We identified two mechan",
@@ -239,7 +311,7 @@
       "url": "https://www.nature.com/articles/s43587-026-01296-8"
     },
     {
-      "id": "nature_6_1777",
+      "id": "nature_6_7641",
       "source": "nature",
       "title": "The aging human brain exhibits reduced hemodynamic and cerebrospinal fluid flow waves during sleep",
       "summary": "Nature Aging, Published online: 13 November 2026; doi:10.1038/s43587-026-01270-4This work shows that cerebrospinal fluid flow during sleep is impaired in the aging human brain, before the onset of any neurological disorder, and identifies parallel ne",
@@ -258,7 +330,7 @@
       "url": "https://www.nature.com/articles/s43587-026-01270-4"
     },
     {
-      "id": "nature_7_1578",
+      "id": "nature_7_5700",
       "source": "nature",
       "title": "Social factors shape health as we age",
       "summary": "Nature Aging, Published online: 12 November 2026; doi:10.1038/s43587-026-01291-zOur knowledge that social factors can influence health is abundant and has shaped research and policy across medicine, public health and society for decades. In this spec",
@@ -276,7 +348,7 @@
       "url": "https://www.nature.com/articles/s43587-026-01291-z"
     },
     {
-      "id": "webrazzi_0_1668",
+      "id": "webrazzi_0_1495",
       "source": "webrazzi",
       "title": "Webrazzi Sessions: AI'da neler yaşandı?",
       "summary": "Webrazzi'nin teknoloji dünyasındaki dönüşümü farklı konu ve formatlarla gündeme taşıdığı etkinlik serisi Webrazzi Sessions, ilk buluşmasını gerçekleştirdi. Paribu ana sponsorluğunda, Terminal Kadıköy'...",
@@ -294,7 +366,7 @@
       "url": "https://webrazzi.com/2026/11/25/webrazzi-sessions-ai-da-neler-yasandi/"
     },
     {
-      "id": "webrazzi_1_4962",
+      "id": "webrazzi_1_481",
       "source": "webrazzi",
       "title": "Yapay zeka ile ürün geliştirmenin yeni kuralları Webrazzi Sessions: AI'da tartışıldı",
       "summary": "Paribu Art'ta gerçekleşen yeni etkinliğimizin ilki olan Webrazzi Sessions: AI, bugün gerçekleşti. Etkinlikte \"Yapay Zeka ile Ürün Geliştirmenin Yeni Kuralları\" başlıklı oturum Webrazzi Yönetici Editör...",
@@ -312,7 +384,7 @@
       "url": "https://webrazzi.com/2026/11/25/yapay-zeka-ile-urun-gelistirmenin-yeni-kurallari-webrazzi-sessions-ai-da-tartisildi/"
     },
     {
-      "id": "webrazzi_2_5903",
+      "id": "webrazzi_2_484",
       "source": "webrazzi",
       "title": "Baki Er: &quot;Paribu'da yapay zeka dönüşümü ekiplerin çalışma biçimini değiştirdi.&quot;",
       "summary": "Terminal Kadıköy’deki Paribu Art’ta devam eden Webrazzi Sessions: AI, Paribu Ürün Ekipleri Lideri Baki Er’in sunumuyla sürüyor. Er, “Sıfır Mesafe: Bilgi, Karar, Aksiyon” başlıklı sunumunda katılımcıla...",
@@ -330,7 +402,7 @@
       "url": "https://webrazzi.com/2026/11/25/baki-er-paribu-da-yapay-zeka-donusumu-ekiplerin-calisma-bicimini-degistirdi/"
     },
     {
-      "id": "webrazzi_3_6525",
+      "id": "webrazzi_3_1837",
       "source": "webrazzi",
       "title": "Meta, yapay zeka asistanı Muse'u Instagram'ın mesajlaşma bölümüne entegre etti",
       "summary": "Meta, kişisel yapay zeka asistanı Muse'un kullanım alanını genişletmeye devam ediyor. Şirket, Muse'u Instagram'ın doğrudan mesajlaşma (DM) bölümüne entegre ettiğini duyurdu. Yeni özellikle birlikte ku...",
@@ -348,7 +420,7 @@
       "url": "https://webrazzi.com/2026/11/25/meta-yapay-zeka-asistani-museu-instagramin-mesajlasma-bolumune-entegre-etti/"
     },
     {
-      "id": "webrazzi_4_7831",
+      "id": "webrazzi_4_2654",
       "source": "webrazzi",
       "title": "Tidal, tamamen yapay zeka üretimi müzikleri platformundan kaldırıyor",
       "summary": "Tidal, tamamen yapay zeka tarafından üretilen müzikleri platformundan kaldırmaya hazırlanıyor. Şirket, 9 Aralık itibarıyla bu tür içerikleri silmeye başlayacağını ve yeni gönderilen parçaları da kabul...",
@@ -366,7 +438,7 @@
       "url": "https://webrazzi.com/2026/11/25/tidal-tamamen-yapay-zeka-uretimi-muzikleri-platformundan-kaldiriyor/"
     },
     {
-      "id": "webrazzi_5_4003",
+      "id": "webrazzi_5_1458",
       "source": "webrazzi",
       "title": "Anthropic, Claude ile oluşturulan araçları masaüstü uygulamasına dönüştürüyor",
       "summary": "Yapay zeka şirketi Anthropic, Claude üzerinden oluşturulan araçları masaüstü uygulamalarına dönüştürmeyi sağlayan yeni özelliğini duyurdu. Install as app adı verilen özellik sayesinde kullanıcılar, Cl...",
@@ -384,7 +456,7 @@
       "url": "https://webrazzi.com/2026/11/25/anthropic-claude-ile-olusturulan-araclari-masaustu-uygulamasina-donusturuyor/"
     },
     {
-      "id": "webrazzi_6_1300",
+      "id": "webrazzi_6_4335",
       "source": "webrazzi",
       "title": "Yasin Oral: &quot;Yapay zeka ile elimizde devasa bir güç var.&quot;",
       "summary": "Webrazzi Sessions isimli yeni bir etkinlik serisine başlayacağımızı geçtiğimiz aylarda sizlere aktarmıştık. Webrazzi Sessions serisinin ilk etkinliği olan Webrazzi Sessions: AI bugün tüm hızıyla başl...",
@@ -402,7 +474,7 @@
       "url": "https://webrazzi.com/2026/11/25/yasin-oral-yapay-zeka-ile-elimizde-devasa-bir-guc-var/"
     },
     {
-      "id": "webrazzi_7_45",
+      "id": "webrazzi_7_7698",
       "source": "webrazzi",
       "title": "Anadolu Sigorta, Ormanın Gözleri ile ormanlarımızı 7/24 izliyor [Sponsorlu İçerik]",
       "summary": "Anadolu Sigorta, sürdürülebilir bir gelecek için 5 yıldır yürüttüğü Ormanın Gözleri projesiyle orman yangınlarıyla mücadeleye katkı sağlamaya devam ediyor.Tarım ve Orman Bakanlığı – Orman Genel Müdürl...",
@@ -420,10 +492,10 @@
       "url": "https://webrazzi.com/2026/11/25/anadolu-sigorta-ormanin-gozleri-ile-ormanlarimizi-724-izliyor/"
     },
     {
-      "id": "lifespan_0_5577",
+      "id": "lifespan_1_5776",
       "source": "lifespan",
       "title": "Single-Dose Gene Therapy Lowers LDL Cholesterol in Monkeys",
-      "summary": "A new study tested a CRISPR-based gene editing therapy for lowering LDL cholesterol and triglycerides. After a single shot, the treated monkeys retained lower LDL levels for at least three years. Big, [&#8230;]",
+      "summary": "A new study tested a CRISPR-based gene editing therapy for lowering LDL cholesterol and triglycerides. After a single shot, the treated monkeys retained lower LDL levels for at least three years. Big, bad [&#8230;]",
       "date": "24 Kas 2026",
       "dv": 20261124,
       "cat": [
@@ -439,7 +511,7 @@
       "url": "https://lifespan.io/single-dose-gene-therapy-lowers-ldl-cholesterol-in-monkeys/"
     },
     {
-      "id": "singularity_1_8902",
+      "id": "singularity_1_3724",
       "source": "singularity",
       "title": "FDA Set to Approve First CRISPR Therapy That Edits Genes Inside the Body",
       "summary": "The one-time treatment, lonvo-z, targets a genetic disorder that triggers painful and potentially dangerous swelling in the throat and elsewhere in the body. The post FDA Set to Approve First CRISPR Therapy That Edits Genes Inside the Body appeared f",
@@ -458,7 +530,7 @@
       "url": "https://singularityhub.com/2026/11/24/fda-set-to-approve-first-crispr-therapy-that-edits-genes-inside-the-body/"
     },
     {
-      "id": "mit_2_7783",
+      "id": "mit_3_3502",
       "source": "mit",
       "title": "The Download: AI’s gas power boom and a consciousness reality check",
       "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Data centers are getting their own natural gas power plants One of the biggest obstacles to building",
@@ -476,7 +548,7 @@
       "url": "https://www.technologyreview.com/2026/11/24/1149669/the-download-data-centers-gas-ai-consciousness/"
     },
     {
-      "id": "mit_3_9983",
+      "id": "mit_4_3332",
       "source": "mit",
       "title": "Data centers are getting their own natural gas power plants",
       "summary": "One of the biggest roadblocks to starting up a data center is getting approval to connect to the electric grid—a wait that could last as long as a decade. Some developers aren’t willing to wait and are instead opting to build their own off-grid, or b",
@@ -494,7 +566,7 @@
       "url": "https://www.technologyreview.com/2026/11/24/1149622/data-centers-natural-gas/"
     },
     {
-      "id": "longevity_4_6644",
+      "id": "longevity_6_898",
       "source": "longevity",
       "title": "Pig kidney passes its first birthday in a human patient",
       "summary": "Molly Falco is the first person to spend a year dialysis-free with a gene-edited porcine kidney; eGenesis now readies a 33-patient trial. On 22 November 2025, surgeons at Massachusetts General Hospital transplanted a kidney from a gene-edited pig int",
@@ -512,7 +584,7 @@
       "url": "https://longevity.technology/news/pig-kidney-passes-its-first-birthday-in-a-human-patient/"
     },
     {
-      "id": "longevity_5_1189",
+      "id": "longevity_7_1724",
       "source": "longevity",
       "title": "Biogen bets up to $411m on a UK startup’s protein-shredding tech",
       "summary": "TRIMTECH is building drugs that make cells throw away bad proteins. The deal points at Alzheimer’s and a new way to fight aging damage. Biogen has signed a research pact with TRIMTECH Therapeutics, a Cambridge, UK startup, to build small-molecule dru",
@@ -531,7 +603,7 @@
       "url": "https://longevity.technology/news/biogen-bets-up-to-411m-on-a-uk-startups-protein-shredding-tech/"
     },
     {
-      "id": "longevity_6_8545",
+      "id": "longevity_8_1361",
       "source": "longevity",
       "title": "Novo asks what weight loss does to bones and children",
       "summary": "Three of Novo’s ObesityWeek presentations cover bone health, children aged 6 to under 12 and early responders. Several are post hoc analyses. Novo spent ObesityWeek 2026 in Washington, DC, asking what happens around the weight loss itself. Across thr",
@@ -549,7 +621,7 @@
       "url": "https://longevity.technology/news/novo-asks-what-weight-loss-does-to-bones-and-children/"
     },
     {
-      "id": "longevity_7_7176",
+      "id": "longevity_9_1684",
       "source": "longevity",
       "title": "351 patients stayed on lecanemab for five years",
       "summary": "Eisai and Biogen say five-year Clarity AD data show a 36% lower risk of progression than ADNI, an outside patient dataset. Only 351 people received lecanemab continuously for five years, and their results anchor what Eisai and Biogen presented at the",
@@ -567,7 +639,7 @@
       "url": "https://longevity.technology/news/351-patients-stayed-on-lecanemab-for-five-years/"
     },
     {
-      "id": "longevity_8_3352",
+      "id": "longevity_10_2899",
       "source": "longevity",
       "title": "United Therapeutics performs first UThymoKidney transplant",
       "summary": "United Therapeutics announced the first clinical xenotransplant of its investigational UThymoKidney in the EXTEND study, performed at NYU Langone Health. The post United Therapeutics performs first UThymoKidney transplant appeared first on Longevity.",
@@ -585,7 +657,7 @@
       "url": "https://longevity.technology/news/united-therapeutics-performs-first-uthymokidney-transplant/"
     },
     {
-      "id": "longevity_9_4522",
+      "id": "longevity_11_4572",
       "source": "longevity",
       "title": "Digbi Health joins Lilly program to expand access to obesity drugs",
       "summary": "Digbi Health has joined Lilly Employer Connect as an independent program administrator, creating a pathway for employers to offer eligible employees access to Zepbound (tirzepatide) KwikPens and Foundayo (orforglipron) tablets with transparent medica",
@@ -603,7 +675,7 @@
       "url": "https://longevity.technology/news/digbi-health-joins-lilly-program-to-expand-access-to-obesity-drugs/"
     },
     {
-      "id": "longevity_10_7013",
+      "id": "longevity_12_2922",
       "source": "longevity",
       "title": "Hua Medicine reports positive results for once-daily diabetes drug",
       "summary": "Hua Medicine reported positive topline results from a U.S. Phase 1b multiple ascending dose trial of HMS1005, a once-daily prodrug of dorzagliatin, in adults with type 2 diabetes. The post Hua Medicine reports positive results for once-daily diabetes",
@@ -621,7 +693,7 @@
       "url": "https://longevity.technology/news/hua-medicine-reports-positive-results-for-once-daily-diabetes-drug/"
     },
     {
-      "id": "ieee_0_6800",
+      "id": "ieee_0_8913",
       "source": "ieee",
       "title": "Mitsubishi Electric Research Lab CEO on How He Reached the C-Suite",
       "summary": "The trajectory from researcher to top executive at a leading R&amp;D organization doesn’t happen overnight. It took Anthony Vetro nearly 30 years to climb the corporate ladder at Mitsubishi Electric Research Laboratories, in Cambridge, Mass. He joine",
@@ -639,7 +711,7 @@
       "url": "https://spectrum.ieee.org/mitsubishi-electric-research-lab-ceo"
     },
     {
-      "id": "webrazzi_8_37",
+      "id": "webrazzi_8_9863",
       "source": "webrazzi",
       "title": "Canva, yapay zeka ajanları için MCP altyapısını genel kullanıma açtı",
       "summary": "Tasarım platformu Canva, yapay zeka ajanlarının ve geliştiricilerin şirketin tasarım araçlarından yararlanmasını sağlayan Canva MCP altyapısını genel kullanıma açtığını duyurdu. Şirket, yenilenen alty...",
@@ -657,7 +729,7 @@
       "url": "https://webrazzi.com/2026/11/24/canva-yapay-zeka-ajanlari-icin-mcp-altyapisini-genel-kullanima-acti/"
     },
     {
-      "id": "webrazzi_9_7486",
+      "id": "webrazzi_9_8128",
       "source": "webrazzi",
       "title": "Sierra, 30 milyar dolar değerleme üzerinden 1,75 milyar dolar yatırım aldı",
       "summary": "Yapay zeka ajanları geliştiren Sierra, 1,75 milyar dolar yatırım aldı. Şirketin 1,75 milyar dolarlık yatırım turuna Greenoaks ve Lightspeed Venture Partners ortaklaşa liderlik etti. ABD merkezli Sierr...",
@@ -675,7 +747,7 @@
       "url": "https://webrazzi.com/2026/11/24/sierra-30-milyar-dolar-degerleme-uzerinden-1-75-milyar-dolar-yatirim-aldi/"
     },
     {
-      "id": "webrazzi_10_6304",
+      "id": "webrazzi_10_568",
       "source": "webrazzi",
       "title": "Z.ai, yeni yapay zeka modeli GLM-5.4'ü tanıttı",
       "summary": "Çin merkezli yapay zeka şirketi Z.ai, yeni amiral gemisi yapay zeka modeli GLM-5.4'ü tanıttı. Şirketin Loop Transformer mimarisini kullanan ilk amiral gemisi modeli olan GLM-5.4, daha fazla parametre ...",
@@ -693,7 +765,7 @@
       "url": "https://webrazzi.com/2026/11/24/zai-yeni-yapay-zeka-modeli-glm-54u-tanitti/"
     },
     {
-      "id": "webrazzi_11_4442",
+      "id": "webrazzi_11_9845",
       "source": "webrazzi",
       "title": "Spotify'a erişim problemi yaşanıyor",
       "summary": "Türkiye dahil olmak üzere dünya genelinde pek çok kullanıcı Spotify'a erişmekte güçlük yaşıyor. Bazı kullanıcılar Spotify hesaplarından çıkış yapıldığını gözlemlerken, hesaplara uygulama ve masaüstünd...",
@@ -711,7 +783,7 @@
       "url": "https://webrazzi.com/2026/11/24/spotify-a-erisim-problemi-yasaniyor/"
     },
     {
-      "id": "webrazzi_12_6180",
+      "id": "webrazzi_12_2912",
       "source": "webrazzi",
       "title": "CrowdStrike, Zscaler'ı 43,9 milyar dolara satın alıyor",
       "summary": "Siber güvenlik şirketi CrowdStrike, bulut tabanlı güvenlik çözümleri geliştiren Zscaler'ı 43,9 milyar dolarlık anlaşmayla satın almak üzere anlaşmaya vardı. Tamamı hisse senedi üzerinden gerçekleştiri...",
@@ -729,7 +801,7 @@
       "url": "https://webrazzi.com/2026/11/24/crowdstrike-zscaleri-439-milyar-dolara-satin-aliyor/"
     },
     {
-      "id": "webrazzi_13_7750",
+      "id": "webrazzi_13_2342",
       "source": "webrazzi",
       "title": "Yapay zeka altyapısı alanında faaliyet gösteren Marlowe, 277 milyon dolar yatırım aldı",
       "summary": "Yapay zeka altyapısı alanında faaliyet gösteren Marlowe, 277 milyon dolar yatırım aldı. Şirketin 277 milyon dolarlık tohum yatırım turuna Accel liderlik etti. ABD merkezli Marlowe'un yatırım turunda B...",
@@ -747,7 +819,7 @@
       "url": "https://webrazzi.com/2026/11/24/yapay-zeka-altyapisi-alaninda-faaliyet-gosteren-marlowe-277-milyon-dolar-yatirim-aldi/"
     },
     {
-      "id": "webrazzi_14_7403",
+      "id": "webrazzi_14_1073",
       "source": "webrazzi",
       "title": "Mastercard Lighthouse Türkiye'nin yeni dönemini Onur Doğan ile konuştuk [Sponsorlu İçerik]",
       "summary": "Mastercard'ın girişim hızlandırma programı olan Mastercard Lighthouse Türkiye Girişim Hızlandırma Programı’nı geçtiğimiz dönemlerde pek çok kez sizlere aktarmıştık. Mastercard Lighthouse Türkiye Giriş...",
@@ -765,7 +837,7 @@
       "url": "https://webrazzi.com/2026/11/24/mastercard-lighthouse-turkiyenin-yeni-donemini-onur-dogan-ile-konustuk/"
     },
     {
-      "id": "lifespan_1_1417",
+      "id": "lifespan_2_3575",
       "source": "lifespan",
       "title": "Putting the Brakes on Peripheral Nerve Aging",
       "summary": "Researchers have discovered a gene whose expression diminishes with aging and that may be potentially targeted to fight senescence in peripheral nerves. The cells that repair and protect nerves Peripheral nerves, which extend from the spine into the ",
@@ -783,7 +855,7 @@
       "url": "https://lifespan.io/putting-the-brakes-on-peripheral-nerve-aging/"
     },
     {
-      "id": "mit_4_7302",
+      "id": "mit_5_5248",
       "source": "mit",
       "title": "A legendary philosopher isn’t buying Anthropic’s consciousness argument",
       "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Before going public last week, Anthropic named the possibility that AI could be conscious or sentient as a risk ",
@@ -801,7 +873,7 @@
       "url": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/"
     },
     {
-      "id": "mit_5_6858",
+      "id": "mit_6_5187",
       "source": "mit",
       "title": "The Download: AI’s judgment problem and carbon removal’s crop threat",
       "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The most misunderstood graph in AI just got a major update A new report from the AI evaluation nonpr",
@@ -819,7 +891,7 @@
       "url": "https://www.technologyreview.com/2026/11/23/1149548/the-download-ai-judgment-problem-carbon-removal-crop-threat/"
     },
     {
-      "id": "mit_6_3290",
+      "id": "mit_7_3870",
       "source": "mit",
       "title": "Why using rocks for carbon removal could eventually reduce crop growth",
       "summary": "Tech companies are investing a lot of hope and money in rocks. Google, Microsoft, and others have committed hundreds of millions of dollars to get startups to spread crushed basalt, olivine, or other alkaline materials across farms, in an effort to c",
@@ -837,7 +909,7 @@
       "url": "https://www.technologyreview.com/2026/11/23/1149392/why-using-rocks-for-carbon-removal-could-eventually-reduce-crop-growth/"
     },
     {
-      "id": "longevity_11_6996",
+      "id": "longevity_13_7613",
       "source": "longevity",
       "title": "Confident, convincing, but wrong: Exploring clinical AI’s problem",
       "summary": "Longevitix founders explain how AI could take over preventive medicine data crunching so physicians can focus on the patient in front of them. Picture a patient who has had brain fog for months, sleeps badly and can’t shift weight no matter what they",
@@ -855,7 +927,7 @@
       "url": "https://longevity.technology/news/confident-convincing-but-wrong-exploring-clinical-ais-problem/"
     },
     {
-      "id": "longevity_12_1231",
+      "id": "longevity_14_6585",
       "source": "longevity",
       "title": "Wave says one WVE-007 dose still acts at one year",
       "summary": "After a roughly 50% share drop in March, Wave reports one-year data from its 240 mg group, though the release gives no body-fat figures. Wave Life Sciences shares lost roughly half their value in a single day in March. The trigger was six-month data ",
@@ -873,43 +945,7 @@
       "url": "https://longevity.technology/news/wave-says-one-wve-007-dose-still-acts-at-one-year/"
     },
     {
-      "id": "longevity_13_1892",
-      "source": "longevity",
-      "title": "MetaVia’s DA-1726 matches retatrutide in mouse study",
-      "summary": "In obese mice, the dual-receptor drug matched weight loss with less appetite suppression and cut glucose more, the company says. Weight-loss drugs usually work by making animals, and people, eat less. A new mouse study from MetaVia points to a second",
-      "date": "23 Kas 2026",
-      "dv": 20261123,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 48,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://longevity.technology/news/metavias-da-1726-matches-retatrutide-in-mouse-study/"
-    },
-    {
-      "id": "longevity_14_5031",
-      "source": "longevity",
-      "title": "Why Southeast Asia is becoming a testbed for longevity medicine",
-      "summary": "Dr Sarassawadee Suwanjinda on why the region must separate prevention from experiment – and publish what happens next. Patients now fly from Europe, Australia and the Gulf to Bangkok, Singapore and Kuala Lumpur for multi-omic panels, biological age t",
-      "date": "23 Kas 2026",
-      "dv": 20261123,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 64,
-      "tiktok": "10K-40K",
-      "factStatus": "verified",
-      "tags": [
-        "longevity"
-      ],
-      "url": "https://longevity.technology/news/why-southeast-asia-is-becoming-a-testbed-for-longevity-medicine/"
-    },
-    {
-      "id": "ieee_1_3419",
+      "id": "ieee_1_369",
       "source": "ieee",
       "title": "Learn How 5G NTN Architecture, Mobility, and Testing Shape 6G",
       "summary": "What you will learn about: How 3GPP standards from Release 15 to Release 19 built the foundation of NR-NTN, and why NTN extends 5G coverage to oceans, rural regions, and disaster zones.How transparent and regenerative satellite payload architectures ",
@@ -927,7 +963,7 @@
       "url": "https://content.knowledgehub.wiley.com/5g-ntn-takes-flight-a-deep-dive-into-nr-ntn-technology-and-testing-aspects/"
     },
     {
-      "id": "singularity_2_473",
+      "id": "singularity_2_4246",
       "source": "singularity",
       "title": "This Week’s Awesome Tech Stories From Around the Web (Through November 21)",
       "summary": "Every week, we scour the web for important, insightful, and fascinating stories in science and technology. The post This Week’s Awesome Tech Stories From Around the Web (Through November 21) appeared first on SingularityHub.",
@@ -945,10 +981,10 @@
       "url": "https://singularityhub.com/2026/11/21/this-weeks-awesome-tech-stories-from-around-the-web-through-november-21-2/"
     },
     {
-      "id": "lifespan_2_267",
+      "id": "lifespan_3_1048",
       "source": "lifespan",
       "title": "James Peyer on Turning Aging Biology Into Medicine",
-      "summary": "James Peyer, co-founder and CEO of Cambrian Bio, is passionate about longevity but clear-eyed about what it would actually take to extend human lifespan. [&#8230;]",
+      "summary": "James Peyer, co-founder and CEO of Cambrian Bio, is passionate about longevity but clear-eyed about what it would actually take to extend human lifespan. Cambrian works [&#8230;]",
       "date": "20 Kas 2026",
       "dv": 20261120,
       "cat": [
@@ -964,7 +1000,7 @@
       "url": "https://lifespan.io/james-peyer-on-turning-aging-biology-into-medicine/"
     },
     {
-      "id": "singularity_3_465",
+      "id": "singularity_3_1491",
       "source": "singularity",
       "title": "Catching AI’s Mistakes Is a Mental Burden—and a Drag on Productivity",
       "summary": "AI gains are often countered by the time and energy spent checking its work. The post Catching AI’s Mistakes Is a Mental Burden—and a Drag on Productivity appeared first on SingularityHub.",
@@ -982,7 +1018,7 @@
       "url": "https://singularityhub.com/2026/11/20/catching-ais-mistakes-is-a-mental-burden-and-a-drag-on-productivity/"
     },
     {
-      "id": "mit_7_989",
+      "id": "mit_8_8203",
       "source": "mit",
       "title": "The most misunderstood graph in AI just got a major update",
       "summary": "A new report from the AI evaluation nonprofit METR finds that some AI capabilities are continuing to improve along an exponential trajectory—but it also indicates that models aren’t quite as good at tasks that require judgment as they are at coding. ",
@@ -1000,7 +1036,7 @@
       "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/"
     },
     {
-      "id": "mit_8_5044",
+      "id": "mit_9_9437",
       "source": "mit",
       "title": "The Download: inside the quest to make our minds immortal",
       "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. What we learned when our Roundtables explored the quest to make minds immortal To preserve our sense",
@@ -1018,7 +1054,7 @@
       "url": "https://www.technologyreview.com/2026/11/20/1149371/the-download-quest-to-make-minds-immortal/"
     },
     {
-      "id": "ieee_2_5843",
+      "id": "ieee_2_4724",
       "source": "ieee",
       "title": "I Don’t Trust Visual Recordings Anymore. But One Day I Will Again",
       "summary": "In March of this year, a flurry of emails and text messages from a half dozen reporters around the world disrupted my quiet Saturday morning. An Iranian news agency had aired a week-old video of what appeared to be a U.S.-made Tomahawk missile hittin",
@@ -1036,10 +1072,10 @@
       "url": "https://spectrum.ieee.org/fighting-back-against-deep-fakes"
     },
     {
-      "id": "lifespan_3_131",
+      "id": "lifespan_4_8929",
       "source": "lifespan",
       "title": "One Way That Aged T Cells Age the Whole Body",
-      "summary": "Researchers have discovered that Granzyme K, a compound predominantly emitted by older CD8+ T cells, accelerates aging in multiple organs. Immune cells can drive aging CD8+ T cells, cytotoxic cells that become primed to recognize and destroy [&#8230;",
+      "summary": "Researchers have discovered that Granzyme K, a compound predominantly emitted by older CD8+ T cells, accelerates aging in multiple organs. Immune cells can drive aging CD8+ T cells, cytotoxic cells that become primed [&#8230;]",
       "date": "19 Kas 2026",
       "dv": 20261119,
       "cat": [
@@ -1054,7 +1090,7 @@
       "url": "https://lifespan.io/one-way-that-aged-t-cells-age-the-whole-body/"
     },
     {
-      "id": "singularity_4_3336",
+      "id": "singularity_4_9599",
       "source": "singularity",
       "title": "Novel Gene Therapy Nearly Erases ‘Drug Resistant’ Seizures",
       "summary": "Scientists have long used chemogenetics to study brains in the lab. A pilot trial for seizures is its first leap into medicine. The post Novel Gene Therapy Nearly Erases &#8216;Drug Resistant&#8217; Seizures appeared first on SingularityHub.",
@@ -1072,25 +1108,7 @@
       "url": "https://singularityhub.com/2026/11/19/novel-gene-therapy-nearly-erases-drug-resistant-seizures/"
     },
     {
-      "id": "mit_9_4692",
-      "source": "mit",
-      "title": "The Download: a living liver, a billion-dollar battery deal, and AI hype",
-      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. A human liver has been kept alive outside the body for a record seven weeks Researchers in Australia",
-      "date": "19 Kas 2026",
-      "dv": 20261119,
-      "cat": [
-        "ai"
-      ],
-      "viral": 50,
-      "tiktok": "5K-20K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://www.technologyreview.com/2026/11/19/1148979/the-download-liver-kept-alive-sila-battery-deal-ai-hype/"
-    },
-    {
-      "id": "ieee_3_9364",
+      "id": "ieee_3_5467",
       "source": "ieee",
       "title": "Community-Focused Academic Brings AI Tools to Colorado Farmers",
       "summary": "Many farmers and ranchers in eastern Colorado are curious about artificial intelligence, but they don’t have a local tech-savvy person to show them how to use it. Xue “Alice” Dong has made that her job.Dong, an IEEE senior member, is an extension reg",
@@ -1108,7 +1126,7 @@
       "url": "https://spectrum.ieee.org/ai-tools-for-rural-communities"
     },
     {
-      "id": "ieee_4_8831",
+      "id": "ieee_4_9881",
       "source": "ieee",
       "title": "Why a Computer Scientist Thinks Superintelligence Won’t Happen",
       "summary": "Many people were caught off guard this past summer when employees of one of the world’s leading AI companies began casually debating whether their products would lead to human extinction. It started when Anthropic researcher Jacob Coxon announced his",
@@ -1126,7 +1144,7 @@
       "url": "https://spectrum.ieee.org/ai-superintelligence-debate"
     },
     {
-      "id": "singularity_5_7320",
+      "id": "singularity_5_453",
       "source": "singularity",
       "title": "Scientists Use AI-Designed CRISPR to Make Disease-Resistant Rice",
       "summary": "The versatile, open-source tool could democratize efforts to engineer healthier, higher-yielding crops. The post Scientists Use AI-Designed CRISPR to Make Disease-Resistant Rice appeared first on SingularityHub.",
@@ -1144,7 +1162,7 @@
       "url": "https://singularityhub.com/2026/11/18/scientists-use-ai-designed-crispr-to-make-disease-resistant-rice/"
     },
     {
-      "id": "ieee_5_2967",
+      "id": "ieee_5_8348",
       "source": "ieee",
       "title": "Build a Personal Brand to Help Employers Find You",
       "summary": "This article is crossposted from IEEE Spectrum’s careers newsletter. Sign up now to get insider tips, expert advice, and practical strategies, written in partnership with tech career development company Parsity and delivered to your inbox for free!In",
@@ -1160,24 +1178,6 @@
         "bilim"
       ],
       "url": "https://spectrum.ieee.org/personal-branding-for-engineers"
-    },
-    {
-      "id": "lifespan_4_313",
-      "source": "lifespan",
-      "title": "Partial Reprogramming’s Outcome Depends on Cell Type",
-      "summary": "A new preprint study of partial reprogramming in three human cell types has found that younger epigenetic ages and better function do not [&#8230;]",
-      "date": "17 Kas 2026",
-      "dv": 20261117,
-      "cat": [
-        "longevity"
-      ],
-      "viral": 65,
-      "tiktok": "10K-40K",
-      "factStatus": "verified",
-      "tags": [
-        "bilim"
-      ],
-      "url": "https://lifespan.io/partial-reprogrammings-outcome-depends-on-cell-type/"
     }
   ],
   "sources": [
